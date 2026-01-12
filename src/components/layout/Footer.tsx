@@ -67,8 +67,7 @@ export function Footer() {
                 width={100}
                 height={35}
                 className="h-8 w-auto object-contain"
-                quality={100}
-                unoptimized
+                quality={85}
               />
               <span className="text-base font-bold">
                 <span className="gradient-text">GENIUS</span>{" "}

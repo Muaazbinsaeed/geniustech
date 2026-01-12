@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { locales } from "@/i18n/config";
 import { getDirection } from "@/i18n/config";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, LOCALES } from "@/lib/constants";
 import {
   LocalBusinessSchema,
   OrganizationSchema,
@@ -96,6 +96,16 @@ export default async function LocaleLayout({
       <head>
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
+        {/* Hreflang tags for multi-language SEO */}
+        {LOCALES.map((loc) => (
+          <link
+            key={loc}
+            rel="alternate"
+            hrefLang={loc}
+            href={`${SITE_CONFIG.url}/${loc}`}
+          />
+        ))}
+        <link rel="alternate" hrefLang="x-default" href={`${SITE_CONFIG.url}/en`} />
         <LocalBusinessSchema />
         <OrganizationSchema />
         <WebSiteSchema />
@@ -103,6 +113,13 @@ export default async function LocaleLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
+        {/* Skip to main content link for accessibility */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 bg-primary text-white px-4 py-2 rounded-md font-medium"
+        >
+          Skip to main content
+        </a>
         <GoogleAnalytics />
         <GoogleAds />
         <ThemeProvider>

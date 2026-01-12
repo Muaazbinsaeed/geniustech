@@ -68,8 +68,7 @@ export function Header() {
               height={40}
               className="h-9 w-auto object-contain"
               priority
-              quality={100}
-              unoptimized
+              quality={85}
             />
             <span className="text-lg font-bold">
               <span className="gradient-text">GENIUS</span>{" "}

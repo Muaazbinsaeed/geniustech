@@ -45,7 +45,7 @@ export default async function HomePage({ params }: HomePageProps) {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         <HeroSlider />
         <TrustBar />
         <VideoSection
