@@ -1,0 +1,457 @@
+{
+  "errors": {
+    "notFound": {
+      "title": "Page Not Found",
+      "description": "Sorry, the page you're looking for doesn't exist or has been moved.",
+      "backHome": "Back to Home"
+    },
+    "error": {
+      "title": "Something Went Wrong",
+      "description": "We apologize for the inconvenience. Please try again or contact us on WhatsApp.",
+      "tryAgain": "Try Again",
+      "backHome": "Back to Home"
+    },
+    "loading": {
+      "title": "Loading..."
+    }
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "bookNow": "Book Now",
+    "callNow": "Call Now",
+    "whatsapp": "WhatsApp",
+    "chatOnWhatsapp": "Chat on WhatsApp",
+    "getQuote": "Get Free Quote",
+    "getFreeQuote": "Get Free Quote",
+    "viewAll": "View All",
+    "readMore": "Read More",
+    "backToHome": "Back to Home",
+    "backTo": "Back to",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "sameDayService": "Same Day Service",
+    "freePickupDelivery": "Free Pickup & Delivery",
+    "premiumParts": "Premium Parts",
+    "viewDetails": "View Details",
+    "whatWeFix": "What We Fix",
+    "commonIssues": "Common Issues We Fix",
+    "faq": "Frequently Asked Questions",
+    "readyToFix": "Ready to Get Your Device Fixed?",
+    "contactUsWhatsapp": "Contact us on WhatsApp for a free quote. Same-day service with free pickup and delivery in Dubai Marina, JLT, and JBR.",
+    "whatsappUsNow": "WhatsApp Us Now",
+    "needHelp": "Need Help With Your Device?",
+    "relatedArticles": "Related Articles",
+    "howItWorks": "How It Works",
+    "servingAll": "Serving All of",
+    "nearLandmarks": "Near these landmarks? We've got you covered.",
+    "needRepairIn": "Need Device Repair in",
+    "contactUsPickup": "Contact us on WhatsApp for a free quote. We'll pick up your device for free and have it fixed the same day.",
+    "step1Title": "Contact Us",
+    "step1Desc": "Send us a message on WhatsApp with your device issue",
+    "step2Title": "Free Pickup",
+    "step2Desc": "We'll pick up your device from your location for free",
+    "step3Title": "Same-Day Repair",
+    "step3Desc": "Get your device back fixed, often within hours",
+    "servicesAvailableIn": "Services Available in",
+    "weRepairAllDevices": "We repair all types of devices with same-day service and free pickup.",
+    "serviceHighlights": "Service Highlights",
+    "expertRepairs": "Expert repairs for all your devices. Fast, reliable, and affordable with free pickup and delivery in Dubai Marina, JLT, and JBR.",
+    "deviceRepairIn": "Device Repair in",
+    "watchVideo": "Watch Our Video"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "areas": "Service Areas",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Dubai's Fastest",
+    "titleHighlight": "Device Repair",
+    "subtitle": "Expert repairs for all phones, laptops & wearables. Free pickup & delivery in Marina, JLT & JBR.",
+    "cta": {
+      "whatsapp": "WhatsApp Us",
+      "call": "Call Now"
+    }
+  },
+  "trust": {
+    "repairs": "Repairs Completed",
+    "sameDay": "Same Day Service",
+    "rating": "Google Rating",
+    "freePickup": "Free Pickup & Delivery"
+  },
+  "services": {
+    "title": "Our Repair Services",
+    "subtitle": "Top Rate Repair Service in UAE for Your Devices",
+    "iphone": {
+      "title": "iPhone Repair",
+      "desc": "Screen, battery, and all iPhone repairs for every model"
+    },
+    "macbook": {
+      "title": "MacBook Repair",
+      "desc": "MacBook Pro & Air screen, keyboard, and battery repairs"
+    },
+    "android": {
+      "title": "Android Repair",
+      "desc": "Samsung, Google, OnePlus, and all Android phone repairs"
+    },
+    "ipad": {
+      "title": "iPad & Tablet Repair",
+      "desc": "iPad and Android tablet screen and battery repairs"
+    },
+    "laptop": {
+      "title": "Laptop Repair",
+      "desc": "Dell, HP, Lenovo, and all Windows laptop repairs"
+    },
+    "smartwatch": {
+      "title": "Smartwatch Repair",
+      "desc": "Apple Watch and wearable device repairs"
+    }
+  },
+  "whyUs": {
+    "title": "Why Choose Genius Tech",
+    "subtitle": "We make your digital life simpler and better",
+    "fastest": {
+      "title": "Fastest Repairs",
+      "desc": "Same-day service, often within hours"
+    },
+    "parts": {
+      "title": "Premium Parts",
+      "desc": "OEM and genuine quality spare parts"
+    },
+    "prices": {
+      "title": "Best Prices",
+      "desc": "Competitive and transparent pricing"
+    },
+    "pickup": {
+      "title": "Free Pickup",
+      "desc": "Free pickup & delivery in Marina, JLT, JBR"
+    },
+    "onsite": {
+      "title": "Onsite Service",
+      "desc": "We come to your home or office"
+    },
+    "experts": {
+      "title": "Expert Technicians",
+      "desc": "Certified and experienced professionals"
+    }
+  },
+  "areas": {
+    "title": "Service Areas",
+    "subtitle": "Free Pickup & Delivery",
+    "marina": "Dubai Marina",
+    "jlt": "JLT (Jumeirah Lakes Towers)",
+    "jbr": "JBR (Jumeirah Beach Residence)",
+    "freeService": "Free pickup and delivery available in these areas"
+  },
+  "reviews": {
+    "title": "What Our Customers Say",
+    "subtitle": "Trusted by thousands across Dubai",
+    "viewAll": "View All Reviews on Google"
+  },
+  "cta": {
+    "title": "Ready to Get Your Device Fixed?",
+    "subtitle": "Quality means doing something right when no one is looking",
+    "button": "Get Free Quote on WhatsApp"
+  },
+  "about": {
+    "title": "About Genius Tech",
+    "subtitle": "Your Trusted Device Repair Partner in Dubai",
+    "description": "At Genius Tech, we specialize in fast, professional, and affordable repair solutions for all your electronic devices. From smartphones and tablets to laptops, gaming consoles, smartwatches, and beyond—we fix it all with precision and care.",
+    "mission": "Based in Dubai Marina, our certified experts use only genuine parts, advanced tools, and deep technical expertise to deliver reliable results every time. Whether it's a cracked screen, water damage, battery issues, or software errors, we offer same-day repairs, free pickup & delivery, and transparent pricing—with no hidden charges.",
+    "promise": "Trusted by thousands of customers across the UAE, Genius Tech is known for quality, honesty, and exceptional customer service. Every repair comes with our commitment to excellence, and every customer is treated like family."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Working Hours",
+    "everyday": "Everyday: 10AM - 10PM",
+    "findUs": "Find Us",
+    "landmark": "Inside Pluspoint Mini Mart"
+  },
+  "blog": {
+    "title": "Device Repair Tips & Guides",
+    "subtitle": "Expert advice on phone and laptop repair, maintenance tips, and guides to help you make informed decisions about your devices.",
+    "allPosts": "All Posts",
+    "minRead": "min read",
+    "backToBlog": "Back to Blog"
+  },
+  "serviceData": {
+    "iphone-repair": {
+      "title": "iPhone Repair",
+      "shortDesc": "Screen, battery, and all iPhone repairs for every model",
+      "description": "Expert iPhone repair services in Dubai for all models from iPhone 6 to iPhone 15 Pro Max. We fix cracked screens, replace batteries, repair charging ports, fix water damage, and more. Same-day service with genuine quality parts.",
+      "features": ["All iPhone models supported (6 to 15 Pro Max)", "Screen replacement with quality displays", "Battery replacement for longer life", "Charging port repair", "Water damage recovery", "Camera and speaker repair", "Face ID and Touch ID repair", "Software troubleshooting"],
+      "issues": [
+        {"title": "Cracked Screen", "desc": "Professional screen replacement with quality displays. We restore your iPhone's look and touch functionality."},
+        {"title": "Battery Draining Fast", "desc": "Battery replacement service to bring back your iPhone's all-day battery life."},
+        {"title": "Not Charging", "desc": "Charging port cleaning or replacement to fix charging issues."},
+        {"title": "Water Damage", "desc": "Expert water damage repair and data recovery services."},
+        {"title": "Camera Not Working", "desc": "Front and back camera repair or replacement for perfect photos."},
+        {"title": "Speaker Issues", "desc": "Earpiece and loudspeaker repair for clear calls and audio."}
+      ],
+      "faqs": [
+        {"q": "How long does iPhone screen repair take?", "a": "Most iPhone screen repairs are completed within 30-60 minutes. We offer same-day service for all screen replacements."},
+        {"q": "Do you use genuine Apple parts?", "a": "We use high-quality OEM-grade parts that match Apple's specifications for performance and durability."},
+        {"q": "Will I lose my data during repair?", "a": "No, your data remains intact during most repairs. We recommend backing up before any repair as a precaution."},
+        {"q": "Do you offer pickup service for iPhone repair?", "a": "Yes! We offer free pickup and delivery in Dubai Marina, JLT, and JBR areas."}
+      ]
+    },
+    "macbook-repair": {
+      "title": "MacBook Repair",
+      "shortDesc": "MacBook Pro & Air screen, keyboard, and battery repairs",
+      "description": "Professional MacBook repair services in Dubai for all MacBook Pro and MacBook Air models. From screen replacement to logic board repair, our certified technicians handle all MacBook issues with expertise.",
+      "features": ["MacBook Pro & Air all models", "Screen replacement (Retina & LCD)", "Keyboard replacement", "Battery replacement", "Logic board repair", "SSD upgrade and data recovery", "Trackpad repair", "Charging port repair"],
+      "issues": [
+        {"title": "Cracked Screen", "desc": "MacBook screen replacement for Retina and standard displays."},
+        {"title": "Keyboard Not Working", "desc": "Full keyboard replacement for stuck or unresponsive keys."},
+        {"title": "Battery Swelling", "desc": "Safe battery replacement to prevent damage and restore battery life."},
+        {"title": "Slow Performance", "desc": "SSD upgrade and optimization to speed up your MacBook."},
+        {"title": "Not Turning On", "desc": "Logic board diagnosis and repair for power issues."},
+        {"title": "Overheating", "desc": "Thermal paste replacement and fan cleaning service."}
+      ],
+      "faqs": [
+        {"q": "How long does MacBook screen repair take?", "a": "MacBook screen repairs typically take 1-2 hours depending on the model and availability of parts."},
+        {"q": "Can you repair MacBook logic boards?", "a": "Yes, we offer component-level logic board repair which is more cost-effective than full board replacement."},
+        {"q": "Do you offer MacBook upgrade services?", "a": "Yes, we can upgrade your MacBook's SSD for more storage and faster performance."},
+        {"q": "Is my data safe during MacBook repair?", "a": "We take data security seriously. Your data remains on your device and we can help with backup if needed."}
+      ]
+    },
+    "android-repair": {
+      "title": "Android Phone Repair",
+      "shortDesc": "Samsung, Google, OnePlus, and all Android phone repairs",
+      "description": "Expert Android phone repair services in Dubai for Samsung Galaxy, Google Pixel, OnePlus, Huawei, Xiaomi, and all other Android brands. We fix screens, batteries, charging ports, and more.",
+      "features": ["Samsung Galaxy S and Note series", "Google Pixel all models", "OnePlus repair services", "Huawei and Xiaomi repair", "Screen replacement", "Battery replacement", "Charging port repair", "Software troubleshooting"],
+      "issues": [
+        {"title": "Cracked Screen", "desc": "Screen replacement for all Android phones with quality AMOLED and LCD displays."},
+        {"title": "Battery Issues", "desc": "Battery replacement for Samsung, Google Pixel, and other Android phones."},
+        {"title": "Charging Problems", "desc": "USB-C port repair and replacement for charging issues."},
+        {"title": "Water Damage", "desc": "Professional water damage repair and component cleaning."},
+        {"title": "Camera Problems", "desc": "Camera module replacement for blurry or non-functional cameras."},
+        {"title": "Software Issues", "desc": "Factory reset, software update, and troubleshooting services."}
+      ],
+      "faqs": [
+        {"q": "Do you repair all Android brands?", "a": "Yes, we repair Samsung, Google, OnePlus, Huawei, Xiaomi, Oppo, Vivo, and most other Android brands."},
+        {"q": "How much does Samsung screen repair cost?", "a": "Samsung screen repair cost varies by model. Contact us on WhatsApp for an instant quote."},
+        {"q": "Can you recover data from a broken Android phone?", "a": "In many cases, yes. We offer data recovery services for damaged Android phones."},
+        {"q": "Do you offer same-day Android repair?", "a": "Yes, most Android repairs are completed same-day, often within a few hours."}
+      ]
+    },
+    "ipad-repair": {
+      "title": "iPad & Tablet Repair",
+      "shortDesc": "iPad and Android tablet screen and battery repairs",
+      "description": "Professional iPad and tablet repair services in Dubai. We repair all iPad models including iPad Pro, iPad Air, iPad Mini, and standard iPad. Also servicing Samsung Galaxy Tab and other Android tablets.",
+      "features": ["All iPad models (Pro, Air, Mini, Standard)", "Samsung Galaxy Tab repair", "Screen replacement", "Battery replacement", "Charging port repair", "Home button and Face ID repair", "Speaker and microphone repair", "Software troubleshooting"],
+      "issues": [
+        {"title": "Cracked Screen", "desc": "iPad screen replacement with quality digitizer and LCD displays."},
+        {"title": "Battery Not Holding Charge", "desc": "Battery replacement to restore your iPad's battery life."},
+        {"title": "Not Charging", "desc": "Lightning or USB-C port repair for charging issues."},
+        {"title": "Home Button Not Working", "desc": "Home button repair or replacement (where applicable)."},
+        {"title": "Slow Performance", "desc": "Software optimization and cleanup to speed up your iPad."},
+        {"title": "Speaker Issues", "desc": "Speaker repair for audio problems."}
+      ],
+      "faqs": [
+        {"q": "Can you repair iPad Pro screens?", "a": "Yes, we repair all iPad Pro models including the latest with Liquid Retina XDR displays."},
+        {"q": "How long does iPad repair take?", "a": "Most iPad repairs are completed within 1-2 hours depending on the issue."},
+        {"q": "Do you repair Android tablets?", "a": "Yes, we repair Samsung Galaxy Tab, Huawei, Lenovo, and other Android tablets."},
+        {"q": "Is iPad data safe during repair?", "a": "Yes, your data remains intact. We recommend backing up before any repair."}
+      ]
+    },
+    "laptop-repair": {
+      "title": "Laptop Repair",
+      "shortDesc": "Dell, HP, Lenovo, and all Windows laptop repairs",
+      "description": "Expert Windows laptop repair services in Dubai for Dell, HP, Lenovo, Asus, Acer, and all other brands. From screen replacement to motherboard repair, we fix all laptop issues.",
+      "features": ["Dell, HP, Lenovo, Asus, Acer repair", "Screen replacement", "Keyboard replacement", "Battery replacement", "Hard drive and SSD upgrade", "RAM upgrade", "Motherboard repair", "Virus removal and cleanup"],
+      "issues": [
+        {"title": "Cracked Screen", "desc": "Laptop screen replacement for all brands and models."},
+        {"title": "Keyboard Not Working", "desc": "Full keyboard replacement for damaged or unresponsive keys."},
+        {"title": "Slow Performance", "desc": "SSD upgrade, RAM upgrade, and software optimization."},
+        {"title": "Overheating", "desc": "Thermal paste replacement and fan cleaning."},
+        {"title": "Not Turning On", "desc": "Power issue diagnosis and motherboard repair."},
+        {"title": "Virus and Malware", "desc": "Professional virus removal and system cleanup."}
+      ],
+      "faqs": [
+        {"q": "Do you repair gaming laptops?", "a": "Yes, we repair gaming laptops from Asus ROG, MSI, Razer, and other gaming brands."},
+        {"q": "Can you upgrade my laptop's SSD?", "a": "Yes, we offer SSD upgrades to make your laptop faster and more responsive."},
+        {"q": "How much does laptop screen repair cost?", "a": "Cost varies by laptop model and screen type. Contact us for a free quote."},
+        {"q": "Do you offer corporate laptop repair?", "a": "Yes, we offer business laptop repair services with quick turnaround times."}
+      ]
+    },
+    "smartwatch-repair": {
+      "title": "Smartwatch Repair",
+      "shortDesc": "Apple Watch and wearable device repairs",
+      "description": "Professional Apple Watch and smartwatch repair services in Dubai. We fix screens, batteries, and other issues for Apple Watch, Samsung Galaxy Watch, and other wearables.",
+      "features": ["Apple Watch all series", "Samsung Galaxy Watch repair", "Screen replacement", "Battery replacement", "Crown and button repair", "Water damage repair", "Band connector repair", "Software troubleshooting"],
+      "issues": [
+        {"title": "Cracked Screen", "desc": "Apple Watch and smartwatch screen replacement."},
+        {"title": "Battery Draining Fast", "desc": "Battery replacement for longer watch life."},
+        {"title": "Not Turning On", "desc": "Diagnosis and repair for power issues."},
+        {"title": "Crown Not Working", "desc": "Digital Crown repair for Apple Watch."},
+        {"title": "Water Damage", "desc": "Water damage assessment and repair."},
+        {"title": "Pairing Issues", "desc": "Software troubleshooting and re-pairing assistance."}
+      ],
+      "faqs": [
+        {"q": "Can you repair Apple Watch Ultra?", "a": "Yes, we repair all Apple Watch models including the Ultra series."},
+        {"q": "How long does Apple Watch screen repair take?", "a": "Apple Watch screen repairs typically take 1-2 hours."},
+        {"q": "Do you repair Samsung Galaxy Watch?", "a": "Yes, we repair Samsung Galaxy Watch and other Android smartwatches."},
+        {"q": "Is Apple Watch water resistance restored after repair?", "a": "We use proper sealing techniques to maintain water resistance after repair."}
+      ]
+    }
+  },
+  "areaData": {
+    "dubai-marina": {
+      "name": "Dubai Marina",
+      "fullName": "Dubai Marina, Dubai",
+      "description": "Professional device repair services in Dubai Marina. We offer same-day iPhone, MacBook, Android, and laptop repairs with free pickup and delivery throughout Dubai Marina.",
+      "highlights": ["Free pickup from any Marina tower", "Same-day repair service", "Located inside Marina", "All device types repaired", "Genuine quality parts", "Expert certified technicians"],
+      "landmarks": ["Marina Mall", "Marina Walk", "JBR Beach", "Bluewaters Island", "Ain Dubai", "The Beach JBR", "Marina Promenade", "Pier 7"]
+    },
+    "jlt": {
+      "name": "JLT",
+      "fullName": "Jumeirah Lakes Towers (JLT), Dubai",
+      "description": "Expert device repair services in JLT. Fast, reliable repairs for all phones, laptops, and tablets with free pickup and delivery throughout Jumeirah Lakes Towers.",
+      "highlights": ["Free pickup from all JLT clusters", "Same-day repair available", "Serving all JLT towers", "All major brands repaired", "Transparent pricing", "90-day warranty on repairs"],
+      "landmarks": ["JLT Metro Station", "Cluster C", "Cluster D", "Cluster E", "Cluster O", "Cluster Q", "Lake Level", "Almas Tower"]
+    },
+    "jbr": {
+      "name": "JBR",
+      "fullName": "Jumeirah Beach Residence (JBR), Dubai",
+      "description": "Quality device repair services in JBR. From The Walk to Bluewaters, we provide fast repairs with free pickup and delivery for all your devices.",
+      "highlights": ["Free pickup from JBR towers", "Quick turnaround time", "Beachside convenience", "All devices serviced", "Premium parts used", "Friendly expert service"],
+      "landmarks": ["The Walk JBR", "The Beach", "Roxy Cinemas", "JBR Plaza", "Bahar Towers", "Shams Towers", "Murjan Towers", "Sadaf Towers"]
+    }
+  },
+  "footer": {
+    "description": "Professional iPhone & MacBook repairs along with secure data recovery services. Whether it's a cracked screen, battery issue, or lost files—our experts ensure fast, reliable, and secure solutions across the UAE.",
+    "services": "Services",
+    "areas": "Areas",
+    "company": "Company",
+    "connect": "Connect",
+    "copyright": "© {year} Genius Tech. All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "At Genius Tech, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you use our device repair services in Dubai."
+      },
+      "collection": {
+        "title": "Information We Collect",
+        "content": "We collect the following information to provide our repair services:",
+        "items": {
+          "name": "Name and contact details (phone number, email, address)",
+          "contact": "WhatsApp messages and communication history",
+          "device": "Device information (model, serial number, issue description)",
+          "location": "Pickup and delivery addresses in Dubai Marina, JLT, and JBR"
+        }
+      },
+      "usage": {
+        "title": "How We Use Your Information",
+        "content": "We use your information for the following purposes:",
+        "items": {
+          "service": "To provide device repair and pickup/delivery services",
+          "communication": "To communicate about your repair status and updates",
+          "improvement": "To improve our services and customer experience"
+        }
+      },
+      "protection": {
+        "title": "Data Protection",
+        "content": "We implement appropriate security measures to protect your personal information. Your data is stored securely and only accessed by authorized personnel for service-related purposes."
+      },
+      "sharing": {
+        "title": "Information Sharing",
+        "content": "We do not sell or share your personal information with third parties for marketing purposes. We may share information only with delivery partners to facilitate pickup and delivery services."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have questions about this Privacy Policy, please contact us at"
+      }
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By using Genius Tech's device repair services, you agree to these Terms of Service. Please read them carefully before using our services."
+      },
+      "services": {
+        "title": "Our Services",
+        "content": "Genius Tech provides device repair services including:",
+        "items": {
+          "diagnosis": "Device diagnosis and assessment",
+          "repair": "Repair and replacement of device components",
+          "parts": "Installation of OEM-grade replacement parts",
+          "pickup": "Free pickup and delivery in Dubai Marina, JLT, and JBR"
+        }
+      },
+      "warranty": {
+        "title": "Warranty",
+        "content": "Our repair services come with warranty coverage:",
+        "items": {
+          "coverage": "Parts and labor warranty on all repairs",
+          "exclusions": "Warranty does not cover physical damage, water damage, or unauthorized modifications after repair",
+          "claims": "Warranty claims must be made by contacting us via WhatsApp with your repair receipt"
+        }
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "content": "While we take utmost care with your devices, Genius Tech is not liable for any pre-existing damage, data loss, or issues unrelated to the repair performed. We recommend backing up your data before any repair service."
+      },
+      "data": {
+        "title": "Customer Data",
+        "content": "We respect your privacy and do not access personal data on your device unless required for the repair. We recommend removing sensitive data or providing device passcodes only when necessary for repair verification."
+      },
+      "payment": {
+        "title": "Payment Terms",
+        "content": "Payment is due upon completion of repair service. We accept cash, card payments, and bank transfers. Prices quoted are final and include all applicable charges unless otherwise stated."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "For questions about these terms, please contact us at"
+      }
+    }
+  },
+  "about": {
+    "title": "About Genius Tech",
+    "subtitle": "Your Trusted Device Repair Partner in Dubai",
+    "description": "At Genius Tech, we specialize in fast, professional, and affordable repair solutions for all your electronic devices. From smartphones and tablets to laptops, gaming consoles, smartwatches, and beyond—we fix it all with precision and care.",
+    "mission": "Based in Dubai Marina, our certified experts use only genuine parts, advanced tools, and deep technical expertise to deliver reliable results every time. Whether it's a cracked screen, water damage, battery issues, or software errors, we offer same-day repairs, free pickup & delivery, and transparent pricing—with no hidden charges.",
+    "promise": "Trusted by thousands of customers across the UAE, Genius Tech is known for quality, honesty, and exceptional customer service. Every repair comes with our commitment to excellence, and every customer is treated like family.",
+    "badge": "About Us",
+    "storyTitle": "Our Story",
+    "valuesTitle": "Our Values",
+    "ctaTitle": "Ready to Experience the Genius Tech Difference?",
+    "ctaSubtitle": "Contact us on WhatsApp for a free quote. Same-day service with free pickup and delivery in Dubai Marina, JLT, and JBR.",
+    "ctaButton": "WhatsApp Us Now",
+    "contactUs": "Contact Us",
+    "values": {
+      "quality": {
+        "title": "Quality First",
+        "description": "We use only premium OEM-grade parts and follow strict quality standards for every repair."
+      },
+      "speed": {
+        "title": "Speed & Efficiency",
+        "description": "Most repairs are completed same-day, often within hours. We value your time."
+      },
+      "care": {
+        "title": "Customer Care",
+        "description": "Every customer is treated like family. We provide honest advice and transparent pricing."
+      },
+      "expertise": {
+        "title": "Expertise",
+        "description": "Our certified technicians have years of experience with all device brands and models."
+      }
+    }
+  }
+}

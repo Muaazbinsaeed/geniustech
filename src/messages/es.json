@@ -1,0 +1,457 @@
+{
+  "errors": {
+    "notFound": {
+      "title": "Página no encontrada",
+      "description": "Lo sentimos, la página que buscas no existe o ha sido movida.",
+      "backHome": "Volver al inicio"
+    },
+    "error": {
+      "title": "Algo salió mal",
+      "description": "Nos disculpamos por las molestias. Por favor intenta de nuevo o contáctanos por WhatsApp.",
+      "tryAgain": "Intentar de nuevo",
+      "backHome": "Volver al inicio"
+    },
+    "loading": {
+      "title": "Cargando..."
+    }
+  },
+  "common": {
+    "learnMore": "Saber más",
+    "bookNow": "Reservar",
+    "callNow": "Llamar",
+    "whatsapp": "WhatsApp",
+    "chatOnWhatsapp": "Chatear por WhatsApp",
+    "getQuote": "Presupuesto gratis",
+    "getFreeQuote": "Presupuesto gratis",
+    "viewAll": "Ver todo",
+    "readMore": "Leer más",
+    "backToHome": "Volver al inicio",
+    "backTo": "Volver a",
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "sameDayService": "Servicio el mismo día",
+    "freePickupDelivery": "Recogida y entrega gratis",
+    "premiumParts": "Piezas premium",
+    "viewDetails": "Ver detalles",
+    "whatWeFix": "Qué reparamos",
+    "commonIssues": "Problemas comunes que reparamos",
+    "faq": "Preguntas frecuentes",
+    "readyToFix": "¿Listo para reparar tu dispositivo?",
+    "contactUsWhatsapp": "Contáctanos por WhatsApp para un presupuesto gratis. Servicio el mismo día con recogida y entrega gratis en Dubai Marina, JLT y JBR.",
+    "whatsappUsNow": "WhatsApp ahora",
+    "needHelp": "¿Necesitas ayuda con tu dispositivo?",
+    "relatedArticles": "Artículos relacionados",
+    "howItWorks": "Cómo funciona",
+    "servingAll": "Servimos a todo",
+    "nearLandmarks": "¿Cerca de estos puntos de referencia? Te cubrimos.",
+    "needRepairIn": "¿Necesitas reparación de dispositivo en",
+    "contactUsPickup": "Contáctanos por WhatsApp para un presupuesto gratis. Recogeremos tu dispositivo gratis y lo repararemos el mismo día.",
+    "step1Title": "Contáctanos",
+    "step1Desc": "Envíanos un mensaje en WhatsApp con el problema de tu dispositivo",
+    "step2Title": "Recogida gratis",
+    "step2Desc": "Recogeremos tu dispositivo gratis desde tu ubicación",
+    "step3Title": "Reparación el mismo día",
+    "step3Desc": "Recupera tu dispositivo reparado, a menudo en horas",
+    "servicesAvailableIn": "Servicios disponibles en",
+    "weRepairAllDevices": "Reparamos todo tipo de dispositivos con servicio el mismo día y recogida gratis.",
+    "serviceHighlights": "Aspectos destacados del servicio",
+    "expertRepairs": "Reparaciones expertas para todos tus dispositivos. Rápido, confiable y asequible con recogida y entrega gratis en Dubai Marina, JLT y JBR.",
+    "deviceRepairIn": "Reparación de dispositivos en",
+    "watchVideo": "Ver video"
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "areas": "Áreas de servicio",
+    "about": "Nosotros",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "La reparación de dispositivos",
+    "titleHighlight": "más rápida de Dubái",
+    "subtitle": "Reparación experta de teléfonos, portátiles y wearables. Recogida y entrega gratis en Marina, JLT y JBR.",
+    "cta": {
+      "whatsapp": "WhatsApp",
+      "call": "Llamar"
+    }
+  },
+  "trust": {
+    "repairs": "Reparaciones completadas",
+    "sameDay": "Servicio el mismo día",
+    "rating": "Valoración Google",
+    "freePickup": "Recogida y entrega gratis"
+  },
+  "services": {
+    "title": "Nuestros servicios de reparación",
+    "subtitle": "Servicio de reparación de primera clase en EAU",
+    "iphone": {
+      "title": "Reparación iPhone",
+      "desc": "Pantalla, batería y todas las reparaciones de iPhone para todos los modelos"
+    },
+    "macbook": {
+      "title": "Reparación MacBook",
+      "desc": "Reparación de pantalla, teclado y batería de MacBook Pro y Air"
+    },
+    "android": {
+      "title": "Reparación Android",
+      "desc": "Reparación de Samsung, Google, OnePlus y todos los teléfonos Android"
+    },
+    "ipad": {
+      "title": "Reparación iPad y tablets",
+      "desc": "Reparación de pantalla y batería de iPad y tablets Android"
+    },
+    "laptop": {
+      "title": "Reparación de portátiles",
+      "desc": "Reparación de Dell, HP, Lenovo y todos los portátiles Windows"
+    },
+    "smartwatch": {
+      "title": "Reparación smartwatch",
+      "desc": "Reparación de Apple Watch y dispositivos wearables"
+    }
+  },
+  "whyUs": {
+    "title": "Por qué elegir Genius Tech",
+    "subtitle": "Hacemos tu vida digital más simple y mejor",
+    "fastest": {
+      "title": "Reparaciones rápidas",
+      "desc": "Servicio el mismo día, a menudo en horas"
+    },
+    "parts": {
+      "title": "Piezas premium",
+      "desc": "Piezas de repuesto OEM y de calidad genuina"
+    },
+    "prices": {
+      "title": "Mejores precios",
+      "desc": "Precios competitivos y transparentes"
+    },
+    "pickup": {
+      "title": "Recogida gratis",
+      "desc": "Recogida y entrega gratis en Marina, JLT, JBR"
+    },
+    "onsite": {
+      "title": "Servicio a domicilio",
+      "desc": "Vamos a tu casa u oficina"
+    },
+    "experts": {
+      "title": "Técnicos expertos",
+      "desc": "Profesionales certificados y experimentados"
+    }
+  },
+  "areas": {
+    "title": "Áreas de servicio",
+    "subtitle": "Recogida y entrega gratis",
+    "marina": "Dubai Marina",
+    "jlt": "JLT (Jumeirah Lakes Towers)",
+    "jbr": "JBR (Jumeirah Beach Residence)",
+    "freeService": "Recogida y entrega gratis disponible en estas áreas"
+  },
+  "reviews": {
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "Confianza de miles en Dubái",
+    "viewAll": "Ver todas las reseñas en Google"
+  },
+  "cta": {
+    "title": "¿Listo para reparar tu dispositivo?",
+    "subtitle": "Calidad significa hacer las cosas bien cuando nadie está mirando",
+    "button": "Presupuesto gratis por WhatsApp"
+  },
+  "about": {
+    "title": "Sobre Genius Tech",
+    "subtitle": "Tu socio de confianza para reparaciones en Dubái",
+    "description": "En Genius Tech, nos especializamos en soluciones de reparación rápidas, profesionales y asequibles para todos tus dispositivos electrónicos.",
+    "mission": "Con sede en Dubai Marina, nuestros expertos certificados solo usan piezas genuinas y herramientas avanzadas.",
+    "promise": "Con la confianza de miles de clientes en EAU, Genius Tech es conocido por su calidad, honestidad y excelente servicio al cliente."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Ponte en contacto con nuestro equipo",
+    "address": "Dirección",
+    "phone": "Teléfono",
+    "email": "Email",
+    "hours": "Horario",
+    "everyday": "Todos los días: 10AM - 10PM",
+    "findUs": "Encuéntranos",
+    "landmark": "Dentro de Pluspoint Mini Mart"
+  },
+  "blog": {
+    "title": "Consejos y guías de reparación",
+    "subtitle": "Consejos expertos sobre reparación de teléfonos y portátiles, tips de mantenimiento y guías para ayudarte a tomar decisiones informadas.",
+    "allPosts": "Todos los artículos",
+    "minRead": "min de lectura",
+    "backToBlog": "Volver al blog"
+  },
+  "serviceData": {
+    "iphone-repair": {
+      "title": "Reparación iPhone",
+      "shortDesc": "Pantalla, batería y todas las reparaciones de iPhone para todos los modelos",
+      "description": "Servicios de reparación de iPhone profesionales en Dubái para todos los modelos desde iPhone 6 hasta iPhone 15 Pro Max. Reparamos pantallas rotas, reemplazamos baterías, reparamos puertos de carga, daños por agua y más.",
+      "features": ["Todos los modelos iPhone (6 a 15 Pro Max)", "Reemplazo de pantalla con pantallas de calidad", "Reemplazo de batería para mayor duración", "Reparación de puerto de carga", "Recuperación de daños por agua", "Reparación de cámara y altavoz", "Reparación Face ID y Touch ID", "Solución de problemas de software"],
+      "issues": [
+        {"title": "Pantalla rota", "desc": "Reemplazo profesional de pantalla con pantallas de calidad."},
+        {"title": "Batería se agota rápido", "desc": "Servicio de reemplazo de batería para recuperar la duración de todo el día."},
+        {"title": "No carga", "desc": "Limpieza o reemplazo del puerto de carga para solucionar problemas de carga."},
+        {"title": "Daño por agua", "desc": "Reparación profesional de daños por agua y recuperación de datos."},
+        {"title": "Cámara no funciona", "desc": "Reparación o reemplazo de cámara frontal y trasera para fotos perfectas."},
+        {"title": "Problemas de altavoz", "desc": "Reparación de auricular y altavoz para llamadas y audio claros."}
+      ],
+      "faqs": [
+        {"q": "¿Cuánto tiempo toma la reparación de pantalla iPhone?", "a": "La mayoría de las reparaciones de pantalla iPhone se completan en 30-60 minutos. Ofrecemos servicio el mismo día para todos los reemplazos de pantalla."},
+        {"q": "¿Usan piezas originales Apple?", "a": "Usamos piezas OEM de alta calidad que coinciden con las especificaciones de Apple en rendimiento y durabilidad."},
+        {"q": "¿Perderé mis datos durante la reparación?", "a": "No, sus datos permanecen intactos durante la mayoría de las reparaciones. Recomendamos hacer una copia de seguridad antes de cualquier reparación."},
+        {"q": "¿Ofrecen servicio de recogida para reparación iPhone?", "a": "¡Sí! Ofrecemos recogida y entrega gratis en Dubai Marina, JLT y JBR."}
+      ]
+    },
+    "macbook-repair": {
+      "title": "Reparación MacBook",
+      "shortDesc": "Reparación de pantalla, teclado y batería de MacBook Pro y Air",
+      "description": "Servicios de reparación MacBook profesionales en Dubái para todos los modelos MacBook Pro y MacBook Air.",
+      "features": ["MacBook Pro y Air todos los modelos", "Reemplazo de pantalla (Retina y LCD)", "Reemplazo de teclado", "Reemplazo de batería", "Reparación de placa lógica", "Actualización SSD y recuperación de datos", "Reparación de trackpad", "Reparación de puerto de carga"],
+      "issues": [
+        {"title": "Pantalla rota", "desc": "Reemplazo de pantalla MacBook para pantallas Retina y estándar."},
+        {"title": "Teclado no funciona", "desc": "Reemplazo completo de teclado para teclas atascadas o sin respuesta."},
+        {"title": "Batería hinchada", "desc": "Reemplazo seguro de batería para prevenir daños y restaurar la duración."},
+        {"title": "Rendimiento lento", "desc": "Actualización SSD y optimización para acelerar tu MacBook."},
+        {"title": "No enciende", "desc": "Diagnóstico y reparación de placa lógica para problemas de alimentación."},
+        {"title": "Sobrecalentamiento", "desc": "Reemplazo de pasta térmica y limpieza de ventilador."}
+      ],
+      "faqs": [
+        {"q": "¿Cuánto tiempo toma la reparación de pantalla MacBook?", "a": "La reparación de pantalla MacBook generalmente toma 1-2 horas dependiendo del modelo y disponibilidad de piezas."},
+        {"q": "¿Pueden reparar placas lógicas MacBook?", "a": "Sí, ofrecemos reparación a nivel de componentes, más económica que el reemplazo completo de placa."},
+        {"q": "¿Ofrecen servicios de actualización MacBook?", "a": "Sí, podemos actualizar el SSD de tu MacBook para más almacenamiento y mejor rendimiento."},
+        {"q": "¿Mis datos están seguros durante la reparación MacBook?", "a": "Tomamos la seguridad de datos muy en serio. Sus datos permanecen en su dispositivo."}
+      ]
+    },
+    "android-repair": {
+      "title": "Reparación teléfono Android",
+      "shortDesc": "Reparación de Samsung, Google, OnePlus y todos los teléfonos Android",
+      "description": "Servicios de reparación de teléfonos Android profesionales en Dubái para Samsung Galaxy, Google Pixel, OnePlus, Huawei, Xiaomi y todas las demás marcas Android.",
+      "features": ["Samsung Galaxy S y Note series", "Google Pixel todos los modelos", "Servicios de reparación OnePlus", "Reparación Huawei y Xiaomi", "Reemplazo de pantalla", "Reemplazo de batería", "Reparación de puerto de carga", "Solución de problemas de software"],
+      "issues": [
+        {"title": "Pantalla rota", "desc": "Reemplazo de pantalla para todos los teléfonos Android con pantallas AMOLED y LCD de calidad."},
+        {"title": "Problemas de batería", "desc": "Reemplazo de batería para Samsung, Google Pixel y otros teléfonos Android."},
+        {"title": "Problemas de carga", "desc": "Reparación y reemplazo de puerto USB-C para problemas de carga."},
+        {"title": "Daño por agua", "desc": "Reparación profesional de daños por agua y limpieza de componentes."},
+        {"title": "Problemas de cámara", "desc": "Reemplazo de módulo de cámara para cámaras borrosas o no funcionales."},
+        {"title": "Problemas de software", "desc": "Restablecimiento de fábrica, actualización de software y servicios de solución de problemas."}
+      ],
+      "faqs": [
+        {"q": "¿Reparan todas las marcas Android?", "a": "Sí, reparamos Samsung, Google, OnePlus, Huawei, Xiaomi, Oppo, Vivo y la mayoría de otras marcas Android."},
+        {"q": "¿Cuánto cuesta la reparación de pantalla Samsung?", "a": "El costo de reparación de pantalla Samsung varía según el modelo. Contáctenos en WhatsApp para un presupuesto instantáneo."},
+        {"q": "¿Pueden recuperar datos de un teléfono Android roto?", "a": "En muchos casos, sí. Ofrecemos servicios de recuperación de datos para teléfonos Android dañados."},
+        {"q": "¿Ofrecen reparación Android el mismo día?", "a": "Sí, la mayoría de las reparaciones Android se completan el mismo día, a menudo en pocas horas."}
+      ]
+    },
+    "ipad-repair": {
+      "title": "Reparación iPad y tablets",
+      "shortDesc": "Reparación de pantalla y batería de iPad y tablets Android",
+      "description": "Servicios de reparación de iPad y tablets profesionales en Dubái. Reparamos todos los modelos iPad incluyendo iPad Pro, iPad Air, iPad Mini e iPad estándar.",
+      "features": ["Todos los modelos iPad (Pro, Air, Mini, Standard)", "Reparación Samsung Galaxy Tab", "Reemplazo de pantalla", "Reemplazo de batería", "Reparación de puerto de carga", "Reparación botón Home y Face ID", "Reparación de altavoz y micrófono", "Solución de problemas de software"],
+      "issues": [
+        {"title": "Pantalla rota", "desc": "Reemplazo de pantalla iPad con digitalizadores y pantallas LCD de calidad."},
+        {"title": "Batería no mantiene carga", "desc": "Reemplazo de batería para restaurar la duración de batería de tu iPad."},
+        {"title": "No carga", "desc": "Reparación de puerto Lightning o USB-C para problemas de carga."},
+        {"title": "Botón Home no funciona", "desc": "Reparación o reemplazo de botón Home (donde aplique)."},
+        {"title": "Rendimiento lento", "desc": "Optimización de software y limpieza para acelerar tu iPad."},
+        {"title": "Problemas de altavoz", "desc": "Reparación de altavoz para problemas de audio."}
+      ],
+      "faqs": [
+        {"q": "¿Pueden reparar pantallas iPad Pro?", "a": "Sí, reparamos todos los modelos iPad Pro incluyendo los últimos con pantallas Liquid Retina XDR."},
+        {"q": "¿Cuánto tiempo toma la reparación de iPad?", "a": "La mayoría de las reparaciones de iPad se completan en 1-2 horas dependiendo del problema."},
+        {"q": "¿Reparan tablets Android?", "a": "Sí, reparamos Samsung Galaxy Tab, Huawei, Lenovo y otras tablets Android."},
+        {"q": "¿Los datos del iPad están seguros durante la reparación?", "a": "Sí, sus datos permanecen intactos. Recomendamos hacer una copia de seguridad."}
+      ]
+    },
+    "laptop-repair": {
+      "title": "Reparación de portátiles",
+      "shortDesc": "Reparación de Dell, HP, Lenovo y todos los portátiles Windows",
+      "description": "Servicios de reparación de portátiles Windows profesionales en Dubái para Dell, HP, Lenovo, Asus, Acer y todas las demás marcas.",
+      "features": ["Reparación Dell, HP, Lenovo, Asus, Acer", "Reemplazo de pantalla", "Reemplazo de teclado", "Reemplazo de batería", "Actualización de disco duro y SSD", "Actualización de RAM", "Reparación de placa base", "Eliminación de virus y limpieza"],
+      "issues": [
+        {"title": "Pantalla rota", "desc": "Reemplazo de pantalla de portátil para todas las marcas y modelos."},
+        {"title": "Teclado no funciona", "desc": "Reemplazo completo de teclado para teclas dañadas o sin respuesta."},
+        {"title": "Rendimiento lento", "desc": "Actualización SSD, actualización RAM y optimización de software."},
+        {"title": "Sobrecalentamiento", "desc": "Reemplazo de pasta térmica y limpieza de ventilador."},
+        {"title": "No enciende", "desc": "Diagnóstico de alimentación y reparación de placa base."},
+        {"title": "Virus y malware", "desc": "Eliminación profesional de virus y limpieza del sistema."}
+      ],
+      "faqs": [
+        {"q": "¿Reparan portátiles gaming?", "a": "Sí, reparamos portátiles gaming Asus ROG, MSI, Razer y otras marcas gaming."},
+        {"q": "¿Pueden actualizar el SSD de mi portátil?", "a": "Sí, ofrecemos actualizaciones SSD para hacer tu portátil más rápido y responsivo."},
+        {"q": "¿Cuánto cuesta la reparación de pantalla de portátil?", "a": "El costo varía según el modelo del portátil y tipo de pantalla. Contáctenos para un presupuesto gratis."},
+        {"q": "¿Ofrecen reparación de portátiles corporativos?", "a": "Sí, ofrecemos servicios de reparación de portátiles empresariales con tiempos de entrega rápidos."}
+      ]
+    },
+    "smartwatch-repair": {
+      "title": "Reparación smartwatch",
+      "shortDesc": "Reparación de Apple Watch y dispositivos wearables",
+      "description": "Servicios de reparación de Apple Watch y smartwatch profesionales en Dubái. Reparamos pantallas, baterías y otros problemas para Apple Watch, Samsung Galaxy Watch y otros wearables.",
+      "features": ["Apple Watch todas las series", "Reparación Samsung Galaxy Watch", "Reemplazo de pantalla", "Reemplazo de batería", "Reparación de corona y botones", "Reparación de daño por agua", "Reparación de conector de correa", "Solución de problemas de software"],
+      "issues": [
+        {"title": "Pantalla rota", "desc": "Reemplazo de pantalla de Apple Watch y smartwatch."},
+        {"title": "Batería se agota rápido", "desc": "Reemplazo de batería para mayor duración del reloj."},
+        {"title": "No enciende", "desc": "Diagnóstico y reparación de problemas de alimentación."},
+        {"title": "Corona no funciona", "desc": "Reparación de Digital Crown para Apple Watch."},
+        {"title": "Daño por agua", "desc": "Evaluación y reparación de daños por agua."},
+        {"title": "Problemas de emparejamiento", "desc": "Solución de problemas de software y asistencia de re-emparejamiento."}
+      ],
+      "faqs": [
+        {"q": "¿Pueden reparar Apple Watch Ultra?", "a": "Sí, reparamos todos los modelos Apple Watch incluyendo la serie Ultra."},
+        {"q": "¿Cuánto tiempo toma la reparación de pantalla Apple Watch?", "a": "La reparación de pantalla Apple Watch generalmente toma 1-2 horas."},
+        {"q": "¿Reparan Samsung Galaxy Watch?", "a": "Sí, reparamos Samsung Galaxy Watch y otros smartwatches Android."},
+        {"q": "¿Se restaura la resistencia al agua del Apple Watch después de la reparación?", "a": "Usamos técnicas de sellado adecuadas para mantener la resistencia al agua después de la reparación."}
+      ]
+    }
+  },
+  "areaData": {
+    "dubai-marina": {
+      "name": "Dubai Marina",
+      "fullName": "Dubai Marina, Dubái",
+      "description": "Servicios de reparación de dispositivos profesionales en Dubai Marina. Ofrecemos reparación de iPhone, MacBook, Android y portátil el mismo día con recogida y entrega gratis en todo Dubai Marina.",
+      "highlights": ["Recogida gratis de cualquier torre Marina", "Servicio de reparación el mismo día", "Ubicado dentro de Marina", "Todos los tipos de dispositivos reparados", "Piezas de calidad genuina", "Técnicos expertos certificados"],
+      "landmarks": ["Marina Mall", "Marina Walk", "JBR Beach", "Bluewaters Island", "Ain Dubai", "The Beach JBR", "Marina Promenade", "Pier 7"]
+    },
+    "jlt": {
+      "name": "JLT",
+      "fullName": "Jumeirah Lakes Towers (JLT), Dubái",
+      "description": "Servicios de reparación de dispositivos expertos en JLT. Reparaciones rápidas y confiables para todos los teléfonos, portátiles y tablets con recogida y entrega gratis en todo Jumeirah Lakes Towers.",
+      "highlights": ["Recogida gratis de todos los clusters JLT", "Servicio el mismo día disponible", "Servimos todas las torres JLT", "Todas las marcas principales reparadas", "Precios transparentes", "Garantía de 90 días en reparaciones"],
+      "landmarks": ["Metro JLT", "Cluster C", "Cluster D", "Cluster E", "Cluster O", "Cluster Q", "Lake Level", "Almas Tower"]
+    },
+    "jbr": {
+      "name": "JBR",
+      "fullName": "Jumeirah Beach Residence (JBR), Dubái",
+      "description": "Servicios de reparación de dispositivos de calidad en JBR. Desde The Walk hasta Bluewaters, proporcionamos reparaciones rápidas con recogida y entrega gratis para todos sus dispositivos.",
+      "highlights": ["Recogida gratis de torres JBR", "Tiempo de respuesta rápido", "Comodidad junto a la playa", "Todos los dispositivos atendidos", "Piezas premium usadas", "Servicio experto amigable"],
+      "landmarks": ["The Walk JBR", "The Beach", "Roxy Cinemas", "JBR Plaza", "Bahar Towers", "Shams Towers", "Murjan Towers", "Sadaf Towers"]
+    }
+  },
+  "footer": {
+    "description": "Reparación profesional de iPhone y MacBook con servicios seguros de recuperación de datos.",
+    "services": "Servicios",
+    "areas": "Áreas",
+    "company": "Empresa",
+    "connect": "Conectar",
+    "copyright": "© {year} Genius Tech. Todos los derechos reservados.",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio"
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "lastUpdated": "Última actualización",
+    "sections": {
+      "intro": {
+        "title": "Introducción",
+        "content": "En Genius Tech, nos comprometemos a proteger su privacidad. Esta Política de privacidad explica cómo recopilamos, usamos y protegemos su información personal cuando utiliza nuestros servicios de reparación de dispositivos en Dubái."
+      },
+      "collection": {
+        "title": "Información que recopilamos",
+        "content": "Recopilamos la siguiente información para proporcionar nuestros servicios de reparación:",
+        "items": {
+          "name": "Nombre y datos de contacto (número de teléfono, email, dirección)",
+          "contact": "Mensajes de WhatsApp e historial de comunicación",
+          "device": "Información del dispositivo (modelo, número de serie, descripción del problema)",
+          "location": "Direcciones de recogida y entrega en Dubai Marina, JLT y JBR"
+        }
+      },
+      "usage": {
+        "title": "Cómo usamos su información",
+        "content": "Usamos su información para los siguientes propósitos:",
+        "items": {
+          "service": "Para proporcionar servicios de reparación de dispositivos y recogida/entrega",
+          "communication": "Para comunicar sobre el estado de su reparación y actualizaciones",
+          "improvement": "Para mejorar nuestros servicios y la experiencia del cliente"
+        }
+      },
+      "protection": {
+        "title": "Protección de datos",
+        "content": "Implementamos medidas de seguridad apropiadas para proteger su información personal. Sus datos se almacenan de forma segura y solo son accesibles por personal autorizado para fines relacionados con el servicio."
+      },
+      "sharing": {
+        "title": "Compartir información",
+        "content": "No vendemos ni compartimos su información personal con terceros con fines de marketing. Solo podemos compartir información con socios de entrega para facilitar los servicios de recogida y entrega."
+      },
+      "contact": {
+        "title": "Contáctenos",
+        "content": "Si tiene preguntas sobre esta Política de privacidad, por favor contáctenos en"
+      }
+    }
+  },
+  "terms": {
+    "title": "Términos de servicio",
+    "lastUpdated": "Última actualización",
+    "sections": {
+      "acceptance": {
+        "title": "Aceptación de términos",
+        "content": "Al utilizar los servicios de reparación de dispositivos de Genius Tech, usted acepta estos Términos de servicio. Por favor léalos cuidadosamente antes de usar nuestros servicios."
+      },
+      "services": {
+        "title": "Nuestros servicios",
+        "content": "Genius Tech proporciona servicios de reparación de dispositivos que incluyen:",
+        "items": {
+          "diagnosis": "Diagnóstico y evaluación del dispositivo",
+          "repair": "Reparación y reemplazo de componentes del dispositivo",
+          "parts": "Instalación de piezas de repuesto de grado OEM",
+          "pickup": "Recogida y entrega gratis en Dubai Marina, JLT y JBR"
+        }
+      },
+      "warranty": {
+        "title": "Garantía",
+        "content": "Nuestros servicios de reparación vienen con cobertura de garantía:",
+        "items": {
+          "coverage": "Garantía de piezas y mano de obra para todas las reparaciones",
+          "exclusions": "La garantía no cubre daños físicos, daños por agua o modificaciones no autorizadas después de la reparación",
+          "claims": "Las reclamaciones de garantía deben hacerse contactándonos por WhatsApp con su recibo de reparación"
+        }
+      },
+      "liability": {
+        "title": "Limitación de responsabilidad",
+        "content": "Si bien cuidamos al máximo sus dispositivos, Genius Tech no es responsable de ningún daño preexistente, pérdida de datos o problemas no relacionados con la reparación realizada. Recomendamos hacer una copia de seguridad de sus datos antes de cualquier servicio de reparación."
+      },
+      "data": {
+        "title": "Datos del cliente",
+        "content": "Respetamos su privacidad y no accedemos a los datos personales de su dispositivo a menos que sea necesario para la reparación. Recomendamos eliminar datos sensibles o proporcionar códigos de acceso del dispositivo solo cuando sea necesario para la verificación de la reparación."
+      },
+      "payment": {
+        "title": "Términos de pago",
+        "content": "El pago se debe al completar el servicio de reparación. Aceptamos efectivo, pagos con tarjeta y transferencias bancarias. Los precios indicados son finales e incluyen todos los cargos aplicables a menos que se indique lo contrario."
+      },
+      "contact": {
+        "title": "Contáctenos",
+        "content": "Para preguntas sobre estos términos, por favor contáctenos en"
+      }
+    }
+  },
+  "about": {
+    "title": "Sobre Genius Tech",
+    "subtitle": "Tu socio de confianza para reparaciones en Dubái",
+    "description": "En Genius Tech, nos especializamos en soluciones de reparación rápidas, profesionales y asequibles para todos tus dispositivos electrónicos. Desde smartphones y tablets hasta portátiles, consolas de juegos, smartwatches y más — reparamos todo con precisión y cuidado.",
+    "mission": "Con sede en Dubai Marina, nuestros expertos certificados solo usan piezas genuinas, herramientas avanzadas y profunda experiencia técnica para entregar resultados confiables cada vez. Ya sea una pantalla rota, daño por agua, problemas de batería o errores de software — ofrecemos reparaciones el mismo día, recogida y entrega gratis, y precios transparentes — sin cargos ocultos.",
+    "promise": "Con la confianza de miles de clientes en EAU, Genius Tech es conocido por su calidad, honestidad y excelente servicio al cliente. Cada reparación viene con nuestro compromiso con la excelencia, y cada cliente es tratado como familia.",
+    "badge": "Sobre nosotros",
+    "storyTitle": "Nuestra historia",
+    "valuesTitle": "Nuestros valores",
+    "ctaTitle": "¿Listo para experimentar la diferencia Genius Tech?",
+    "ctaSubtitle": "Contáctanos por WhatsApp para un presupuesto gratis. Servicio el mismo día con recogida y entrega gratis en Dubai Marina, JLT y JBR.",
+    "ctaButton": "WhatsApp ahora",
+    "contactUs": "Contáctanos",
+    "values": {
+      "quality": {
+        "title": "Calidad primero",
+        "description": "Solo usamos piezas OEM premium y seguimos estrictos estándares de calidad para cada reparación."
+      },
+      "speed": {
+        "title": "Velocidad y eficiencia",
+        "description": "La mayoría de las reparaciones se completan el mismo día, a menudo en horas. Valoramos tu tiempo."
+      },
+      "care": {
+        "title": "Atención al cliente",
+        "description": "Cada cliente es tratado como familia. Proporcionamos consejos honestos y precios transparentes."
+      },
+      "expertise": {
+        "title": "Experiencia",
+        "description": "Nuestros técnicos certificados tienen años de experiencia con todas las marcas y modelos de dispositivos."
+      }
+    }
+  }
+}
