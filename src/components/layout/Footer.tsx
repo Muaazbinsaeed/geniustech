@@ -1,8 +1,6 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { useLocale, useTranslations } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Instagram, Facebook, MapPin, Phone, Mail } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
 import { servicesData } from "@/data/services";
@@ -20,11 +18,11 @@ function TikTokIcon({ className }: { className?: string }) {
   );
 }
 
-export function Footer() {
-  const locale = useLocale();
-  const t = useTranslations("footer");
-  const tNav = useTranslations("nav");
-  const tService = useTranslations("serviceData");
+export async function Footer() {
+  const locale = await getLocale();
+  const t = await getTranslations("footer");
+  const tNav = await getTranslations("nav");
+  const tService = await getTranslations("serviceData");
 
   const currentYear = new Date().getFullYear();
 

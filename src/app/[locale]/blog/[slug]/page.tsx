@@ -7,11 +7,11 @@ import {
   Calendar,
   Clock,
   ArrowLeft,
-  MessageCircle,
   ChevronDown,
   Tag,
   User,
 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
@@ -37,11 +37,15 @@ export async function generateMetadata({
     return { title: "Post Not Found" };
   }
 
+  const { locale } = await params;
   return {
     title: post.title,
     description: post.excerpt,
     keywords: post.tags,
     authors: [{ name: post.author }],
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/${locale}/blog/${slug}`,
+    },
     openGraph: {
       type: "article",
       title: post.title,
@@ -89,7 +93,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <BlogPostSchema post={post} locale={locale} />
       {post.faqs && <FAQSchema faqs={post.faqs} />}
 
-      <main className="pt-24 pb-16">
+      <main id="main-content" className="pt-24 pb-16">
         <article className="container mx-auto px-4">
           {/* Back Link */}
           <Link
@@ -205,7 +209,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
                 >
-                  <MessageCircle className="h-5 w-5" />
+                  <WhatsAppIcon className="h-5 w-5" />
                   {t("whatsapp")}
                 </a>
               </Button>

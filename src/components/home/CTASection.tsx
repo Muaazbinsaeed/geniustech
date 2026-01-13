@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { Button } from "@/components/ui/Button";
 import { SITE_CONFIG } from "@/lib/constants";
 import { getWhatsAppLink } from "@/lib/utils";
@@ -45,7 +45,7 @@ export function CTASection() {
               rel="noopener noreferrer"
               className="flex items-center gap-3"
             >
-              <MessageCircle className="h-5 w-5" />
+              <WhatsAppIcon className="h-5 w-5" />
               {t("button")}
             </a>
           </Button>

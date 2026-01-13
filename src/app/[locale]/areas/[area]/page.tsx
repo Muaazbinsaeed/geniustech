@@ -6,12 +6,12 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import {
   MapPin,
   Check,
-  MessageCircle,
   Phone,
   ArrowLeft,
   Truck,
   Clock,
 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
@@ -54,6 +54,9 @@ export async function generateMetadata({
       `macbook repair ${name.toLowerCase()}`,
       `free pickup ${name.toLowerCase()}`,
     ],
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/${locale}/areas/${area}`,
+    },
     openGraph: {
       title: `${tCommon("deviceRepairIn")} ${name}`,
       description: description,
@@ -97,7 +100,7 @@ export default async function AreaPage({ params }: AreaPageProps) {
   return (
     <>
       <Header />
-      <main className="pt-24 pb-16">
+      <main id="main-content" className="pt-24 pb-16">
         {/* Hero Section */}
         <section className="relative py-16 md:py-24 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-cyan/5" />
@@ -144,7 +147,7 @@ export default async function AreaPage({ params }: AreaPageProps) {
                       rel="noopener noreferrer"
                       className="flex items-center gap-2"
                     >
-                      <MessageCircle className="h-5 w-5" />
+                      <WhatsAppIcon className="h-5 w-5" />
                       {t("getFreeQuote")}
                     </a>
                   </Button>
@@ -237,7 +240,7 @@ export default async function AreaPage({ params }: AreaPageProps) {
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <MessageCircle className="h-8 w-8 text-primary" />
+                  <WhatsAppIcon className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">1. {t("step1Title")}</h3>
                 <p className="text-sm text-foreground-muted">
@@ -308,7 +311,7 @@ export default async function AreaPage({ params }: AreaPageProps) {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-                <MessageCircle className="h-5 w-5" />
+                <WhatsAppIcon className="h-5 w-5" />
                 {t("whatsappUsNow")}
               </a>
             </Button>

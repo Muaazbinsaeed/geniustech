@@ -22,10 +22,28 @@ const iconMap: Record<string, typeof Smartphone> = {
   Watch,
 };
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({ params }: ServicesPageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const description = `Professional device repair services in Dubai. iPhone, MacBook, Android, iPad, laptop, and smartwatch repairs. Same-day service with free pickup in ${SITE_CONFIG.serviceAreas.join(", ")}.`;
   return {
     title: "Device Repair Services",
-    description: `Professional device repair services in Dubai. iPhone, MacBook, Android, iPad, laptop, and smartwatch repairs. Same-day service with free pickup in ${SITE_CONFIG.serviceAreas.join(", ")}.`,
+    description,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/${locale}/services`,
+    },
+    openGraph: {
+      title: `Device Repair Services | ${SITE_CONFIG.name}`,
+      description,
+      type: "website",
+      locale: locale === "ar" ? "ar_AE" : "en_AE",
+      siteName: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/${locale}/services`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `Device Repair Services | ${SITE_CONFIG.name}`,
+      description,
+    },
   };
 }
 
@@ -43,7 +61,7 @@ export default async function ServicesPage({ params }: ServicesPageProps) {
   return (
     <>
       <Header />
-      <main className="pt-20">
+      <main id="main-content" className="pt-20">
         {/* Hero Banner */}
         <section className="relative h-[300px] md:h-[400px] overflow-hidden">
           {/* Background Image */}

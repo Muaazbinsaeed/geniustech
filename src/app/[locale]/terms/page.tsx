@@ -7,10 +7,28 @@ import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
 import { SITE_CONFIG } from "@/lib/constants";
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({ params }: TermsPageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const description = `Terms of Service for ${SITE_CONFIG.name}. Read our terms and conditions for device repair services in Dubai.`;
   return {
     title: "Terms of Service | Genius Tech",
-    description: `Terms of Service for ${SITE_CONFIG.name}. Read our terms and conditions for device repair services in Dubai.`,
+    description,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/${locale}/terms`,
+    },
+    openGraph: {
+      title: `Terms of Service | ${SITE_CONFIG.name}`,
+      description,
+      type: "website",
+      locale: locale === "ar" ? "ar_AE" : "en_AE",
+      siteName: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/${locale}/terms`,
+    },
+    twitter: {
+      card: "summary",
+      title: `Terms of Service | ${SITE_CONFIG.name}`,
+      description,
+    },
   };
 }
 
@@ -27,7 +45,7 @@ export default async function TermsPage({ params }: TermsPageProps) {
   return (
     <>
       <Header />
-      <main className="pt-24 pb-16">
+      <main id="main-content" className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           <Link
             href={`/${locale}`}

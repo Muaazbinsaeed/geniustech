@@ -21,6 +21,9 @@ export async function generateMetadata({ params }: AreasPageProps): Promise<Meta
   return {
     title: `${t("title")} | ${tCommon("freePickupDelivery")}`,
     description: `${t("freeService")} ${SITE_CONFIG.serviceAreas.join(", ")}.`,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/${locale}/areas`,
+    },
   };
 }
 
@@ -34,7 +37,7 @@ export default async function AreasPage({ params }: AreasPageProps) {
   return (
     <>
       <Header />
-      <main className="pt-20">
+      <main id="main-content" className="pt-20">
         {/* Hero Banner */}
         <section className="relative h-[300px] md:h-[400px] overflow-hidden">
           {/* Background Image - Dubai Marina Skyline */}

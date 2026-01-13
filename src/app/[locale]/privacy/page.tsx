@@ -7,10 +7,28 @@ import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
 import { SITE_CONFIG } from "@/lib/constants";
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({ params }: PrivacyPageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const description = `Privacy Policy for ${SITE_CONFIG.name}. Learn how we collect, use, and protect your personal information.`;
   return {
     title: "Privacy Policy | Genius Tech",
-    description: `Privacy Policy for ${SITE_CONFIG.name}. Learn how we collect, use, and protect your personal information.`,
+    description,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/${locale}/privacy`,
+    },
+    openGraph: {
+      title: `Privacy Policy | ${SITE_CONFIG.name}`,
+      description,
+      type: "website",
+      locale: locale === "ar" ? "ar_AE" : "en_AE",
+      siteName: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/${locale}/privacy`,
+    },
+    twitter: {
+      card: "summary",
+      title: `Privacy Policy | ${SITE_CONFIG.name}`,
+      description,
+    },
   };
 }
 
@@ -27,7 +45,7 @@ export default async function PrivacyPage({ params }: PrivacyPageProps) {
   return (
     <>
       <Header />
-      <main className="pt-24 pb-16">
+      <main id="main-content" className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           <Link
             href={`/${locale}`}

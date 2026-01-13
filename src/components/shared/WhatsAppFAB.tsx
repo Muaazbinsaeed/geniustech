@@ -1,6 +1,7 @@
 "use client";
 
-import { MessageCircle, Phone, X } from "lucide-react";
+import { Phone, X } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
@@ -45,7 +46,7 @@ export function WhatsAppFAB() {
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white px-4 py-3 rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-shadow"
             >
-              <MessageCircle className="h-5 w-5" />
+              <WhatsAppIcon className="h-5 w-5" />
               <span className="text-sm font-medium">{t("whatsapp")}</span>
             </motion.a>
           </>
@@ -83,7 +84,7 @@ export function WhatsAppFAB() {
               exit={{ rotate: -90, opacity: 0 }}
               transition={{ duration: 0.2 }}
             >
-              <MessageCircle className="h-6 w-6" />
+              <WhatsAppIcon className="h-6 w-6" />
             </motion.div>
           )}
         </AnimatePresence>

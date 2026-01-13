@@ -6,9 +6,9 @@ import {
   Phone,
   Mail,
   Clock,
-  MessageCircle,
   ExternalLink,
 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
@@ -16,10 +16,28 @@ import { Button } from "@/components/ui/Button";
 import { SITE_CONFIG } from "@/lib/constants";
 import { getWhatsAppLink, getPhoneLink } from "@/lib/utils";
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({ params }: ContactPageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const description = `Contact ${SITE_CONFIG.name} for device repair in Dubai. Located in Dubai Marina (Inside Pluspoint Mini Mart). WhatsApp, call, or visit us for same-day repairs.`;
   return {
     title: "Contact Us | Get in Touch",
-    description: `Contact ${SITE_CONFIG.name} for device repair in Dubai. Located in Dubai Marina (Inside Pluspoint Mini Mart). WhatsApp, call, or visit us for same-day repairs.`,
+    description,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/${locale}/contact`,
+    },
+    openGraph: {
+      title: `Contact ${SITE_CONFIG.name} | Dubai Device Repair`,
+      description,
+      type: "website",
+      locale: locale === "ar" ? "ar_AE" : "en_AE",
+      siteName: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/${locale}/contact`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `Contact ${SITE_CONFIG.name}`,
+      description,
+    },
   };
 }
 
@@ -40,12 +58,13 @@ export default async function ContactPage({ params }: ContactPageProps) {
 
   const contactMethods = [
     {
-      icon: MessageCircle,
+      icon: WhatsAppIcon,
       title: "WhatsApp",
       value: SITE_CONFIG.whatsapp,
       link: whatsappLink,
       primary: true,
       description: "Fastest response - usually within minutes",
+      isWhatsApp: true,
     },
     {
       icon: Phone,
@@ -54,6 +73,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
       link: phoneLink,
       primary: false,
       description: "Call us directly",
+      isWhatsApp: false,
     },
     {
       icon: Mail,
@@ -62,13 +82,14 @@ export default async function ContactPage({ params }: ContactPageProps) {
       link: `mailto:${SITE_CONFIG.email}`,
       primary: false,
       description: "For inquiries and quotes",
+      isWhatsApp: false,
     },
   ];
 
   return (
     <>
       <Header />
-      <main className="pt-20">
+      <main id="main-content" className="pt-20">
         {/* Hero Banner */}
         <section className="relative h-[300px] md:h-[400px] overflow-hidden">
           {/* Background Image - Tech workspace with devices */}
@@ -88,7 +109,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
             <div className="container mx-auto px-4">
               <div className="max-w-2xl">
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary text-sm font-medium mb-4 backdrop-blur-sm">
-                  <MessageCircle className="h-4 w-4" />
+                  <WhatsAppIcon className="h-4 w-4" />
                   {t("subtitle")}
                 </span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
@@ -110,8 +131,8 @@ export default async function ContactPage({ params }: ContactPageProps) {
                 <a
                   key={index}
                   href={method.link}
-                  target={method.icon === MessageCircle ? "_blank" : undefined}
-                  rel={method.icon === MessageCircle ? "noopener noreferrer" : undefined}
+                  target={method.isWhatsApp ? "_blank" : undefined}
+                  rel={method.isWhatsApp ? "noopener noreferrer" : undefined}
                   className={`p-6 rounded-2xl border transition-all duration-300 hover:shadow-lg ${
                     method.primary
                       ? "bg-gradient-to-br from-[#25D366] to-[#128C7E] text-white border-transparent"
@@ -174,7 +195,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
                       rel="noopener noreferrer"
                       className="flex items-center gap-2"
                     >
-                      <MessageCircle className="h-5 w-5" />
+                      <WhatsAppIcon className="h-5 w-5" />
                       WhatsApp Us
                     </a>
                   </Button>

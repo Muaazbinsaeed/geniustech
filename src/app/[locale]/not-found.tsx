@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Home, MessageCircle } from "lucide-react";
+import { Home } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { Button } from "@/components/ui/Button";
 import { SITE_CONFIG } from "@/lib/constants";
 import { getWhatsAppLink } from "@/lib/utils";
@@ -38,7 +39,7 @@ export default function NotFound() {
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
-              <MessageCircle className="h-4 w-4" />
+              <WhatsAppIcon className="h-4 w-4" />
               Contact Us
             </a>
           </Button>

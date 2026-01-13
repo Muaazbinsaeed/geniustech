@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
-import { Menu, X, MessageCircle, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn, getWhatsAppLink } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
@@ -91,6 +92,8 @@ export function Header() {
                     "flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-colors",
                     "text-foreground-muted hover:text-foreground hover:bg-background-secondary"
                   )}
+                  aria-expanded={link.hasDropdown ? isServicesOpen : undefined}
+                  aria-haspopup={link.hasDropdown ? "menu" : undefined}
                 >
                   {link.label}
                   {link.hasDropdown && (
@@ -99,6 +102,7 @@ export function Header() {
                         "h-4 w-4 transition-transform",
                         isServicesOpen && "rotate-180"
                       )}
+                      aria-hidden="true"
                     />
                   )}
                 </Link>
@@ -110,6 +114,8 @@ export function Header() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
                     className="absolute top-full left-0 mt-1 w-64 bg-card border border-card-border rounded-xl shadow-lg overflow-hidden"
+                    role="menu"
+                    aria-label="Services submenu"
                   >
                     {servicesData.map((service) => (
                       <Link
@@ -140,7 +146,7 @@ export function Header() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-                <MessageCircle className="h-4 w-4" />
+                <WhatsAppIcon className="h-4 w-4" />
                 {tCommon("whatsapp")}
               </a>
             </Button>
@@ -148,11 +154,14 @@ export function Header() {
 
           {/* Mobile Menu Toggle */}
           <div className="flex lg:hidden items-center gap-2">
+            <LanguageSwitcher compact />
             <ThemeToggle />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="h-10 w-10 rounded-xl bg-card border border-card-border flex items-center justify-center"
+              className="h-11 w-11 rounded-xl bg-card border border-card-border flex items-center justify-center"
               aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
             >
               {isMobileMenuOpen ? (
                 <X className="h-5 w-5" />
@@ -168,10 +177,13 @@ export function Header() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
+            id="mobile-menu"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             className="lg:hidden bg-background border-b border-border overflow-hidden"
+            role="navigation"
+            aria-label="Mobile navigation"
           >
             <div className="container mx-auto px-4 py-4">
               <nav className="flex flex-col gap-1">
@@ -187,16 +199,15 @@ export function Header() {
                 ))}
               </nav>
 
-              <div className="mt-4 pt-4 border-t border-border flex items-center gap-3">
-                <LanguageSwitcher className="flex-1" />
-                <Button variant="whatsapp" size="sm" className="flex-1" asChild>
+              <div className="mt-4 pt-4 border-t border-border">
+                <Button variant="whatsapp" size="sm" className="w-full" asChild>
                   <a
                     href={whatsappLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2"
                   >
-                    <MessageCircle className="h-4 w-4" />
+                    <WhatsAppIcon className="h-4 w-4" />
                     {tCommon("whatsapp")}
                   </a>
                 </Button>

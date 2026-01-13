@@ -4,12 +4,14 @@ A modern, multi-lingual website for Genius Tech, Dubai's fastest device repair s
 
 ## Features
 
-- **7 Languages** - English, Arabic, Hindi, Urdu, Russian, French, Spanish
+- **7 Languages** - English 🇬🇧, Arabic 🇦🇪, Hindi 🇮🇳, Urdu 🇵🇰, Russian 🇷🇺, French 🇫🇷, Spanish 🇪🇸
 - **RTL Support** - Full right-to-left layout for Arabic and Urdu
 - **Dark/Light Mode** - Theme toggle with system preference detection
 - **Responsive Design** - Mobile-first, works on all devices
+- **WhatsApp Integration** - Primary CTA with official WhatsApp Business icon
 - **SEO Optimized** - Sitemap, robots.txt, schema markup
 - **Analytics Ready** - Google Analytics & Ads integration
+- **PWA Support** - Offline-ready progressive web app
 
 ## Tech Stack
 

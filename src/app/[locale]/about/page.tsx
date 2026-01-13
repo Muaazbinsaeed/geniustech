@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { MessageCircle, Shield, Award, Zap, Heart } from "lucide-react";
+import { Shield, Award, Zap, Heart } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
@@ -9,10 +10,28 @@ import { Button } from "@/components/ui/Button";
 import { SITE_CONFIG } from "@/lib/constants";
 import { getWhatsAppLink } from "@/lib/utils";
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({ params }: AboutPageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const description = `Learn about ${SITE_CONFIG.name} - Dubai's trusted device repair service. Professional iPhone, MacBook, and laptop repairs with certified technicians and genuine parts.`;
   return {
     title: "About Us | Your Trusted Device Repair Partner",
-    description: `Learn about ${SITE_CONFIG.name} - Dubai's trusted device repair service. Professional iPhone, MacBook, and laptop repairs with certified technicians and genuine parts.`,
+    description,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/${locale}/about`,
+    },
+    openGraph: {
+      title: `About ${SITE_CONFIG.name} | Dubai's Trusted Device Repair`,
+      description,
+      type: "website",
+      locale: locale === "ar" ? "ar_AE" : "en_AE",
+      siteName: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/${locale}/about`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `About ${SITE_CONFIG.name}`,
+      description,
+    },
   };
 }
 
@@ -52,7 +71,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
   return (
     <>
       <Header />
-      <main className="pt-20">
+      <main id="main-content" className="pt-20">
         {/* Hero Banner */}
         <section className="relative h-[300px] md:h-[400px] overflow-hidden">
           {/* Background Image - Tech workspace / Team */}
@@ -107,7 +126,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
                       rel="noopener noreferrer"
                       className="flex items-center gap-2"
                     >
-                      <MessageCircle className="h-5 w-5" />
+                      <WhatsAppIcon className="h-5 w-5" />
                       {t("contactUs")}
                     </a>
                   </Button>
@@ -202,7 +221,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-                <MessageCircle className="h-5 w-5" />
+                <WhatsAppIcon className="h-5 w-5" />
                 {t("ctaButton")}
               </a>
             </Button>

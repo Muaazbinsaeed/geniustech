@@ -19,10 +19,14 @@ const categoryImages: Record<string, string> = {
   "default": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&q=80",
 };
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
+  const { locale } = await params;
   return {
     title: "Blog | Device Repair Tips & Guides",
     description: `Expert tips and guides for phone and laptop repair in Dubai. Learn about iPhone screen replacement, MacBook battery issues, water damage repair, and more from ${SITE_CONFIG.name}.`,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/${locale}/blog`,
+    },
   };
 }
 
@@ -42,7 +46,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
   return (
     <>
       <Header />
-      <main className="pt-20">
+      <main id="main-content" className="pt-20">
         {/* Hero Banner */}
         <section className="relative h-[300px] md:h-[400px] overflow-hidden">
           {/* Background Image */}

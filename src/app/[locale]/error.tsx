@@ -2,7 +2,8 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import { Home, RefreshCw, MessageCircle } from "lucide-react";
+import { Home, RefreshCw } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { Button } from "@/components/ui/Button";
 import { SITE_CONFIG } from "@/lib/constants";
 import { getWhatsAppLink } from "@/lib/utils";
@@ -64,7 +65,7 @@ export default function Error({ error, reset }: ErrorProps) {
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
-              <MessageCircle className="h-4 w-4" />
+              <WhatsAppIcon className="h-4 w-4" />
               Report Issue on WhatsApp
             </a>
           </Button>

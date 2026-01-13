@@ -9,11 +9,11 @@ import {
   Tablet,
   Watch,
   Check,
-  MessageCircle,
   Phone,
   ChevronDown,
   ArrowLeft,
 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
@@ -61,6 +61,9 @@ export async function generateMetadata({
       "same day repair",
       "free pickup dubai",
     ],
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/${locale}/services/${slug}`,
+    },
   };
 }
 
@@ -100,7 +103,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
     <>
       <Header />
 
-      <main className="pt-24 pb-16">
+      <main id="main-content" className="pt-24 pb-16">
         {/* Hero Section */}
         <section className="relative py-16 md:py-24 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-cyan/5" />
@@ -146,7 +149,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                       rel="noopener noreferrer"
                       className="flex items-center gap-2"
                     >
-                      <MessageCircle className="h-5 w-5" />
+                      <WhatsAppIcon className="h-5 w-5" />
                       {t("getFreeQuote")}
                     </a>
                   </Button>
@@ -260,7 +263,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-                <MessageCircle className="h-5 w-5" />
+                <WhatsAppIcon className="h-5 w-5" />
                 {t("whatsappUsNow")}
               </a>
             </Button>
