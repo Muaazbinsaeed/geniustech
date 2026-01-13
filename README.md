@@ -63,21 +63,72 @@ src/
 
 ## Configuration
 
-Copy `.env.example` to `.env.local` and configure:
+### Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
 
 ```env
+# Site Configuration
 NEXT_PUBLIC_SITE_URL=https://geniustech.ae
-NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
-NEXT_PUBLIC_GOOGLE_ADS_ID=AW-XXXXXXXXXX
+
+# Google Analytics (Optional)
+# Get your Measurement ID from Google Analytics dashboard
+# Format: G-XXXXXXXXXX
+NEXT_PUBLIC_GA_MEASUREMENT_ID=
+
+# Google Ads (Optional)
+# Get your Conversion ID from Google Ads dashboard
+# Format: AW-XXXXXXXXXX
+NEXT_PUBLIC_GOOGLE_ADS_ID=
+
+# Google Ads Conversion Labels (Optional)
+# Get these from your Google Ads conversion actions
+NEXT_PUBLIC_GOOGLE_ADS_WHATSAPP_CONVERSION=
+NEXT_PUBLIC_GOOGLE_ADS_CALL_CONVERSION=
 ```
+
+**Note:** All environment variables are optional. The site will work without them, but analytics and conversion tracking will be disabled.
 
 ## Deployment
 
-### Vercel (Recommended)
+### Deploy to Vercel (Recommended)
 
-1. Push to GitHub
-2. Import project in Vercel
-3. Deploy automatically
+**Step 1: Go to Vercel**
+- Visit [vercel.com](https://vercel.com) and sign in with GitHub
+
+**Step 2: Import Project**
+1. Click **"Add New..."** → **"Project"**
+2. Find **"geniustech"** in your repository list
+3. Click **"Import"**
+
+**Step 3: Configure Project**
+- Leave defaults as-is
+- Optionally add environment variables:
+
+| Name | Value |
+|------|-------|
+| `NEXT_PUBLIC_SITE_URL` | `https://your-domain.vercel.app` |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Your GA4 ID (optional) |
+
+**Step 4: Deploy**
+- Click **"Deploy"** and wait ~2 minutes
+- You'll get a URL like `https://geniustech.vercel.app`
+
+**Step 5: Custom Domain (Optional)**
+1. Go to **Project Settings** → **Domains**
+2. Add your domain (e.g., `geniustech.ae`)
+3. Update your domain DNS:
+   - **A Record:** `76.76.21.21`
+   - **CNAME:** `cname.vercel-dns.com`
+
+Your site will auto-deploy on every push to `main`.
+
+### Pre-Deployment Checklist
+
+- [ ] Create `og-image.jpg` (1200x630px) in `/public` folder
+- [ ] Set environment variables in Vercel dashboard
+- [ ] Configure custom domain (if applicable)
+- [ ] Test all language routes after deployment
 
 ## License
 

@@ -161,3 +161,30 @@ const tCommon = useTranslations("common");
 - `video` - Video section content
 
 When adding new UI text, always add translations to all 7 files in `src/messages/`.
+
+## Deployment
+
+### Deploy to Vercel
+
+**Step 1:** Go to [vercel.com](https://vercel.com) and sign in with GitHub
+
+**Step 2:** Import Project
+1. Click **"Add New..."** → **"Project"**
+2. Find **"geniustech"** in repository list
+3. Click **"Import"**
+
+**Step 3:** Configure (optional environment variables)
+| Name | Value |
+|------|-------|
+| `NEXT_PUBLIC_SITE_URL` | `https://your-domain.vercel.app` |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Your GA4 ID |
+
+**Step 4:** Click **"Deploy"** (~2 min build time)
+
+**Step 5:** Custom Domain (optional)
+1. Project Settings → Domains → Add domain
+2. DNS settings:
+   - **A Record:** `76.76.21.21`
+   - **CNAME:** `cname.vercel-dns.com`
+
+Auto-deploys on every push to `main`.

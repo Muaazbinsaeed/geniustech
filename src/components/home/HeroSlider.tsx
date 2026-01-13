@@ -85,7 +85,7 @@ export function HeroSlider() {
         >
           <Image
             src={slides[currentSlide].image}
-            alt="Hero background"
+            alt={t(slides[currentSlide].titleKey)}
             fill
             className="object-cover"
             priority
