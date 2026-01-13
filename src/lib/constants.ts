@@ -23,6 +23,11 @@ export const SITE_CONFIG = {
     youtubeVideoId: "dQw4w9WgXcQ", // Replace with your actual promo video ID
     // Or add direct video URL (mp4, webm)
     videoUrl: "",
+    // YouTube Shorts video IDs
+    youtubeShorts: [
+      { id: "UUOwX1M60_U", title: "iPhone Screen Repair in Minutes" },
+      { id: "7F_-X3XZCns", title: "Expert MacBook Repair Service" },
+    ],
   },
   social: {
     instagram: "https://www.instagram.com/geniustechmobrepair",

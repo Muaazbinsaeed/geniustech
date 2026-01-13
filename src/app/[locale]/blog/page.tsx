@@ -7,7 +7,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
 import { blogPosts, getAllCategories } from "@/data/blog";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, type Locale } from "@/lib/constants";
+import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 // Category-based images
 const categoryImages: Record<string, string> = {
@@ -21,11 +22,25 @@ const categoryImages: Record<string, string> = {
 
 export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
   const { locale } = await params;
+  const description = `Expert tips and guides for phone and laptop repair in Dubai. Learn about iPhone screen replacement, MacBook battery issues, water damage repair, and more from ${SITE_CONFIG.name}.`;
   return {
     title: "Blog | Device Repair Tips & Guides",
-    description: `Expert tips and guides for phone and laptop repair in Dubai. Learn about iPhone screen replacement, MacBook battery issues, water damage repair, and more from ${SITE_CONFIG.name}.`,
-    alternates: {
-      canonical: `${SITE_CONFIG.url}/${locale}/blog`,
+    description,
+    alternates: generateAlternates(locale as Locale, "/blog"),
+    openGraph: {
+      title: `Blog | ${SITE_CONFIG.name}`,
+      description,
+      type: "website",
+      locale: getOGLocale(locale as Locale),
+      siteName: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/${locale}/blog`,
+      images: [DEFAULT_OG_IMAGE],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `Blog | ${SITE_CONFIG.name}`,
+      description,
+      images: [DEFAULT_OG_IMAGE.url],
     },
   };
 }

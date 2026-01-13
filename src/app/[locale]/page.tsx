@@ -5,10 +5,12 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { HeroSlider } from "@/components/home/HeroSlider";
 import { TrustBar } from "@/components/home/TrustBar";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, type Locale } from "@/lib/constants";
+import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 // Dynamic imports for below-fold components (code splitting)
 const VideoSection = dynamic(() => import("@/components/home/VideoSection").then(mod => ({ default: mod.VideoSection })));
+const VideoShortsSection = dynamic(() => import("@/components/home/VideoShortsSection").then(mod => ({ default: mod.VideoShortsSection })));
 const Services = dynamic(() => import("@/components/home/Services").then(mod => ({ default: mod.Services })));
 const WhyChooseUs = dynamic(() => import("@/components/home/WhyChooseUs").then(mod => ({ default: mod.WhyChooseUs })));
 const ServiceAreas = dynamic(() => import("@/components/home/ServiceAreas").then(mod => ({ default: mod.ServiceAreas })));
@@ -35,14 +37,18 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
       "samsung repair dubai",
       "device repair uae",
     ],
-    alternates: {
-      canonical: `${SITE_CONFIG.url}/${locale}`,
-    },
+    alternates: generateAlternates(locale as Locale, ""),
     openGraph: {
       title: `${SITE_CONFIG.name} | Dubai's Fastest Device Repair`,
       description: SITE_CONFIG.description,
       type: "website",
-      locale: "en_AE",
+      locale: getOGLocale(locale as Locale),
+      url: `${SITE_CONFIG.url}/${locale}`,
+      images: [DEFAULT_OG_IMAGE],
+    },
+    twitter: {
+      card: "summary_large_image",
+      images: [DEFAULT_OG_IMAGE.url],
     },
   };
 }
@@ -57,10 +63,7 @@ export default async function HomePage({ params }: HomePageProps) {
       <main id="main-content">
         <HeroSlider />
         <TrustBar />
-        <VideoSection
-          videoId={SITE_CONFIG.location.youtubeVideoId || undefined}
-          videoUrl={SITE_CONFIG.location.videoUrl || undefined}
-        />
+        <VideoShortsSection videos={SITE_CONFIG.location.youtubeShorts} />
         <Services />
         <WhyChooseUs />
         <ServiceAreas />

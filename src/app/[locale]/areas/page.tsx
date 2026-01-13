@@ -7,7 +7,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
 import { areasData } from "@/data/areas";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, type Locale } from "@/lib/constants";
+import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 interface AreasPageProps {
   params: Promise<{ locale: string }>;
@@ -18,11 +19,25 @@ export async function generateMetadata({ params }: AreasPageProps): Promise<Meta
   const t = await getTranslations({ locale, namespace: "areas" });
   const tCommon = await getTranslations({ locale, namespace: "common" });
 
+  const description = `${t("freeService")} ${SITE_CONFIG.serviceAreas.join(", ")}.`;
   return {
     title: `${t("title")} | ${tCommon("freePickupDelivery")}`,
-    description: `${t("freeService")} ${SITE_CONFIG.serviceAreas.join(", ")}.`,
-    alternates: {
-      canonical: `${SITE_CONFIG.url}/${locale}/areas`,
+    description,
+    alternates: generateAlternates(locale as Locale, "/areas"),
+    openGraph: {
+      title: `${t("title")} | ${SITE_CONFIG.name}`,
+      description,
+      type: "website",
+      locale: getOGLocale(locale as Locale),
+      siteName: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/${locale}/areas`,
+      images: [DEFAULT_OG_IMAGE],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${t("title")} | ${SITE_CONFIG.name}`,
+      description,
+      images: [DEFAULT_OG_IMAGE.url],
     },
   };
 }

@@ -13,7 +13,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
 import { Button } from "@/components/ui/Button";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, type Locale } from "@/lib/constants";
+import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
 import { getWhatsAppLink, getPhoneLink } from "@/lib/utils";
 
 export async function generateMetadata({ params }: ContactPageProps): Promise<Metadata> {
@@ -22,21 +23,21 @@ export async function generateMetadata({ params }: ContactPageProps): Promise<Me
   return {
     title: "Contact Us | Get in Touch",
     description,
-    alternates: {
-      canonical: `${SITE_CONFIG.url}/${locale}/contact`,
-    },
+    alternates: generateAlternates(locale as Locale, "/contact"),
     openGraph: {
       title: `Contact ${SITE_CONFIG.name} | Dubai Device Repair`,
       description,
       type: "website",
-      locale: locale === "ar" ? "ar_AE" : "en_AE",
+      locale: getOGLocale(locale as Locale),
       siteName: SITE_CONFIG.name,
       url: `${SITE_CONFIG.url}/${locale}/contact`,
+      images: [DEFAULT_OG_IMAGE],
     },
     twitter: {
       card: "summary_large_image",
       title: `Contact ${SITE_CONFIG.name}`,
       description,
+      images: [DEFAULT_OG_IMAGE.url],
     },
   };
 }

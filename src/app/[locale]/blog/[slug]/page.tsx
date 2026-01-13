@@ -17,8 +17,9 @@ import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
 import { Button } from "@/components/ui/Button";
 import { blogPosts, getAllBlogSlugs, getBlogPostBySlug } from "@/data/blog";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, type Locale } from "@/lib/constants";
 import { getWhatsAppLink } from "@/lib/utils";
+import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
 import { BlogPostSchema, FAQSchema } from "@/components/seo/SchemaMarkup";
 
 export async function generateStaticParams() {
@@ -43,17 +44,25 @@ export async function generateMetadata({
     description: post.excerpt,
     keywords: post.tags,
     authors: [{ name: post.author }],
-    alternates: {
-      canonical: `${SITE_CONFIG.url}/${locale}/blog/${slug}`,
-    },
+    alternates: generateAlternates(locale as Locale, `/blog/${slug}`),
     openGraph: {
       type: "article",
       title: post.title,
       description: post.excerpt,
+      locale: getOGLocale(locale as Locale),
+      siteName: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/${locale}/blog/${slug}`,
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt,
       authors: [post.author],
       tags: post.tags,
+      images: post.image ? [post.image] : [DEFAULT_OG_IMAGE],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: post.image ? [post.image] : [DEFAULT_OG_IMAGE.url],
     },
   };
 }

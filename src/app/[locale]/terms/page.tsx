@@ -5,7 +5,8 @@ import { ArrowLeft } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, type Locale } from "@/lib/constants";
+import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 export async function generateMetadata({ params }: TermsPageProps): Promise<Metadata> {
   const { locale } = await params;
@@ -13,21 +14,21 @@ export async function generateMetadata({ params }: TermsPageProps): Promise<Meta
   return {
     title: "Terms of Service | Genius Tech",
     description,
-    alternates: {
-      canonical: `${SITE_CONFIG.url}/${locale}/terms`,
-    },
+    alternates: generateAlternates(locale as Locale, "/terms"),
     openGraph: {
       title: `Terms of Service | ${SITE_CONFIG.name}`,
       description,
       type: "website",
-      locale: locale === "ar" ? "ar_AE" : "en_AE",
+      locale: getOGLocale(locale as Locale),
       siteName: SITE_CONFIG.name,
       url: `${SITE_CONFIG.url}/${locale}/terms`,
+      images: [DEFAULT_OG_IMAGE],
     },
     twitter: {
       card: "summary",
       title: `Terms of Service | ${SITE_CONFIG.name}`,
       description,
+      images: [DEFAULT_OG_IMAGE.url],
     },
   };
 }

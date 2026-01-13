@@ -7,7 +7,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
 import { Button } from "@/components/ui/Button";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, type Locale } from "@/lib/constants";
+import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/utils";
 
 export async function generateMetadata({ params }: AboutPageProps): Promise<Metadata> {
@@ -16,21 +17,21 @@ export async function generateMetadata({ params }: AboutPageProps): Promise<Meta
   return {
     title: "About Us | Your Trusted Device Repair Partner",
     description,
-    alternates: {
-      canonical: `${SITE_CONFIG.url}/${locale}/about`,
-    },
+    alternates: generateAlternates(locale as Locale, "/about"),
     openGraph: {
       title: `About ${SITE_CONFIG.name} | Dubai's Trusted Device Repair`,
       description,
       type: "website",
-      locale: locale === "ar" ? "ar_AE" : "en_AE",
+      locale: getOGLocale(locale as Locale),
       siteName: SITE_CONFIG.name,
       url: `${SITE_CONFIG.url}/${locale}/about`,
+      images: [DEFAULT_OG_IMAGE],
     },
     twitter: {
       card: "summary_large_image",
       title: `About ${SITE_CONFIG.name}`,
       description,
+      images: [DEFAULT_OG_IMAGE.url],
     },
   };
 }

@@ -18,8 +18,9 @@ import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
 import { Button } from "@/components/ui/Button";
 import { areasData, getAllAreaSlugs, getAreaBySlug } from "@/data/areas";
 import { servicesData } from "@/data/services";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, type Locale } from "@/lib/constants";
 import { getWhatsAppLink, getPhoneLink } from "@/lib/utils";
+import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 export async function generateStaticParams() {
   return getAllAreaSlugs().map((area) => ({ area }));
@@ -54,12 +55,20 @@ export async function generateMetadata({
       `macbook repair ${name.toLowerCase()}`,
       `free pickup ${name.toLowerCase()}`,
     ],
-    alternates: {
-      canonical: `${SITE_CONFIG.url}/${locale}/areas/${area}`,
-    },
+    alternates: generateAlternates(locale as Locale, `/areas/${area}`),
     openGraph: {
       title: `${tCommon("deviceRepairIn")} ${name}`,
       description: description,
+      type: "website",
+      locale: getOGLocale(locale as Locale),
+      siteName: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/${locale}/areas/${area}`,
+      images: [areaData.image],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${tCommon("deviceRepairIn")} ${name} | ${SITE_CONFIG.name}`,
+      description,
       images: [areaData.image],
     },
   };

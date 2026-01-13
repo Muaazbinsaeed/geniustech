@@ -19,8 +19,9 @@ import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
 import { Button } from "@/components/ui/Button";
 import { getAllServiceSlugs, getServiceBySlug } from "@/data/services";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, type Locale } from "@/lib/constants";
 import { getWhatsAppLink, getPhoneLink } from "@/lib/utils";
+import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 const iconMap: Record<string, typeof Smartphone> = {
   Smartphone,
@@ -61,8 +62,21 @@ export async function generateMetadata({
       "same day repair",
       "free pickup dubai",
     ],
-    alternates: {
-      canonical: `${SITE_CONFIG.url}/${locale}/services/${slug}`,
+    alternates: generateAlternates(locale as Locale, `/services/${slug}`),
+    openGraph: {
+      title: `${title} Dubai | Same-Day Repair`,
+      description,
+      type: "website",
+      locale: getOGLocale(locale as Locale),
+      siteName: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/${locale}/services/${slug}`,
+      images: [service.image || DEFAULT_OG_IMAGE],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | ${SITE_CONFIG.name}`,
+      description,
+      images: [service.image || DEFAULT_OG_IMAGE.url],
     },
   };
 }
