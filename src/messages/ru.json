@@ -92,7 +92,11 @@
     "cta": {
       "whatsapp": "Написать в WhatsApp",
       "call": "Позвонить"
-    }
+    },
+    "slide1Title": "Горизонт Дубай Марина",
+    "slide2Title": "Ремонт смартфонов",
+    "slide3Title": "Ремонт MacBook",
+    "slide4Title": "Пляж Дубай JBR"
   },
   "trust": {
     "repairs": "Выполненных ремонтов",

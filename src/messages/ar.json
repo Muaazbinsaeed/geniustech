@@ -92,7 +92,11 @@
     "cta": {
       "whatsapp": "تواصل واتساب",
       "call": "اتصل الآن"
-    }
+    },
+    "slide1Title": "أفق دبي مارينا",
+    "slide2Title": "إصلاح الهواتف الذكية",
+    "slide3Title": "إصلاح ماك بوك",
+    "slide4Title": "شاطئ دبي JBR"
   },
   "trust": {
     "repairs": "عملية إصلاح مكتملة",

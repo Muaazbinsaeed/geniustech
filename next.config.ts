@@ -1,53 +1,56 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
-import withPWAInit from "next-pwa";
+import withPWA from "@ducanh2912/next-pwa";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
-const withPWA = withPWAInit({
+const withPWAConfig = withPWA({
   dest: "public",
   register: true,
-  skipWaiting: true,
   disable: process.env.NODE_ENV === "development",
-  runtimeCaching: [
-    {
-      urlPattern: /^https:\/\/fonts\.(?:gstatic|googleapis)\.com\/.*/i,
-      handler: "CacheFirst",
-      options: {
-        cacheName: "google-fonts",
-        expiration: {
-          maxEntries: 10,
-          maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
+  workboxOptions: {
+    skipWaiting: true,
+    clientsClaim: true,
+    runtimeCaching: [
+      {
+        urlPattern: /^https:\/\/fonts\.(?:gstatic|googleapis)\.com\/.*/i,
+        handler: "CacheFirst",
+        options: {
+          cacheName: "google-fonts",
+          expiration: {
+            maxEntries: 10,
+            maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
+          },
         },
       },
-    },
-    {
-      urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp|ico)$/i,
-      handler: "CacheFirst",
-      options: {
-        cacheName: "images",
-        expiration: {
-          maxEntries: 100,
-          maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+      {
+        urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp|ico)$/i,
+        handler: "CacheFirst",
+        options: {
+          cacheName: "images",
+          expiration: {
+            maxEntries: 100,
+            maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+          },
         },
       },
-    },
-    {
-      urlPattern: /^https:\/\/wa\.me\/.*/i,
-      handler: "NetworkOnly",
-    },
-    {
-      urlPattern: /\/_next\/static\/.*/i,
-      handler: "CacheFirst",
-      options: {
-        cacheName: "next-static",
-        expiration: {
-          maxEntries: 100,
-          maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
+      {
+        urlPattern: /^https:\/\/wa\.me\/.*/i,
+        handler: "NetworkOnly",
+      },
+      {
+        urlPattern: /\/_next\/static\/.*/i,
+        handler: "CacheFirst",
+        options: {
+          cacheName: "next-static",
+          expiration: {
+            maxEntries: 100,
+            maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
+          },
         },
       },
-    },
-  ],
+    ],
+  },
   fallbacks: {
     document: "/offline.html",
   },
@@ -121,4 +124,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default withPWA(withNextIntl(nextConfig));
+export default withPWAConfig(withNextIntl(nextConfig));

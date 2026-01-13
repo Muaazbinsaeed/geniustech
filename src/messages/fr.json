@@ -92,7 +92,11 @@
     "cta": {
       "whatsapp": "WhatsApp",
       "call": "Appeler"
-    }
+    },
+    "slide1Title": "Horizon de Dubai Marina",
+    "slide2Title": "Réparation de smartphone",
+    "slide3Title": "Réparation MacBook",
+    "slide4Title": "Plage de Dubai JBR"
   },
   "trust": {
     "repairs": "Réparations effectuées",

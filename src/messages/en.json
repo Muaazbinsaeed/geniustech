@@ -92,7 +92,11 @@
     "cta": {
       "whatsapp": "WhatsApp Us",
       "call": "Call Now"
-    }
+    },
+    "slide1Title": "Dubai Marina Skyline",
+    "slide2Title": "Smartphone Repair",
+    "slide3Title": "MacBook Repair",
+    "slide4Title": "Dubai JBR Beach"
   },
   "trust": {
     "repairs": "Repairs Completed",
