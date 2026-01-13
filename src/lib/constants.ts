@@ -2,7 +2,7 @@ export const SITE_CONFIG = {
   name: "Genius Tech",
   tagline: "Quality means doing something right when no one is looking",
   description: "Dubai's fastest device repair service. Expert repairs for iPhones, MacBooks, Android phones, laptops, and wearables. Free pickup & delivery in JLT, JBR, and Dubai Marina.",
-  url: "https://geniustech.ae",
+  url: "https://geniustechuae.com",
   phone: "+971502719636",
   whatsapp: "+971547507842",
   email: "Geniustechmob@gmail.com",
