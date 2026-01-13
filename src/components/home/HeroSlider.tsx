@@ -87,6 +87,7 @@ export function HeroSlider() {
             src={slides[currentSlide].image}
             alt={t(slides[currentSlide].titleKey)}
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />

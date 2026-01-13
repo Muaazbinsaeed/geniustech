@@ -21,6 +21,7 @@ import { servicesData } from "@/data/services";
 import { SITE_CONFIG, type Locale } from "@/lib/constants";
 import { getWhatsAppLink, getPhoneLink } from "@/lib/utils";
 import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
+import { LocalBusinessSchema, BreadcrumbSchema } from "@/components/seo/SchemaMarkup";
 
 export async function generateStaticParams() {
   return getAllAreaSlugs().map((area) => ({ area }));
@@ -106,8 +107,19 @@ export default async function AreaPage({ params }: AreaPageProps) {
   );
   const phoneLink = getPhoneLink(SITE_CONFIG.phone);
 
+  // Prepare breadcrumb data
+  const breadcrumbs = [
+    { name: "Home", url: `${SITE_CONFIG.url}/${locale}` },
+    { name: tNav("areas"), url: `${SITE_CONFIG.url}/${locale}/areas` },
+    { name: name, url: `${SITE_CONFIG.url}/${locale}/areas/${area}` },
+  ];
+
   return (
     <>
+      {/* SEO Schema Markup */}
+      <LocalBusinessSchema />
+      <BreadcrumbSchema items={breadcrumbs} />
+
       <Header />
       <main id="main-content" className="pt-24 pb-16">
         {/* Hero Section */}

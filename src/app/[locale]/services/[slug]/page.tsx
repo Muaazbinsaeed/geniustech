@@ -22,6 +22,7 @@ import { getAllServiceSlugs, getServiceBySlug } from "@/data/services";
 import { SITE_CONFIG, type Locale } from "@/lib/constants";
 import { getWhatsAppLink, getPhoneLink } from "@/lib/utils";
 import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
+import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/SchemaMarkup";
 
 const iconMap: Record<string, typeof Smartphone> = {
   Smartphone,
@@ -113,8 +114,29 @@ export default async function ServicePage({ params }: ServicePageProps) {
   const issues = tService.raw("issues") as { title: string; desc: string }[];
   const faqs = tService.raw("faqs") as { q: string; a: string }[];
 
+  // Prepare breadcrumb data
+  const breadcrumbs = [
+    { name: "Home", url: `${SITE_CONFIG.url}/${locale}` },
+    { name: tNav("services"), url: `${SITE_CONFIG.url}/${locale}/services` },
+    { name: serviceTitle, url: `${SITE_CONFIG.url}/${locale}/services/${slug}` },
+  ];
+
+  // Prepare FAQ data for schema
+  const faqSchemaData = faqs.map((faq) => ({ question: faq.q, answer: faq.a }));
+
   return (
     <>
+      {/* SEO Schema Markup */}
+      <ServiceSchema
+        slug={slug}
+        title={serviceTitle}
+        description={tService("description")}
+        features={features}
+        locale={locale}
+      />
+      <FAQSchema faqs={faqSchemaData} />
+      <BreadcrumbSchema items={breadcrumbs} />
+
       <Header />
 
       <main id="main-content" className="pt-24 pb-16">
