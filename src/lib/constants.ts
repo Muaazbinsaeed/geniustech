@@ -25,8 +25,8 @@ export const SITE_CONFIG = {
     videoUrl: "",
     // YouTube Shorts video IDs
     youtubeShorts: [
-      { id: "UUOwX1M60_U", title: "iPhone Screen Repair in Minutes" },
       { id: "7F_-X3XZCns", title: "Expert MacBook Repair Service" },
+      { id: "UUOwX1M60_U", title: "iPhone Screen Repair in Minutes" },
     ],
   },
   social: {
