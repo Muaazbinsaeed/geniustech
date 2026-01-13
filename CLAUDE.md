@@ -2,6 +2,14 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Project Links
+
+| Resource | URL |
+|----------|-----|
+| **Live Website** | https://geniustechuae.com |
+| **GitHub Repository** | https://github.com/Muaazbinsaeed/geniustech |
+| **Vercel Dashboard** | https://vercel.com/muaazs-projects-bc145511/geniustech |
+
 ## Build Commands
 
 ```bash
@@ -176,15 +184,13 @@ When adding new UI text, always add translations to all 7 files in `src/messages
 **Step 3:** Configure (optional environment variables)
 | Name | Value |
 |------|-------|
-| `NEXT_PUBLIC_SITE_URL` | `https://your-domain.vercel.app` |
+| `NEXT_PUBLIC_SITE_URL` | `https://geniustechuae.com` |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Your GA4 ID |
 
 **Step 4:** Click **"Deploy"** (~2 min build time)
 
-**Step 5:** Custom Domain (optional)
-1. Project Settings → Domains → Add domain
-2. DNS settings:
-   - **A Record:** `76.76.21.21`
-   - **CNAME:** `cname.vercel-dns.com`
+**Step 5:** Custom Domain
+- Domain: `geniustechuae.com`
+- DNS: Vercel nameservers (`ns1.vercel-dns.com`, `ns2.vercel-dns.com`)
 
 Auto-deploys on every push to `main`.

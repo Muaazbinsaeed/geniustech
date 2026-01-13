@@ -2,6 +2,14 @@
 
 A modern, multi-lingual website for Genius Tech, Dubai's fastest device repair service.
 
+## Project Links
+
+| Resource | URL |
+|----------|-----|
+| **Live Website** | [geniustechuae.com](https://geniustechuae.com) |
+| **GitHub Repository** | [github.com/Muaazbinsaeed/geniustech](https://github.com/Muaazbinsaeed/geniustech) |
+| **Vercel Dashboard** | [vercel.com/muaazs-projects-bc145511/geniustech](https://vercel.com/muaazs-projects-bc145511/geniustech) |
+
 ## Features
 
 - **7 Languages** - English 🇬🇧, Arabic 🇦🇪, Hindi 🇮🇳, Urdu 🇵🇰, Russian 🇷🇺, French 🇫🇷, Spanish 🇪🇸
@@ -69,7 +77,7 @@ Create a `.env.local` file in the root directory with the following variables:
 
 ```env
 # Site Configuration
-NEXT_PUBLIC_SITE_URL=https://geniustech.ae
+NEXT_PUBLIC_SITE_URL=https://geniustechuae.com
 
 # Google Analytics (Optional)
 # Get your Measurement ID from Google Analytics dashboard
@@ -107,17 +115,18 @@ NEXT_PUBLIC_GOOGLE_ADS_CALL_CONVERSION=
 
 | Name | Value |
 |------|-------|
-| `NEXT_PUBLIC_SITE_URL` | `https://your-domain.vercel.app` |
+| `NEXT_PUBLIC_SITE_URL` | `https://geniustechuae.com` |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Your GA4 ID (optional) |
 
 **Step 4: Deploy**
 - Click **"Deploy"** and wait ~2 minutes
-- You'll get a URL like `https://geniustech.vercel.app`
+- You'll get a URL like `https://geniustech-xxx.vercel.app`
 
-**Step 5: Custom Domain (Optional)**
-1. Go to **Project Settings** → **Domains**
-2. Add your domain (e.g., `geniustech.ae`)
-3. Update your domain DNS:
+**Step 5: Custom Domain**
+The site uses `geniustechuae.com` with Vercel DNS:
+- **Nameservers:** `ns1.vercel-dns.com`, `ns2.vercel-dns.com`
+
+Alternatively, use CNAME/A records:
    - **A Record:** `76.76.21.21`
    - **CNAME:** `cname.vercel-dns.com`
 

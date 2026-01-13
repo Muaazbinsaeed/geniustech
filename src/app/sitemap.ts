@@ -8,7 +8,7 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || SITE_CONFIG.url;
 
 // Use a static date for pages that don't have specific modification dates
 // This represents when the site was last significantly updated
-const SITE_LAST_MODIFIED = new Date("2026-01-12");
+const SITE_LAST_MODIFIED = new Date("2026-01-14");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const serviceSlugs = getAllServiceSlugs();
