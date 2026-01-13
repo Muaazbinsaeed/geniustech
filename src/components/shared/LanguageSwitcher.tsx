@@ -1,6 +1,6 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
@@ -27,6 +27,7 @@ interface LanguageSwitcherProps {
 
 export function LanguageSwitcher({ className, compact = false }: LanguageSwitcherProps) {
   const locale = useLocale() as Locale;
+  const tCommon = useTranslations("common");
   const router = useRouter();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
@@ -66,7 +67,7 @@ export function LanguageSwitcher({ className, compact = false }: LanguageSwitche
             ? "h-10 w-10 justify-center bg-card"
             : "h-10 px-3 bg-card"
         )}
-        aria-label="Select language"
+        aria-label={tCommon("selectLanguage")}
         aria-expanded={isOpen}
         aria-haspopup="listbox"
       >
@@ -100,7 +101,7 @@ export function LanguageSwitcher({ className, compact = false }: LanguageSwitche
             transition={{ duration: 0.15, ease: "easeOut" }}
             className="absolute top-full right-0 mt-2 w-44 rounded-xl bg-card border border-card-border shadow-2xl overflow-hidden z-50"
             role="listbox"
-            aria-label="Select language"
+            aria-label={tCommon("selectLanguage")}
           >
             {locales.map(([code, name]) => (
               <button

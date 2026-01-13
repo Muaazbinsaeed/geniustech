@@ -1,4 +1,13 @@
 {
+  "video": {
+    "youtubeShorts": "YouTube Shorts",
+    "shorts": "Shorts",
+    "tapToWatch": "Нажмите для просмотра",
+    "watchExperts": "Смотрите наших экспертов за работой",
+    "watchNow": "Смотреть",
+    "closeVideo": "Закрыть видео",
+    "videoTitle": "Видео ремонта устройств"
+  },
   "errors": {
     "notFound": {
       "title": "Страница не найдена",
@@ -58,7 +67,15 @@
     "expertRepairs": "Профессиональный ремонт всех ваших устройств. Быстро, надёжно и доступно с бесплатной доставкой в Dubai Marina, JLT и JBR.",
     "deviceRepairIn": "Ремонт устройств в",
     "watchVideo": "Смотреть видео",
-    "watchInAction": "Смотрите нас в деле"
+    "watchInAction": "Смотрите нас в деле",
+    "googleRating": "Рейтинг Google",
+    "reviewCount": "отзывов",
+    "viaGoogle": "через Google",
+    "viewOnGoogleMaps": "Открыть в Google Maps",
+    "openMenu": "Открыть меню",
+    "closeMenu": "Закрыть меню",
+    "selectLanguage": "Выбрать язык",
+    "promoVideo": "Промо видео"
   },
   "nav": {
     "home": "Главная",

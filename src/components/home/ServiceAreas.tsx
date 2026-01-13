@@ -31,6 +31,8 @@ const areas = [
 export function ServiceAreas() {
   const locale = useLocale();
   const t = useTranslations("areas");
+  const tTrust = useTranslations("trust");
+  const tCommon = useTranslations("common");
 
   return (
     <section className="py-20 md:py-28">
@@ -79,7 +81,7 @@ export function ServiceAreas() {
                     <div className="flex-1">
                       <div className="font-semibold text-lg">{t(area.key)}</div>
                       <div className="text-sm text-foreground-muted">
-                        Free pickup & delivery
+                        {tTrust("freePickup")}
                       </div>
                     </div>
                     <Check className="h-5 w-5 text-green-500" />
@@ -119,7 +121,7 @@ export function ServiceAreas() {
               className="absolute bottom-4 right-4 flex items-center gap-2 px-4 py-2 bg-card/90 backdrop-blur border border-card-border rounded-lg text-sm font-medium hover:bg-card transition-colors"
             >
               <ExternalLink className="h-4 w-4" />
-              View on Google Maps
+              {tCommon("viewOnGoogleMaps")}
             </a>
           </motion.div>
         </div>

@@ -54,6 +54,7 @@ function StarRating({ rating }: { rating: number }) {
 
 export function Reviews() {
   const t = useTranslations("reviews");
+  const tCommon = useTranslations("common");
 
   return (
     <section className="py-20 md:py-28 bg-background-secondary">
@@ -79,7 +80,7 @@ export function Reviews() {
               ))}
             </div>
             <span className="text-2xl font-bold">4.9</span>
-            <span className="text-foreground-muted">(230+ reviews)</span>
+            <span className="text-foreground-muted">(230+ {tCommon("reviewCount")})</span>
           </div>
         </motion.div>
 
@@ -106,7 +107,7 @@ export function Reviews() {
                   </div>
                 </div>
                 <div className="text-xs text-foreground-muted">
-                  via Google
+                  {tCommon("viaGoogle")}
                 </div>
               </div>
             </motion.div>

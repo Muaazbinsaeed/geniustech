@@ -159,7 +159,7 @@ export function Header() {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="h-11 w-11 rounded-xl bg-card border border-card-border flex items-center justify-center"
-              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-label={isMobileMenuOpen ? tCommon("closeMenu") : tCommon("openMenu")}
               aria-expanded={isMobileMenuOpen}
               aria-controls="mobile-menu"
             >

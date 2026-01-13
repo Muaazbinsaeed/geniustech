@@ -1,4 +1,13 @@
 {
+  "video": {
+    "youtubeShorts": "یوٹیوب شارٹس",
+    "shorts": "شارٹس",
+    "tapToWatch": "دیکھنے کے لیے ٹیپ کریں",
+    "watchExperts": "ہمارے ماہر ٹیکنیشنز کو کام کرتے دیکھیں",
+    "watchNow": "ابھی دیکھیں",
+    "closeVideo": "ویڈیو بند کریں",
+    "videoTitle": "ڈیوائس کی مرمت کی ویڈیو"
+  },
   "errors": {
     "notFound": {
       "title": "صفحہ نہیں ملا",
@@ -58,7 +67,15 @@
     "expertRepairs": "آپ کے تمام ڈیوائسز کی ماہرانہ مرمت۔ تیز، قابل اعتماد اور سستی، دبئی مرینا، JLT اور JBR میں مفت پک اپ-ڈیلیوری۔",
     "deviceRepairIn": "میں ڈیوائس کی مرمت",
     "watchVideo": "ویڈیو دیکھیں",
-    "watchInAction": "ہمیں عمل میں دیکھیں"
+    "watchInAction": "ہمیں عمل میں دیکھیں",
+    "googleRating": "گوگل ریٹنگ",
+    "reviewCount": "جائزے",
+    "viaGoogle": "گوگل کے ذریعے",
+    "viewOnGoogleMaps": "گوگل میپس پر دیکھیں",
+    "openMenu": "مینو کھولیں",
+    "closeMenu": "مینو بند کریں",
+    "selectLanguage": "زبان منتخب کریں",
+    "promoVideo": "پرومو ویڈیو"
   },
   "nav": {
     "home": "ہوم",

@@ -7,6 +7,7 @@ import { HeroSlider } from "@/components/home/HeroSlider";
 import { TrustBar } from "@/components/home/TrustBar";
 import { SITE_CONFIG, type Locale } from "@/lib/constants";
 import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
+import { VideoSchema } from "@/components/seo/SchemaMarkup";
 
 // Dynamic imports for below-fold components (code splitting)
 const VideoSection = dynamic(() => import("@/components/home/VideoSection").then(mod => ({ default: mod.VideoSection })));
@@ -59,6 +60,7 @@ export default async function HomePage({ params }: HomePageProps) {
 
   return (
     <>
+      <VideoSchema videos={SITE_CONFIG.location.youtubeShorts} />
       <Header />
       <main id="main-content">
         <HeroSlider />

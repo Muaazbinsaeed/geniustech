@@ -162,7 +162,7 @@ export function HeroSlider() {
             >
               <div className="flex items-center gap-2">
                 <span className="text-yellow-400 text-lg">★</span>
-                <span className="text-sm font-medium">4.9 Google Rating</span>
+                <span className="text-sm font-medium">4.9 {tCommon("googleRating")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="h-2 w-2 rounded-full bg-green-500" />

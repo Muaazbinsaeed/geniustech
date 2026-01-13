@@ -1,4 +1,13 @@
 {
+  "video": {
+    "youtubeShorts": "YouTube Shorts",
+    "shorts": "Shorts",
+    "tapToWatch": "Tap to watch",
+    "watchExperts": "Watch our expert technicians in action",
+    "watchNow": "Watch now",
+    "closeVideo": "Close video",
+    "videoTitle": "Device Repair Video"
+  },
   "errors": {
     "notFound": {
       "title": "Page Not Found",
@@ -58,7 +67,15 @@
     "expertRepairs": "Expert repairs for all your devices. Fast, reliable, and affordable with free pickup and delivery in Dubai Marina, JLT, and JBR.",
     "deviceRepairIn": "Device Repair in",
     "watchVideo": "Watch Our Video",
-    "watchInAction": "See Us in Action"
+    "watchInAction": "See Us in Action",
+    "googleRating": "Google Rating",
+    "reviewCount": "reviews",
+    "viaGoogle": "via Google",
+    "viewOnGoogleMaps": "View on Google Maps",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "selectLanguage": "Select language",
+    "promoVideo": "Promo Video"
   },
   "nav": {
     "home": "Home",

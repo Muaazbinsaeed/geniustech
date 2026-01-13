@@ -320,3 +320,47 @@ export function WebSiteSchema() {
     />
   );
 }
+
+// VideoObject Schema for YouTube Shorts
+interface VideoSchemaProps {
+  videos: readonly { id: string; title: string }[];
+}
+
+export function VideoSchema({ videos }: VideoSchemaProps) {
+  const schemas = videos.map((video) => ({
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "@id": `${SITE_CONFIG.url}/#video-${video.id}`,
+    name: video.title,
+    description: `${video.title} - ${SITE_CONFIG.name} device repair service in Dubai`,
+    thumbnailUrl: `https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`,
+    uploadDate: new Date().toISOString().split("T")[0],
+    contentUrl: `https://www.youtube.com/shorts/${video.id}`,
+    embedUrl: `https://www.youtube.com/embed/${video.id}`,
+    publisher: {
+      "@type": "Organization",
+      "@id": `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_CONFIG.url}/logo.png`,
+      },
+    },
+    potentialAction: {
+      "@type": "WatchAction",
+      target: `https://www.youtube.com/shorts/${video.id}`,
+    },
+  }));
+
+  return (
+    <>
+      {schemas.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+    </>
+  );
+}

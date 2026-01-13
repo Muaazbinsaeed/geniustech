@@ -1,4 +1,13 @@
 {
+  "video": {
+    "youtubeShorts": "यूट्यूब शॉर्ट्स",
+    "shorts": "शॉर्ट्स",
+    "tapToWatch": "देखने के लिए टैप करें",
+    "watchExperts": "हमारे एक्सपर्ट टेक्नीशियन को काम करते देखें",
+    "watchNow": "अभी देखें",
+    "closeVideo": "वीडियो बंद करें",
+    "videoTitle": "डिवाइस रिपेयर वीडियो"
+  },
   "errors": {
     "notFound": {
       "title": "पेज नहीं मिला",
@@ -58,7 +67,15 @@
     "expertRepairs": "आपके सभी डिवाइस के लिए एक्सपर्ट रिपेयर। तेज, विश्वसनीय और किफायती, दुबई मरीना, JLT और JBR में मुफ्त पिकअप-डिलीवरी।",
     "deviceRepairIn": "में डिवाइस रिपेयर",
     "watchVideo": "वीडियो देखें",
-    "watchInAction": "हमें काम करते देखें"
+    "watchInAction": "हमें काम करते देखें",
+    "googleRating": "गूगल रेटिंग",
+    "reviewCount": "समीक्षाएं",
+    "viaGoogle": "गूगल के माध्यम से",
+    "viewOnGoogleMaps": "गूगल मैप्स पर देखें",
+    "openMenu": "मेनू खोलें",
+    "closeMenu": "मेनू बंद करें",
+    "selectLanguage": "भाषा चुनें",
+    "promoVideo": "प्रोमो वीडियो"
   },
   "nav": {
     "home": "होम",

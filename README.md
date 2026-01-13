@@ -9,7 +9,8 @@ A modern, multi-lingual website for Genius Tech, Dubai's fastest device repair s
 - **Dark/Light Mode** - Theme toggle with system preference detection
 - **Responsive Design** - Mobile-first, works on all devices
 - **WhatsApp Integration** - Primary CTA with official WhatsApp Business icon
-- **SEO Optimized** - Sitemap, robots.txt, schema markup
+- **SEO Optimized** - Sitemap, robots.txt, schema markup, hreflang tags
+- **Video Integration** - YouTube Shorts with VideoObject schema
 - **Analytics Ready** - Google Analytics & Ads integration
 - **PWA Support** - Offline-ready progressive web app
 

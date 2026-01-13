@@ -1,4 +1,13 @@
 {
+  "video": {
+    "youtubeShorts": "يوتيوب شورتس",
+    "shorts": "شورتس",
+    "tapToWatch": "انقر للمشاهدة",
+    "watchExperts": "شاهد فنيينا الخبراء أثناء العمل",
+    "watchNow": "شاهد الآن",
+    "closeVideo": "إغلاق الفيديو",
+    "videoTitle": "فيديو إصلاح الأجهزة"
+  },
   "errors": {
     "notFound": {
       "title": "الصفحة غير موجودة",
@@ -58,7 +67,15 @@
     "expertRepairs": "إصلاحات احترافية لجميع أجهزتك. سريع وموثوق وبأسعار معقولة مع استلام وتوصيل مجاني في دبي مارينا وJLT وJBR.",
     "deviceRepairIn": "إصلاح الأجهزة في",
     "watchVideo": "شاهد الفيديو",
-    "watchInAction": "شاهدنا أثناء العمل"
+    "watchInAction": "شاهدنا أثناء العمل",
+    "googleRating": "تقييم جوجل",
+    "reviewCount": "تقييمات",
+    "viaGoogle": "عبر جوجل",
+    "viewOnGoogleMaps": "عرض على خرائط جوجل",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "selectLanguage": "اختر اللغة",
+    "promoVideo": "فيديو ترويجي"
   },
   "nav": {
     "home": "الرئيسية",
