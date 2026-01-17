@@ -16,11 +16,11 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
 import { Button } from "@/components/ui/Button";
-import { areasData, getAllAreaSlugs, getAreaBySlug } from "@/data/areas";
+import { getAllAreaSlugs, getAreaBySlug } from "@/data/areas";
 import { servicesData } from "@/data/services";
 import { SITE_CONFIG, type Locale } from "@/lib/constants";
 import { getWhatsAppLink, getPhoneLink } from "@/lib/utils";
-import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
+import { generateAlternates, getOGLocale } from "@/lib/seo";
 import { LocalBusinessSchema, BreadcrumbSchema } from "@/components/seo/SchemaMarkup";
 
 export async function generateStaticParams() {
@@ -40,26 +40,56 @@ export async function generateMetadata({
   }
 
   const tArea = await getTranslations({ locale, namespace: "areaData" });
-  const tCommon = await getTranslations({ locale, namespace: "common" });
-
   const name = tArea(`${area}.name`);
-  const fullName = tArea(`${area}.fullName`);
-  const description = tArea(`${area}.description`);
+
+  // Generate area-specific keywords
+  const areaKeywords: Record<string, string[]> = {
+    "dubai-marina": [
+      "phone repair dubai marina",
+      "iphone repair dubai marina",
+      "mobile repair west avenue",
+      "phone fix marina walk",
+      "laptop repair marina",
+      "samsung repair dubai marina",
+      "device repair near marina mall",
+    ],
+    "jlt": [
+      "phone repair jlt",
+      "iphone repair jumeirah lake towers",
+      "mobile repair jlt cluster",
+      "laptop repair jlt dubai",
+      "samsung repair jlt",
+      "phone screen repair jlt",
+    ],
+    "jbr": [
+      "phone repair jbr",
+      "iphone repair jumeirah beach residence",
+      "mobile repair the walk jbr",
+      "laptop repair jbr dubai",
+      "samsung repair jbr",
+      "device repair near jbr",
+    ],
+  };
+
+  const specificKeywords = areaKeywords[area] || [];
 
   return {
-    title: `${tCommon("deviceRepairIn")} ${name} | ${tCommon("freePickupDelivery")}`,
-    description: description,
+    title: `Phone & Laptop Repair ${name} | Free Pickup | Same-Day Service`,
+    description: `Expert phone, laptop & device repair in ${name}. Free pickup & delivery, same-day service. iPhone, MacBook, Samsung repair by certified technicians. WhatsApp us now!`,
     keywords: [
       `phone repair ${name.toLowerCase()}`,
       `laptop repair ${name.toLowerCase()}`,
       `iphone repair ${name.toLowerCase()}`,
       `macbook repair ${name.toLowerCase()}`,
       `free pickup ${name.toLowerCase()}`,
+      `same day repair ${name.toLowerCase()}`,
+      `mobile repair ${name.toLowerCase()}`,
+      ...specificKeywords,
     ],
     alternates: generateAlternates(locale as Locale, `/areas/${area}`),
     openGraph: {
-      title: `${tCommon("deviceRepairIn")} ${name}`,
-      description: description,
+      title: `Phone Repair ${name} | Free Pickup & Delivery | ${SITE_CONFIG.name}`,
+      description: `Expert device repair in ${name}. Free pickup, same-day service!`,
       type: "website",
       locale: getOGLocale(locale as Locale),
       siteName: SITE_CONFIG.name,
@@ -68,8 +98,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${tCommon("deviceRepairIn")} ${name} | ${SITE_CONFIG.name}`,
-      description,
+      title: `Phone Repair ${name} | Free Pickup | ${SITE_CONFIG.name}`,
+      description: `Expert device repair with free pickup in ${name}!`,
       images: [areaData.image],
     },
   };

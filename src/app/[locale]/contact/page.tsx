@@ -19,13 +19,23 @@ import { getWhatsAppLink, getPhoneLink } from "@/lib/utils";
 
 export async function generateMetadata({ params }: ContactPageProps): Promise<Metadata> {
   const { locale } = await params;
-  const description = `Contact ${SITE_CONFIG.name} for device repair in Dubai. Located in Dubai Marina (Inside Pluspoint Mini Mart). WhatsApp, call, or visit us for same-day repairs.`;
+  const description = `Contact ${SITE_CONFIG.name} for phone repair in Dubai Marina. WhatsApp: ${SITE_CONFIG.whatsapp}. Located inside Pluspoint Mini Mart, West Avenue Building. Open 10AM-10PM daily. Free pickup in JLT, JBR!`;
   return {
-    title: "Contact Us | Get in Touch",
+    title: `Contact Us | Phone Repair Dubai Marina | ${SITE_CONFIG.name}`,
     description,
+    keywords: [
+      "phone repair contact dubai",
+      "genius tech location",
+      "phone repair shop dubai marina",
+      "device repair near me",
+      "repair shop west avenue dubai",
+      "phone repair pluspoint mini mart",
+      "whatsapp phone repair dubai",
+      "call phone repair dubai",
+    ],
     alternates: generateAlternates(locale as Locale, "/contact"),
     openGraph: {
-      title: `Contact ${SITE_CONFIG.name} | Dubai Device Repair`,
+      title: `Contact ${SITE_CONFIG.name} | Dubai Marina Phone Repair`,
       description,
       type: "website",
       locale: getOGLocale(locale as Locale),
@@ -35,7 +45,7 @@ export async function generateMetadata({ params }: ContactPageProps): Promise<Me
     },
     twitter: {
       card: "summary_large_image",
-      title: `Contact ${SITE_CONFIG.name}`,
+      title: `Contact ${SITE_CONFIG.name} | Dubai Phone Repair`,
       description,
       images: [DEFAULT_OG_IMAGE.url],
     },

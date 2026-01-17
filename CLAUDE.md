@@ -14,16 +14,23 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 npm run dev      # Start development server (http://localhost:3000)
-npm run build    # Build for production (generates all 159 static pages)
+npm run build    # Build for production (generates static pages for all locales)
 npm run lint     # Run ESLint
 npm start        # Start production server
 ```
 
 ## Architecture Overview
 
+### Tech Stack
+
+- **Next.js 16** with App Router (React 19)
+- **Tailwind CSS 4** - Uses `@tailwindcss/postcss` (not the legacy v3 config)
+- **next-intl** - Internationalization
+- **Framer Motion** - Animations
+
 ### Internationalization (i18n)
 
-This is a fully internationalized Next.js App Router site using `next-intl`. All routes are prefixed with locale (`/en/`, `/ar/`, etc.).
+This is a fully internationalized Next.js App Router site using `next-intl`. All routes are prefixed with locale (`/en/`, `/ar/`, etc.). Supported locales are defined in `src/lib/constants.ts` (`LOCALES` array).
 
 **Key pattern**: Every page must call `setRequestLocale(locale)` at the top of the component for static generation to work:
 
@@ -37,6 +44,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 
 **Translation access**:
 - Server components: `const t = await getTranslations("namespace")`
+- Client components: `const t = useTranslations("namespace")` (requires `"use client"`)
 - Raw arrays/objects: `t.raw("key")` returns the untranslated JSON structure
 - Translation files: `src/messages/{locale}.json`
 
@@ -71,19 +79,12 @@ Service content (features, issues, FAQs) is stored in translation files under `s
 - `components/icons/` - Custom icons (WhatsAppIcon)
 - `components/ui/` - Base UI components (Button)
 
-### Key Components
+### Utility Functions
 
-**WhatsAppIcon** (`components/icons/WhatsAppIcon.tsx`): Official WhatsApp Business SVG logo, used throughout the site.
-
-**LanguageSwitcher** (`components/shared/LanguageSwitcher.tsx`):
-- Uses flag images from flagcdn.com
-- Props: `compact` (boolean) - shows only flag icon for mobile navbar
-- Supports all 7 languages with country flags (GB, AE, IN, PK, RU, FR, ES)
-
-**VideoShortsSection** (`components/home/VideoShortsSection.tsx`):
-- Displays YouTube Shorts with hero layout (large + small cards)
-- Video IDs configured in `SITE_CONFIG.location.youtubeShorts`
-- Uses modal for video playback with responsive 9:16 aspect ratio
+**`src/lib/utils.ts`**:
+- `cn(...classes)` - Merge Tailwind classes with conflict resolution (clsx + tailwind-merge)
+- `getWhatsAppLink(phone, message?)` - Generate WhatsApp deep link
+- `getPhoneLink(phone)` - Generate tel: link
 
 ### SEO Utilities
 
@@ -126,7 +127,7 @@ Locales defined as: `LOCALES`, `RTL_LOCALES`, `DEFAULT_LOCALE`, `LOCALE_NAMES`
 
 ### New Service
 1. Add entry to `src/data/services.ts`
-2. Add `serviceData.{slug}` translations to all 7 files in `src/messages/`
+2. Add `serviceData.{slug}` translations to all locale files in `src/messages/`
 3. Page auto-generates at `/{locale}/services/{slug}`
 
 ### New Blog Post
@@ -135,8 +136,9 @@ Locales defined as: `LOCALES`, `RTL_LOCALES`, `DEFAULT_LOCALE`, `LOCALE_NAMES`
 
 ### New Language
 1. Create `src/messages/{code}.json` (copy structure from `en.json`)
-2. Add code to `LOCALES` in `src/lib/constants.ts`
-3. Add to `RTL_LOCALES` if right-to-left
+2. Add locale code to `LOCALES` array in `src/lib/constants.ts`
+3. Add to `RTL_LOCALES` array if right-to-left
+4. Add locale name to `LOCALE_NAMES` record
 
 ## Business Context
 
@@ -168,29 +170,15 @@ const tCommon = useTranslations("common");
 - `reviews` - Customer reviews section
 - `video` - Video section content
 
-When adding new UI text, always add translations to all 7 files in `src/messages/`.
+When adding new UI text, add translations to all locale files in `src/messages/`.
 
 ## Deployment
 
-### Deploy to Vercel
+Deployed to Vercel with auto-deploy on push to `main`. See README.md for detailed deployment instructions.
 
-**Step 1:** Go to [vercel.com](https://vercel.com) and sign in with GitHub
-
-**Step 2:** Import Project
-1. Click **"Add New..."** → **"Project"**
-2. Find **"geniustech"** in repository list
-3. Click **"Import"**
-
-**Step 3:** Configure (optional environment variables)
-| Name | Value |
-|------|-------|
-| `NEXT_PUBLIC_SITE_URL` | `https://geniustechuae.com` |
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Your GA4 ID |
-
-**Step 4:** Click **"Deploy"** (~2 min build time)
-
-**Step 5:** Custom Domain
-- Domain: `geniustechuae.com`
-- DNS: Vercel nameservers (`ns1.vercel-dns.com`, `ns2.vercel-dns.com`)
-
-Auto-deploys on every push to `main`.
+**Environment variables** (optional):
+- `NEXT_PUBLIC_SITE_URL` - Site URL for metadata
+- `NEXT_PUBLIC_GA_MEASUREMENT_ID` - Google Analytics 4 ID (format: `G-XXXXXXXXXX`)
+- `NEXT_PUBLIC_GOOGLE_ADS_ID` - Google Ads conversion ID (format: `AW-XXXXXXXXXX`)
+- `NEXT_PUBLIC_GOOGLE_ADS_WHATSAPP_CONVERSION` - WhatsApp button conversion label
+- `NEXT_PUBLIC_GOOGLE_ADS_CALL_CONVERSION` - Phone call conversion label

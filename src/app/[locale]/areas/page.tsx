@@ -16,16 +16,24 @@ interface AreasPageProps {
 
 export async function generateMetadata({ params }: AreasPageProps): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "areas" });
-  const tCommon = await getTranslations({ locale, namespace: "common" });
 
-  const description = `${t("freeService")} ${SITE_CONFIG.serviceAreas.join(", ")}.`;
+  const description = `Free phone repair pickup & delivery in Dubai Marina, JLT (Jumeirah Lake Towers), and JBR (Jumeirah Beach Residence). Same-day service, no extra charge!`;
   return {
-    title: `${t("title")} | ${tCommon("freePickupDelivery")}`,
+    title: `Phone Repair Pickup Dubai | Free Delivery in Marina, JLT, JBR`,
     description,
+    keywords: [
+      "phone repair pickup dubai",
+      "free delivery phone repair",
+      "phone repair dubai marina",
+      "phone repair jlt",
+      "phone repair jbr",
+      "mobile repair pickup dubai",
+      "laptop repair pickup dubai",
+      "device repair near me dubai",
+    ],
     alternates: generateAlternates(locale as Locale, "/areas"),
     openGraph: {
-      title: `${t("title")} | ${SITE_CONFIG.name}`,
+      title: `Service Areas | Free Pickup in Dubai Marina, JLT, JBR`,
       description,
       type: "website",
       locale: getOGLocale(locale as Locale),
@@ -35,7 +43,7 @@ export async function generateMetadata({ params }: AreasPageProps): Promise<Meta
     },
     twitter: {
       card: "summary_large_image",
-      title: `${t("title")} | ${SITE_CONFIG.name}`,
+      title: `Free Pickup & Delivery | Dubai Marina, JLT, JBR`,
       description,
       images: [DEFAULT_OG_IMAGE.url],
     },

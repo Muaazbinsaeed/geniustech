@@ -25,13 +25,27 @@ const iconMap: Record<string, typeof Smartphone> = {
 
 export async function generateMetadata({ params }: ServicesPageProps): Promise<Metadata> {
   const { locale } = await params;
-  const description = `Professional device repair services in Dubai. iPhone, MacBook, Android, iPad, laptop, and smartwatch repairs. Same-day service with free pickup in ${SITE_CONFIG.serviceAreas.join(", ")}.`;
+  const description = `Expert phone, laptop & device repair in Dubai Marina. iPhone screen repair, MacBook keyboard fix, Samsung battery replacement, iPad repair & more. Same-day service, free pickup in JLT, JBR!`;
   return {
-    title: "Device Repair Services",
+    title: `Phone & Laptop Repair Services Dubai | iPhone, MacBook, Samsung`,
     description,
+    keywords: [
+      "phone repair services dubai",
+      "laptop repair services dubai",
+      "iphone repair dubai",
+      "macbook repair dubai",
+      "samsung repair dubai",
+      "ipad repair dubai",
+      "android repair dubai",
+      "smartwatch repair dubai",
+      "device repair dubai marina",
+      "screen repair dubai",
+      "battery replacement dubai",
+      "same day repair dubai",
+    ],
     alternates: generateAlternates(locale as Locale, "/services"),
     openGraph: {
-      title: `Device Repair Services | ${SITE_CONFIG.name}`,
+      title: `All Repair Services | iPhone, MacBook, Samsung | ${SITE_CONFIG.name}`,
       description,
       type: "website",
       locale: getOGLocale(locale as Locale),
@@ -41,7 +55,7 @@ export async function generateMetadata({ params }: ServicesPageProps): Promise<M
     },
     twitter: {
       card: "summary_large_image",
-      title: `Device Repair Services | ${SITE_CONFIG.name}`,
+      title: `Phone & Laptop Repair Dubai | All Services`,
       description,
       images: [DEFAULT_OG_IMAGE.url],
     },

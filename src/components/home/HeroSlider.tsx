@@ -13,31 +13,59 @@ import { getWhatsAppLink, getPhoneLink } from "@/lib/utils";
 const slides = [
   {
     id: 1,
-    // Dubai Marina with modern buildings - blue hour
-    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80",
+    // Genius Tech shop interior - Dubai Marina (branded)
+    image: "/images/hero/shop-interior.jpg",
     titleKey: "slide1Title",
     subtitleKey: "slide1Subtitle",
+    altKey: "Genius Tech phone repair shop in Dubai Marina with expert technicians and customers",
   },
   {
     id: 2,
-    // Modern smartphone on clean surface - bright
-    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1920&q=80",
+    // Dubai Marina with modern buildings - blue hour
+    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80",
     titleKey: "slide2Title",
     subtitleKey: "slide2Subtitle",
+    altKey: "Dubai Marina skyline - phone repair service location",
   },
   {
     id: 3,
+    // Branded marketing - Fast & Reliable Phone Repairs (branded)
+    image: "/images/hero/branded-marketing.jpg",
+    titleKey: "slide3Title",
+    subtitleKey: "slide3Subtitle",
+    altKey: "Genius Tech Phone Repair Dubai Marina - Fast and reliable iPhone MacBook Samsung repair",
+  },
+  {
+    id: 4,
+    // Modern smartphone on clean surface - bright
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1920&q=80",
+    titleKey: "slide1Title",
+    subtitleKey: "slide1Subtitle",
+    altKey: "iPhone smartphone repair Dubai - screen replacement battery fix",
+  },
+  {
+    id: 5,
+    // Home service repair - technician visiting customer (branded)
+    image: "/images/hero/home-service.jpg",
+    titleKey: "slide2Title",
+    subtitleKey: "slide2Subtitle",
+    altKey: "Professional phone repair home service in Dubai Marina JLT JBR - free pickup and delivery",
+  },
+  {
+    id: 6,
     // MacBook Pro clean setup - modern workspace
     image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1920&q=80",
     titleKey: "slide3Title",
     subtitleKey: "slide3Subtitle",
+    altKey: "MacBook laptop repair Dubai Marina - keyboard screen battery fix",
   },
   {
-    id: 4,
+    id: 7,
     // Dubai JBR beach skyline - bright day
     image: "https://images.unsplash.com/photo-1546412414-e1885259563a?w=1920&q=80",
-    titleKey: "slide4Title",
-    subtitleKey: "slide4Subtitle",
+    titleKey: "slide1Title",
+    subtitleKey: "slide1Subtitle",
+    altKey: "Dubai JBR skyline - phone repair pickup delivery service area",
   },
 ];
 
@@ -72,7 +100,7 @@ export function HeroSlider() {
   }, [isAutoPlaying, nextSlide]);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-14 sm:pt-16 md:pt-18 lg:pt-20">
       {/* Background Slides */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -85,11 +113,12 @@ export function HeroSlider() {
         >
           <Image
             src={slides[currentSlide].image}
-            alt={t(slides[currentSlide].titleKey)}
+            alt={slides[currentSlide].altKey || t(slides[currentSlide].titleKey)}
             fill
             sizes="100vw"
             className="object-cover"
-            priority
+            priority={currentSlide === 0}
+            loading={currentSlide === 0 ? "eager" : "lazy"}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-cyan-500/10" />
         </motion.div>
@@ -99,10 +128,10 @@ export function HeroSlider() {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,102,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,102,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px] z-10" />
 
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
         <div className="max-w-4xl mx-auto">
           {/* Content Box with brand gradient background */}
-          <div className="bg-gradient-to-br from-[#0a1628]/90 via-[#0d2847]/85 to-[#0f3460]/80 backdrop-blur-md rounded-2xl p-8 md:p-12 border-l-4 border-orange shadow-2xl">
+          <div className="bg-gradient-to-br from-[#0a1628]/90 via-[#0d2847]/85 to-[#0f3460]/80 backdrop-blur-md rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 border-l-4 border-orange shadow-2xl">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentSlide}
@@ -111,7 +140,7 @@ export function HeroSlider() {
                 exit={{ opacity: 0, y: -30 }}
                 transition={{ duration: 0.5 }}
               >
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4 sm:mb-6">
                   <span className="text-white">{t("title")}</span>
                   <br />
                   <span className="gradient-text">{t("titleHighlight")}</span>
@@ -123,7 +152,7 @@ export function HeroSlider() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg md:text-xl text-gray-200 max-w-2xl mb-8"
+              className="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl mb-6 sm:mb-8"
             >
               {t("subtitle")}
             </motion.p>
@@ -133,7 +162,7 @@ export function HeroSlider() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4"
             >
               <Button variant="whatsapp" size="lg" asChild>
                 <a
@@ -159,7 +188,7 @@ export function HeroSlider() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="mt-8 flex flex-wrap gap-6 text-gray-300"
+              className="mt-6 sm:mt-8 flex flex-wrap gap-4 sm:gap-6 text-gray-300"
             >
               <div className="flex items-center gap-2">
                 <span className="text-yellow-400 text-lg">★</span>
@@ -189,10 +218,10 @@ export function HeroSlider() {
           setIsAutoPlaying(false);
           setTimeout(() => setIsAutoPlaying(true), 10000);
         }}
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-card/80 backdrop-blur border border-card-border hover:bg-card transition-colors group"
+        className="absolute left-2 sm:left-4 md:left-8 top-1/2 -translate-y-1/2 z-30 p-2 sm:p-3 rounded-full bg-card/80 backdrop-blur border border-card-border hover:bg-card transition-colors group"
         aria-label="Previous slide"
       >
-        <ChevronLeft className="h-6 w-6 text-foreground-muted group-hover:text-primary transition-colors" />
+        <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6 text-foreground-muted group-hover:text-primary transition-colors" />
       </button>
       <button
         onClick={() => {
@@ -200,14 +229,14 @@ export function HeroSlider() {
           setIsAutoPlaying(false);
           setTimeout(() => setIsAutoPlaying(true), 10000);
         }}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-card/80 backdrop-blur border border-card-border hover:bg-card transition-colors group"
+        className="absolute right-2 sm:right-4 md:right-8 top-1/2 -translate-y-1/2 z-30 p-2 sm:p-3 rounded-full bg-card/80 backdrop-blur border border-card-border hover:bg-card transition-colors group"
         aria-label="Next slide"
       >
-        <ChevronRight className="h-6 w-6 text-foreground-muted group-hover:text-primary transition-colors" />
+        <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6 text-foreground-muted group-hover:text-primary transition-colors" />
       </button>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-3">
+      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-2 sm:gap-3">
         {slides.map((_, index) => (
           <button
             key={index}

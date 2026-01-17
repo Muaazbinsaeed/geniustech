@@ -12,15 +12,17 @@ export function LocalBusinessSchema() {
     url: SITE_CONFIG.url,
     telephone: SITE_CONFIG.phone,
     email: SITE_CONFIG.email,
-    image: `${SITE_CONFIG.url}/logo.jpg`,
+    image: `${SITE_CONFIG.url}/og-image.jpg`,
     logo: `${SITE_CONFIG.url}/logo.jpg`,
-    priceRange: "$$",
+    priceRange: "AED 99-499",
+    currenciesAccepted: "AED",
+    paymentAccepted: "Cash, Credit Card, Debit Card, Apple Pay, Google Pay",
     address: {
       "@type": "PostalAddress",
       streetAddress: "West Avenue Building, Shop 1, Al Yahoom St",
       addressLocality: "Dubai Marina",
       addressRegion: "Dubai",
-      postalCode: "",
+      postalCode: "00000",
       addressCountry: "AE",
     },
     geo: {
@@ -362,5 +364,159 @@ export function VideoSchema({ videos }: VideoSchemaProps) {
         />
       ))}
     </>
+  );
+}
+
+// Service Area Schema for location-specific pages
+interface AreaSchemaProps {
+  areaName: string;
+  areaSlug: string;
+  description: string;
+  locale: string;
+}
+
+export function AreaSchema({ areaName, areaSlug, description, locale }: AreaSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${SITE_CONFIG.url}/${locale}/areas/${areaSlug}`,
+    name: `Phone Repair in ${areaName}`,
+    description: description,
+    provider: {
+      "@type": "LocalBusiness",
+      "@id": `${SITE_CONFIG.url}/#business`,
+      name: SITE_CONFIG.name,
+    },
+    areaServed: {
+      "@type": "Place",
+      name: areaName,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: areaName,
+        addressRegion: "Dubai",
+        addressCountry: "AE",
+      },
+    },
+    serviceType: "Device Repair",
+    offers: {
+      "@type": "Offer",
+      name: "Free Pickup & Delivery",
+      description: `Free pickup and delivery for device repair in ${areaName}`,
+      price: "0",
+      priceCurrency: "AED",
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Review Schema for displaying individual reviews
+interface ReviewSchemaProps {
+  reviews: {
+    author: string;
+    rating: number;
+    text: string;
+    date?: string;
+  }[];
+}
+
+export function ReviewSchema({ reviews }: ReviewSchemaProps) {
+  const schemas = reviews.map((review, index) => ({
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "@id": `${SITE_CONFIG.url}/#review-${index}`,
+    author: {
+      "@type": "Person",
+      name: review.author,
+    },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: review.rating,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    reviewBody: review.text,
+    datePublished: review.date || new Date().toISOString().split("T")[0],
+    itemReviewed: {
+      "@type": "LocalBusiness",
+      "@id": `${SITE_CONFIG.url}/#business`,
+      name: SITE_CONFIG.name,
+    },
+  }));
+
+  return (
+    <>
+      {schemas.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+    </>
+  );
+}
+
+// Action Schema for CTAs (WhatsApp, Call)
+export function ActionSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_CONFIG.url}/#webpage`,
+    name: `${SITE_CONFIG.name} - Dubai's Fastest Device Repair`,
+    description: SITE_CONFIG.description,
+    potentialAction: [
+      {
+        "@type": "CommunicateAction",
+        name: "Get Free Quote via WhatsApp",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: `https://wa.me/${SITE_CONFIG.whatsapp.replace("+", "")}`,
+          actionPlatform: [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform",
+            "http://schema.org/AndroidPlatform",
+            "http://schema.org/IOSPlatform",
+          ],
+        },
+      },
+      {
+        "@type": "CommunicateAction",
+        name: "Call for Same-Day Repair",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: `tel:${SITE_CONFIG.phone}`,
+          actionPlatform: [
+            "http://schema.org/MobileWebPlatform",
+            "http://schema.org/AndroidPlatform",
+            "http://schema.org/IOSPlatform",
+          ],
+        },
+      },
+      {
+        "@type": "ReserveAction",
+        name: "Book Pickup & Delivery",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: `https://wa.me/${SITE_CONFIG.whatsapp.replace("+", "")}?text=Hi!%20I%20need%20free%20pickup%20for%20device%20repair`,
+        },
+        result: {
+          "@type": "Reservation",
+          name: "Free Pickup & Delivery Service",
+        },
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
   );
 }

@@ -47,37 +47,93 @@ export async function generateMetadata({
     return { title: "Service Not Found" };
   }
 
-  // Get translated title and description
+  // Get translated title
   const tService = await getTranslations({ locale, namespace: `serviceData.${slug}` });
   const title = tService("title");
-  const description = tService("description");
+
+  // Generate slug-specific keywords
+  const slugKeywords: Record<string, string[]> = {
+    "iphone-repair": [
+      "iphone screen repair dubai",
+      "iphone battery replacement dubai",
+      "iphone water damage repair",
+      "iphone 15 repair dubai",
+      "iphone 14 repair dubai",
+      "iphone back glass repair",
+      "apple certified repair dubai",
+    ],
+    "macbook-repair": [
+      "macbook screen repair dubai",
+      "macbook keyboard repair",
+      "macbook battery replacement dubai",
+      "macbook pro repair dubai",
+      "macbook air repair dubai",
+      "apple laptop repair",
+    ],
+    "android-repair": [
+      "samsung screen repair dubai",
+      "samsung galaxy repair",
+      "google pixel repair dubai",
+      "oneplus repair dubai",
+      "huawei repair dubai",
+      "android phone repair",
+    ],
+    "ipad-repair": [
+      "ipad screen repair dubai",
+      "ipad battery replacement",
+      "ipad charging port repair",
+      "tablet repair dubai",
+      "ipad pro repair dubai",
+    ],
+    "laptop-repair": [
+      "dell laptop repair dubai",
+      "hp laptop repair dubai",
+      "lenovo repair dubai",
+      "windows laptop repair",
+      "laptop screen replacement dubai",
+      "laptop keyboard repair",
+    ],
+    "smartwatch-repair": [
+      "apple watch repair dubai",
+      "apple watch screen replacement",
+      "smartwatch battery replacement",
+      "wearable repair dubai",
+      "galaxy watch repair",
+    ],
+  };
+
+  const specificKeywords = slugKeywords[slug] || [];
 
   return {
-    title: `${title} Dubai | Same-Day Repair`,
-    description: description,
+    title: `${title} in Dubai Marina | Same-Day Service | Free Pickup | ${SITE_CONFIG.name}`,
+    description: `Professional ${title.toLowerCase()} in Dubai Marina, JLT & JBR. Same-day service, free pickup & delivery. Certified technicians, premium parts, affordable prices. WhatsApp us now!`,
     keywords: [
       `${title.toLowerCase()} dubai`,
       `${title.toLowerCase()} dubai marina`,
       `${title.toLowerCase()} jlt`,
       `${title.toLowerCase()} jbr`,
-      "same day repair",
-      "free pickup dubai",
+      `${title.toLowerCase()} near me`,
+      `best ${title.toLowerCase()} dubai`,
+      `affordable ${title.toLowerCase()} dubai`,
+      "same day repair dubai",
+      "free pickup delivery dubai",
+      ...specificKeywords,
     ],
     alternates: generateAlternates(locale as Locale, `/services/${slug}`),
     openGraph: {
-      title: `${title} Dubai | Same-Day Repair`,
-      description,
+      title: `${title} Dubai Marina | Same-Day Repair | ${SITE_CONFIG.name}`,
+      description: `Professional ${title.toLowerCase()} in Dubai. Same-day service, free pickup in Marina, JLT, JBR!`,
       type: "website",
       locale: getOGLocale(locale as Locale),
       siteName: SITE_CONFIG.name,
       url: `${SITE_CONFIG.url}/${locale}/services/${slug}`,
-      images: [service.image || DEFAULT_OG_IMAGE],
+      images: [DEFAULT_OG_IMAGE],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} | ${SITE_CONFIG.name}`,
-      description,
-      images: [service.image || DEFAULT_OG_IMAGE.url],
+      title: `${title} Dubai | Same-Day Service | ${SITE_CONFIG.name}`,
+      description: `Professional ${title.toLowerCase()} in Dubai Marina. Free pickup & delivery!`,
+      images: [DEFAULT_OG_IMAGE.url],
     },
   };
 }

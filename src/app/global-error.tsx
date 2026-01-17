@@ -1,5 +1,9 @@
 "use client";
 
+/* eslint-disable @next/next/no-html-link-for-pages */
+// Note: Using <a> instead of <Link> is intentional here because global-error.tsx
+// renders outside the normal Next.js app context and <Link> may not work correctly.
+
 import { useEffect } from "react";
 
 interface GlobalErrorProps {

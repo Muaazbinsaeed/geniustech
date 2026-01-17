@@ -84,7 +84,15 @@ const nextConfig: NextConfig = {
         hostname: "i.ytimg.com",
       },
     ],
-    qualities: [100, 75],
+    // Enable modern image formats for better performance
+    formats: ["image/avif", "image/webp"],
+    // Optimize device sizes for responsive images
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    // Quality settings
+    qualities: [100, 85, 75],
+    // Longer cache for optimized images
+    minimumCacheTTL: 31536000, // 1 year
   },
   async headers() {
     return [

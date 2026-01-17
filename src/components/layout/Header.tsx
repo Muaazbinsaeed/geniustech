@@ -55,8 +55,8 @@ export function Header() {
           : "bg-background/80 backdrop-blur-sm"
       )}
     >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-14 sm:h-16 md:h-18 lg:h-20">
           {/* Logo */}
           <Link
             href={`/${locale}`}
@@ -78,7 +78,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-0.5 lg:gap-1">
             {navLinks.map((link) => (
               <div
                 key={link.href}
@@ -89,7 +89,7 @@ export function Header() {
                 <Link
                   href={link.href}
                   className={cn(
-                    "flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-colors",
+                    "flex items-center gap-1 px-2 py-1.5 md:px-3 md:py-2 lg:px-4 lg:py-2 text-xs md:text-sm font-medium rounded-lg transition-colors",
                     "text-foreground-muted hover:text-foreground hover:bg-background-secondary"
                   )}
                   aria-expanded={link.hasDropdown ? isServicesOpen : undefined}
@@ -113,7 +113,7 @@ export function Header() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
-                    className="absolute top-full left-0 mt-1 w-64 bg-card border border-card-border rounded-xl shadow-lg overflow-hidden"
+                    className="absolute top-full left-0 mt-1 w-56 md:w-64 bg-card border border-card-border rounded-xl shadow-lg overflow-hidden"
                     role="menu"
                     aria-label="Services submenu"
                   >
@@ -136,7 +136,7 @@ export function Header() {
           </nav>
 
           {/* Desktop Actions */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-2 lg:gap-3">
             <LanguageSwitcher />
             <ThemeToggle />
             <Button variant="whatsapp" size="sm" asChild>
@@ -153,7 +153,7 @@ export function Header() {
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="flex lg:hidden items-center gap-2">
+          <div className="flex md:hidden items-center gap-1.5 sm:gap-2">
             <LanguageSwitcher compact />
             <ThemeToggle />
             <button
@@ -185,7 +185,7 @@ export function Header() {
             role="navigation"
             aria-label="Mobile navigation"
           >
-            <div className="container mx-auto px-4 py-4">
+            <div className="container mx-auto px-4 sm:px-6 py-4">
               <nav className="flex flex-col gap-1">
                 {navLinks.map((link) => (
                   <Link

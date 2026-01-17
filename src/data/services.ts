@@ -10,7 +10,8 @@ export const servicesData: ServiceDetail[] = [
     id: "iphone-repair",
     slug: "iphone-repair",
     icon: "Smartphone",
-    image: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800&q=80",
+    // Using branded home service image showing actual repair work
+    image: "/images/hero/home-service.jpg",
   },
   {
     id: "macbook-repair",
@@ -22,7 +23,8 @@ export const servicesData: ServiceDetail[] = [
     id: "android-repair",
     slug: "android-repair",
     icon: "Smartphone",
-    image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&q=80",
+    // Using branded shop image showing repair station
+    image: "/images/hero/shop-interior.jpg",
   },
   {
     id: "ipad-repair",

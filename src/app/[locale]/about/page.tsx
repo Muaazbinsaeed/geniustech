@@ -13,13 +13,22 @@ import { getWhatsAppLink } from "@/lib/utils";
 
 export async function generateMetadata({ params }: AboutPageProps): Promise<Metadata> {
   const { locale } = await params;
-  const description = `Learn about ${SITE_CONFIG.name} - Dubai's trusted device repair service. Professional iPhone, MacBook, and laptop repairs with certified technicians and genuine parts.`;
+  const description = `${SITE_CONFIG.name} - Dubai Marina's trusted phone & laptop repair experts. Certified technicians, genuine parts, same-day service. Serving Dubai Marina, JLT, JBR since 2018. 5000+ repairs completed.`;
   return {
-    title: "About Us | Your Trusted Device Repair Partner",
+    title: `About ${SITE_CONFIG.name} | Dubai Marina's Trusted Phone Repair Experts`,
     description,
+    keywords: [
+      "genius tech dubai",
+      "phone repair company dubai",
+      "trusted repair shop dubai marina",
+      "certified phone technicians dubai",
+      "best repair shop jlt",
+      "reliable laptop repair dubai",
+      "professional device repair uae",
+    ],
     alternates: generateAlternates(locale as Locale, "/about"),
     openGraph: {
-      title: `About ${SITE_CONFIG.name} | Dubai's Trusted Device Repair`,
+      title: `About ${SITE_CONFIG.name} | Dubai Marina's Expert Phone Repair Team`,
       description,
       type: "website",
       locale: getOGLocale(locale as Locale),
@@ -29,7 +38,7 @@ export async function generateMetadata({ params }: AboutPageProps): Promise<Meta
     },
     twitter: {
       card: "summary_large_image",
-      title: `About ${SITE_CONFIG.name}`,
+      title: `About ${SITE_CONFIG.name} | Dubai's Phone Repair Experts`,
       description,
       images: [DEFAULT_OG_IMAGE.url],
     },

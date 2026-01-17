@@ -22,13 +22,25 @@ const categoryImages: Record<string, string> = {
 
 export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
   const { locale } = await params;
-  const description = `Expert tips and guides for phone and laptop repair in Dubai. Learn about iPhone screen replacement, MacBook battery issues, water damage repair, and more from ${SITE_CONFIG.name}.`;
+  const description = `Phone repair tips & guides from Dubai's experts. Learn iPhone screen replacement cost, MacBook battery life tips, water damage fixes, and when to repair vs replace. Free advice from ${SITE_CONFIG.name}.`;
   return {
-    title: "Blog | Device Repair Tips & Guides",
+    title: `Phone Repair Blog Dubai | Expert Tips & Guides | ${SITE_CONFIG.name}`,
     description,
+    keywords: [
+      "phone repair tips dubai",
+      "iphone repair guide",
+      "macbook repair tips",
+      "how to fix phone screen",
+      "phone battery replacement guide",
+      "water damaged phone fix",
+      "laptop repair tips",
+      "device maintenance dubai",
+      "phone repair cost dubai",
+      "when to replace phone screen",
+    ],
     alternates: generateAlternates(locale as Locale, "/blog"),
     openGraph: {
-      title: `Blog | ${SITE_CONFIG.name}`,
+      title: `Phone Repair Blog | Tips & Guides | ${SITE_CONFIG.name}`,
       description,
       type: "website",
       locale: getOGLocale(locale as Locale),
@@ -38,7 +50,7 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
     },
     twitter: {
       card: "summary_large_image",
-      title: `Blog | ${SITE_CONFIG.name}`,
+      title: `Phone Repair Blog | Expert Tips from Dubai`,
       description,
       images: [DEFAULT_OG_IMAGE.url],
     },

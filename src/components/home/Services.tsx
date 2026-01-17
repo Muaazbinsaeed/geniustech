@@ -36,24 +36,24 @@ export function Services() {
   const tCommon = useTranslations("common");
 
   return (
-    <section className="py-20 md:py-28">
-      <div className="container mx-auto px-4">
+    <section className="section-padding">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-10 md:mb-12"
         >
           <span className="text-primary text-sm font-semibold uppercase tracking-wider">
             {t("title")}
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-3">{t("subtitle")}</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-3">{t("subtitle")}</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-primary to-cyan mx-auto mt-4 rounded-full" />
         </motion.div>
 
         {/* Services Grid - Equal height cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {servicesData.map((service, index) => {
             const Icon = serviceIcons[service.icon] || Smartphone;
             const translationKey = serviceKeyMap[service.id];
@@ -67,9 +67,9 @@ export function Services() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={`/${locale}/services/${service.slug}`}>
-                  <div className="group relative h-full min-h-[320px] rounded-2xl bg-card border border-card-border transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(0,102,255,0.1)] overflow-hidden flex flex-col">
+                  <div className="group relative h-full min-h-[280px] sm:min-h-[320px] rounded-xl sm:rounded-2xl bg-card border border-card-border transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(0,102,255,0.1)] overflow-hidden flex flex-col">
                     {/* Image */}
-                    <div className="relative w-full h-44 overflow-hidden flex-shrink-0">
+                    <div className="relative w-full h-36 sm:h-44 overflow-hidden flex-shrink-0">
                       <Image
                         src={service.image}
                         alt={t(`${translationKey}.title`)}
@@ -81,17 +81,17 @@ export function Services() {
                     </div>
 
                     {/* Content */}
-                    <div className="relative z-10 p-6 flex-1 flex flex-col">
+                    <div className="relative z-10 p-4 sm:p-6 flex-1 flex flex-col">
                       {/* Icon Badge */}
-                      <div className="absolute -top-7 left-6 w-14 h-14 rounded-xl flex items-center justify-center shadow-lg transition-colors bg-card text-primary border border-card-border group-hover:bg-primary group-hover:text-white group-hover:border-primary">
-                        <Icon className="h-7 w-7" />
+                      <div className="absolute -top-6 sm:-top-7 left-4 sm:left-6 w-12 h-12 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg transition-colors bg-card text-primary border border-card-border group-hover:bg-primary group-hover:text-white group-hover:border-primary">
+                        <Icon className="h-5 w-5 sm:h-7 sm:w-7" />
                       </div>
 
                       <div className="mt-4 flex-1 flex flex-col">
-                        <h3 className="font-bold text-xl mb-2">
+                        <h3 className="font-bold text-lg sm:text-xl mb-2">
                           {t(`${translationKey}.title`)}
                         </h3>
-                        <p className="text-foreground-muted text-sm leading-relaxed flex-1">
+                        <p className="text-foreground-muted text-xs sm:text-sm leading-relaxed flex-1">
                           {t(`${translationKey}.desc`)}
                         </p>
 
