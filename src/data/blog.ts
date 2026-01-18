@@ -1092,6 +1092,762 @@ Free Pickup & Delivery: Dubai Marina, JLT, JBR
       },
     ],
   },
+  // PAA-Targeted Blog Posts (Answer Engine Optimization)
+  {
+    slug: "iphone-screen-repair-cost-dubai",
+    title: "How Much Does iPhone Screen Repair Cost in Dubai? 2026 Price Guide",
+    excerpt:
+      "iPhone screen repair in Dubai costs AED 200-1,200 depending on your model. Get exact pricing for all iPhone models from Dubai Marina's trusted repair experts.",
+    image: "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=800&q=80",
+    content: `
+## Quick Answer: iPhone Screen Repair Cost in Dubai
+
+**iPhone screen repair in Dubai costs AED 200 to AED 1,200** depending on your iPhone model. Older models like iPhone SE, X, and XR cost AED 200-400, mid-range models like iPhone 11-13 cost AED 280-700, and newer models like iPhone 14-15 Pro Max cost AED 600-1,200. At Genius Tech in Dubai Marina, all prices include OEM-grade screens, professional installation, and warranty.
+
+## Complete iPhone Screen Repair Price List Dubai 2026
+
+Here's our transparent pricing for all iPhone models:
+
+### iPhone 15 Series
+| Model | Screen Repair Cost | Repair Time |
+|-------|-------------------|-------------|
+| iPhone 15 Pro Max | AED 800 - 1,200 | 45-60 min |
+| iPhone 15 Pro | AED 700 - 1,000 | 45-60 min |
+| iPhone 15 Plus | AED 650 - 900 | 30-45 min |
+| iPhone 15 | AED 600 - 850 | 30-45 min |
+
+### iPhone 14 Series
+| Model | Screen Repair Cost | Repair Time |
+|-------|-------------------|-------------|
+| iPhone 14 Pro Max | AED 650 - 950 | 45-60 min |
+| iPhone 14 Pro | AED 600 - 850 | 45-60 min |
+| iPhone 14 Plus | AED 550 - 800 | 30-45 min |
+| iPhone 14 | AED 500 - 750 | 30-45 min |
+
+### iPhone 13 Series
+| Model | Screen Repair Cost | Repair Time |
+|-------|-------------------|-------------|
+| iPhone 13 Pro Max | AED 500 - 700 | 30-45 min |
+| iPhone 13 Pro | AED 450 - 650 | 30-45 min |
+| iPhone 13 | AED 400 - 600 | 30-45 min |
+| iPhone 13 Mini | AED 400 - 550 | 30-45 min |
+
+### iPhone 12 Series
+| Model | Screen Repair Cost | Repair Time |
+|-------|-------------------|-------------|
+| iPhone 12 Pro Max | AED 400 - 600 | 30-45 min |
+| iPhone 12 Pro | AED 380 - 550 | 30-45 min |
+| iPhone 12 | AED 350 - 500 | 30-45 min |
+| iPhone 12 Mini | AED 350 - 480 | 30-45 min |
+
+### iPhone 11 & Older
+| Model | Screen Repair Cost | Repair Time |
+|-------|-------------------|-------------|
+| iPhone 11 Pro Max | AED 350 - 500 | 30-45 min |
+| iPhone 11 Pro | AED 320 - 450 | 30-45 min |
+| iPhone 11 | AED 280 - 400 | 30-45 min |
+| iPhone XS Max | AED 300 - 420 | 30-45 min |
+| iPhone XS/X | AED 280 - 380 | 30-45 min |
+| iPhone XR | AED 250 - 350 | 30-45 min |
+| iPhone SE (2nd/3rd) | AED 200 - 300 | 30-45 min |
+| iPhone 8 Plus | AED 200 - 280 | 30-45 min |
+| iPhone 8/7 | AED 180 - 250 | 30-45 min |
+
+*Prices as of January 2026. Contact us for exact quote.*
+
+## What's Included in Our iPhone Screen Repair Price
+
+At Genius Tech Dubai Marina, every screen repair includes:
+
+- **OEM-Grade Screen** - Same quality as Apple's screens
+- **True Tone Support** - On compatible models
+- **Professional Installation** - By certified technicians
+- **Warranty** - Coverage for manufacturing defects
+- **Free Pickup & Delivery** - In Dubai Marina, JLT, JBR
+- **Same-Day Service** - Most repairs done in 30-60 minutes
+
+## Factors That Affect iPhone Screen Repair Cost
+
+### 1. iPhone Model
+Newer and larger phones cost more to repair because their screens are more expensive and complex.
+
+### 2. Screen Type (OLED vs LCD)
+OLED screens on iPhone X and later models cost more than LCD screens on iPhone 8 and earlier.
+
+### 3. Part Quality
+OEM-grade parts cost more than cheap third-party screens but last longer and maintain all features.
+
+### 4. Repair Shop Location
+Dubai Marina shops may charge differently than Deira shops. We offer competitive pricing with premium quality.
+
+## Why Choose Genius Tech for iPhone Screen Repair
+
+Located in Dubai Marina, we serve professionals in JLT, residents in JBR, and the entire Marina community:
+
+- **Same-Day Service** - Don't wait days for your phone
+- **Free Pickup & Delivery** - We come to you
+- **Transparent Pricing** - No hidden fees
+- **Warranty Included** - Peace of mind guaranteed
+- **OEM-Grade Parts** - Best quality for your iPhone
+
+## Get Your Free Quote Today
+
+WhatsApp us your iPhone model and we'll send you an exact price quote within minutes.
+
+**Genius Tech Dubai Marina**
+West Avenue Building, Shop 1, Al Yahoom Street
+Open 10 AM - 10 PM, Every Day
+Free Pickup & Delivery: Dubai Marina, JLT, JBR
+    `,
+    publishedAt: "2026-01-15",
+    updatedAt: "2026-01-15",
+    author: "Genius Tech Team",
+    category: "iPhone",
+    tags: [
+      "iPhone Screen Repair Cost Dubai",
+      "iPhone Repair Price Dubai",
+      "Screen Replacement Cost UAE",
+      "iPhone 15 Screen Repair Dubai",
+      "Affordable iPhone Repair Dubai",
+    ],
+    readTime: 5,
+    faqs: [
+      {
+        question: "How much does iPhone 15 Pro Max screen repair cost in Dubai?",
+        answer:
+          "iPhone 15 Pro Max screen repair in Dubai costs AED 800-1,200 at Genius Tech. This includes an OEM-grade screen with True Tone support, professional installation, and warranty.",
+      },
+      {
+        question: "Is iPhone screen repair cheaper in Dubai than Apple Store?",
+        answer:
+          "Yes, third-party repair shops like Genius Tech typically charge 30-50% less than Apple Store prices while using quality OEM-grade parts. We offer AED 200-1,200 depending on model.",
+      },
+      {
+        question: "Why do iPhone screen repair costs vary so much in Dubai?",
+        answer:
+          "Prices vary based on iPhone model (newer = more expensive), screen type (OLED vs LCD), and part quality (OEM vs cheap third-party). Always ask what parts are included in the price.",
+      },
+    ],
+  },
+  {
+    slug: "best-phone-repair-dubai-marina",
+    title: "Where is the Best Phone Repair in Dubai Marina? Top Shop Guide 2026",
+    excerpt:
+      "Looking for the best phone repair shop in Dubai Marina? Genius Tech offers same-day service, free pickup, and OEM parts. Located in West Avenue Building near Marina Walk.",
+    image: "/images/hero/shop-interior.jpg",
+    content: `
+## Quick Answer: Best Phone Repair in Dubai Marina
+
+**Genius Tech is Dubai Marina's top-rated phone repair shop**, located in West Avenue Building on Al Yahoom Street. We offer same-day iPhone, Samsung, and MacBook repairs with free pickup and delivery throughout Dubai Marina, JLT, and JBR. With a 4.9-star Google rating and 230+ reviews, we're trusted by Marina residents and professionals.
+
+## Why Genius Tech is Dubai Marina's Best Choice
+
+### Convenient Location in the Heart of Marina
+
+**Address:** West Avenue Building, Shop 1, Al Yahoom Street, Dubai Marina (Inside Pluspoint Mini Mart)
+
+**Easily accessible from:**
+- Marina Walk (2-minute walk)
+- Marina Promenade towers
+- All Marina residential buildings
+- DMCC Metro Station (15-minute walk)
+
+**Hours:** 10 AM - 10 PM, Every Day including weekends
+
+### What Sets Us Apart
+
+#### 1. Same-Day Repairs
+Most repairs completed in 30-60 minutes while you wait. iPhone screen? 30 minutes. MacBook battery? 1-2 hours. Samsung screen? 45 minutes.
+
+#### 2. Free Pickup & Delivery
+Can't leave your Marina apartment or JLT office? We come to you. Completely free pickup and delivery throughout:
+- All Dubai Marina towers
+- All JLT clusters (A-Z)
+- All JBR buildings
+- Palm Jumeirah (select areas)
+
+#### 3. OEM-Grade Parts
+We use premium parts that match original quality. Features like True Tone and Face ID continue working. No cheap knockoffs that fail after a month.
+
+#### 4. Transparent Pricing
+Get exact quotes via WhatsApp before we start. No hidden fees, no surprise charges. What we quote is what you pay.
+
+#### 5. Warranty on All Repairs
+Every repair comes with warranty coverage. If something isn't right, we fix it.
+
+### Our Google Rating: 4.9 Stars
+
+With 230+ reviews, here's what Dubai Marina residents say:
+
+> "Fixed my iPhone screen in 30 minutes. Free pickup from my apartment in Marina Heights. Excellent service!" - Ahmed K.
+
+> "Best phone repair in Dubai. Same-day MacBook battery replacement with warranty." - Sarah M.
+
+> "Professional, fast, and honest pricing. My go-to shop for all repairs now." - Michael R.
+
+## Services We Offer in Dubai Marina
+
+### iPhone Repair
+- Screen replacement (all models)
+- Battery replacement
+- Charging port repair
+- Water damage recovery
+- Back glass replacement
+- Camera repair
+
+### Samsung & Android Repair
+- Screen replacement
+- Battery replacement
+- Charging port repair
+- Software troubleshooting
+
+### MacBook & Laptop Repair
+- Screen replacement
+- Battery replacement
+- Keyboard replacement
+- SSD upgrades
+- Logic board repair
+
+### iPad & Tablet Repair
+- Screen replacement
+- Battery replacement
+- Charging port repair
+
+## How to Find Us in Dubai Marina
+
+### From Marina Walk
+Walk towards West Avenue Building (near Marina Promenade). We're in Shop 1 at street level, inside Pluspoint Mini Mart.
+
+### From JLT
+We're a 5-10 minute drive from any JLT cluster. Or use our free pickup service!
+
+### From JBR
+10-15 minute drive along Sheikh Zayed Road. Or schedule free pickup from your JBR building.
+
+### Parking
+Street parking available on Al Yahoom Street. Marina Mall parking is a 5-minute walk.
+
+## Compare Us to Other Marina Repair Shops
+
+| Feature | Genius Tech | Other Shops |
+|---------|-------------|-------------|
+| Same-Day Service | ✅ Yes | Sometimes |
+| Free Pickup/Delivery | ✅ Yes (Marina, JLT, JBR) | Usually No |
+| OEM Parts Standard | ✅ Yes | Often Cheap Parts |
+| Evening Hours | ✅ Until 10 PM | Often Close 7 PM |
+| Weekend Service | ✅ 7 Days | Limited |
+| WhatsApp Support | ✅ Instant Response | Slow Response |
+| Warranty | ✅ Included | Sometimes Extra |
+
+## Book Your Repair Today
+
+Ready to fix your phone at Dubai Marina's best repair shop?
+
+**Option 1: WhatsApp Us**
+Send your device model and issue for instant quote
+
+**Option 2: Walk In**
+Visit us at West Avenue Building, Dubai Marina
+
+**Option 3: Free Pickup**
+We'll collect from your Marina address
+
+---
+
+**Genius Tech - Dubai Marina's Trusted Repair Experts**
+West Avenue Building, Shop 1, Al Yahoom Street
+Open 10 AM - 10 PM Daily
+Free Pickup: Dubai Marina, JLT, JBR
+    `,
+    publishedAt: "2026-01-14",
+    updatedAt: "2026-01-14",
+    author: "Genius Tech Team",
+    category: "Services",
+    tags: [
+      "Best Phone Repair Dubai Marina",
+      "Phone Repair Shop Marina",
+      "iPhone Repair Dubai Marina",
+      "Mobile Repair Near Marina Walk",
+      "Top Phone Repair Dubai",
+    ],
+    readTime: 5,
+    faqs: [
+      {
+        question: "Where is the best phone repair shop in Dubai Marina?",
+        answer:
+          "Genius Tech in West Avenue Building is Dubai Marina's top-rated phone repair shop with 4.9 stars on Google. We offer same-day repairs, free pickup/delivery, and OEM parts for all iPhone, Samsung, and MacBook repairs.",
+      },
+      {
+        question: "Is there a phone repair shop near Marina Walk?",
+        answer:
+          "Yes! Genius Tech is located a 2-minute walk from Marina Walk in West Avenue Building, Shop 1 (inside Pluspoint Mini Mart). Open 10 AM - 10 PM every day.",
+      },
+      {
+        question: "Do any Dubai Marina phone repair shops offer free pickup?",
+        answer:
+          "Yes, Genius Tech offers completely free pickup and delivery throughout Dubai Marina, JLT, and JBR. Just WhatsApp us your address and we'll collect your device.",
+      },
+    ],
+  },
+  {
+    slug: "how-long-phone-repair-takes-dubai",
+    title: "How Long Does Phone Repair Take in Dubai? Same-Day Service Guide",
+    excerpt:
+      "Phone repair in Dubai takes 30 minutes to 2 hours for most issues. Genius Tech offers same-day service with free pickup in Dubai Marina, JLT, and JBR.",
+    image: "https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=800&q=80",
+    content: `
+## Quick Answer: Phone Repair Time in Dubai
+
+**Most phone repairs in Dubai take 30 minutes to 2 hours.** iPhone screen replacement takes 30-60 minutes. Battery replacement takes 30-45 minutes. Samsung screen repairs take 45-90 minutes. At Genius Tech in Dubai Marina, we complete most repairs same-day, often while you wait.
+
+## Repair Times by Type
+
+### iPhone Screen Repair Time
+| Repair | Time at Genius Tech |
+|--------|---------------------|
+| iPhone 15 Series Screen | 45-60 minutes |
+| iPhone 14 Series Screen | 45-60 minutes |
+| iPhone 13/12 Series Screen | 30-45 minutes |
+| iPhone 11 and Older Screen | 30-45 minutes |
+| iPhone SE Screen | 30 minutes |
+
+### Battery Replacement Time
+| Device | Repair Time |
+|--------|-------------|
+| iPhone (all models) | 30-45 minutes |
+| Samsung Galaxy | 45-60 minutes |
+| MacBook Air | 1-1.5 hours |
+| MacBook Pro | 1.5-2 hours |
+| iPad | 45-90 minutes |
+
+### Other Common Repairs
+| Repair Type | Time |
+|-------------|------|
+| Charging Port | 30-60 minutes |
+| Back Glass (iPhone) | 45-90 minutes |
+| Camera Replacement | 30-45 minutes |
+| Speaker/Microphone | 30-45 minutes |
+| Water Damage Assessment | 1-2 hours |
+| Water Damage Repair | 2-24 hours |
+| MacBook Screen | 1-2 hours |
+| MacBook Keyboard | 1-3 hours |
+| Logic Board Repair | 24-48 hours |
+
+## Same-Day Repair Service in Dubai Marina
+
+At Genius Tech, most repairs are completed **the same day**:
+
+### While You Wait (30-60 min)
+- Screen replacements
+- Battery replacements
+- Charging port repairs
+- Small component fixes
+
+### Same Day (1-3 hours)
+- MacBook repairs
+- iPad screen replacements
+- Complex phone repairs
+- Back glass replacements
+
+### Next Day (24-48 hours)
+- Water damage (ultrasonic cleaning required)
+- Logic board repairs
+- Part ordering for rare models
+
+## Factors That Affect Repair Time
+
+### 1. Type of Damage
+Simple screen cracks are faster to fix than water damage requiring full disassembly and ultrasonic cleaning.
+
+### 2. Device Model
+Newer devices with more complex designs may take slightly longer. iPhone 15 Pro Max takes more time than iPhone SE.
+
+### 3. Part Availability
+Common parts for popular iPhone and Samsung models are always in stock. Rare models may require ordering.
+
+### 4. Workshop Queue
+During busy periods, there may be a short wait. Walk-ins are served first-come-first-served.
+
+## How Our Same-Day Service Works
+
+### Option 1: Walk In
+1. Visit our Dubai Marina shop
+2. Get diagnosed (5 minutes)
+3. Receive quote and time estimate
+4. Wait in Marina area or leave device
+5. Collect repaired device
+
+### Option 2: Free Pickup & Delivery
+1. WhatsApp us device and issue
+2. Get instant quote
+3. Schedule pickup (1-2 hours)
+4. We collect from your Dubai Marina, JLT, or JBR location
+5. Same-day repair at our center
+6. Free delivery back to you
+
+## When Repairs Take Longer
+
+### Water Damage
+Water damage requires careful drying and ultrasonic cleaning. This process takes 2-24 hours depending on damage severity. Rushing can cause more damage.
+
+### Parts Not in Stock
+Very new models or rare phones may need parts ordered. We'll tell you upfront and give an accurate timeline.
+
+### Logic Board Issues
+Complex repairs like iPhone Face ID or MacBook logic board issues require specialized work and may take 24-48 hours.
+
+## Tips for Faster Repair
+
+1. **Contact us first** - WhatsApp your model and issue so we can prepare
+2. **Backup your data** - Don't spend time at the shop doing this
+3. **Know your passcode** - We may need it for testing
+4. **Morning visits** - Less busy than evenings
+5. **Use pickup service** - We can collect while you work
+
+## Genius Tech Dubai Marina - Fast Repairs Guaranteed
+
+**Location:** West Avenue Building, Shop 1, Dubai Marina
+**Hours:** 10 AM - 10 PM, Every Day
+**Coverage:** Free Pickup in Dubai Marina, JLT, JBR
+
+Most repairs: 30-60 minutes
+WhatsApp for instant quote and time estimate
+    `,
+    publishedAt: "2026-01-13",
+    updatedAt: "2026-01-13",
+    author: "Genius Tech Team",
+    category: "Repair Tips",
+    tags: [
+      "Phone Repair Time Dubai",
+      "Same Day Repair Dubai",
+      "Fast Phone Repair Dubai Marina",
+      "Quick iPhone Repair Dubai",
+      "Phone Repair Duration UAE",
+    ],
+    readTime: 5,
+    faqs: [
+      {
+        question: "How long does iPhone screen replacement take in Dubai?",
+        answer:
+          "iPhone screen replacement takes 30-60 minutes at Genius Tech in Dubai Marina. Older models like iPhone 11 take about 30 minutes, while iPhone 15 Pro Max takes 45-60 minutes.",
+      },
+      {
+        question: "Can I get same-day phone repair in Dubai Marina?",
+        answer:
+          "Yes! Genius Tech offers same-day repair for most phone issues including screen replacement, battery replacement, and charging port repairs. We're open 10 AM - 10 PM daily.",
+      },
+      {
+        question: "How long does water damage repair take in Dubai?",
+        answer:
+          "Water damage repair takes 2-24 hours depending on severity. The phone needs proper drying and ultrasonic cleaning. Rushing causes more damage, so we take the time needed for proper recovery.",
+      },
+    ],
+  },
+  {
+    slug: "is-it-worth-repairing-cracked-phone-screen",
+    title: "Is It Worth Repairing a Cracked Phone Screen? Dubai Expert Advice",
+    excerpt:
+      "Yes, repairing a cracked phone screen is usually worth it if repair cost is less than 50% of phone value. Dubai repair experts explain when to repair vs replace.",
+    image: "https://images.unsplash.com/photo-1588702547919-26089e690ecc?w=800&q=80",
+    content: `
+## Quick Answer: Is Screen Repair Worth It?
+
+**Yes, repairing a cracked phone screen is worth it in most cases.** The rule of thumb: if repair costs less than 50% of your phone's current value, repair is the smart choice. A cracked iPhone 14 screen repair (AED 500-750) is much cheaper than buying a new phone (AED 3,500+). At Genius Tech in Dubai Marina, we help customers make the right decision.
+
+## When Screen Repair IS Worth It
+
+### 1. Phone is Less Than 3 Years Old
+Modern phones from the last 3 years have plenty of life left. A new screen gives you years more use at a fraction of replacement cost.
+
+**Example:** iPhone 13 screen repair costs AED 400-600. A new iPhone costs AED 3,500+. Repair saves you AED 3,000.
+
+### 2. Repair Cost < 50% of Phone Value
+This is the golden rule. If repair costs less than half what your phone is worth, repair makes financial sense.
+
+| Phone | Screen Repair | New Phone | Worth Repairing? |
+|-------|--------------|-----------|------------------|
+| iPhone 15 Pro | AED 700-1,000 | AED 5,000+ | ✅ Yes |
+| iPhone 14 | AED 500-750 | AED 3,500+ | ✅ Yes |
+| iPhone 13 | AED 400-600 | AED 3,000+ | ✅ Yes |
+| iPhone 12 | AED 350-500 | AED 2,500+ | ✅ Yes |
+| iPhone 11 | AED 280-400 | AED 2,000+ | ✅ Yes |
+| Samsung S24 | AED 500-700 | AED 4,000+ | ✅ Yes |
+| Samsung S23 | AED 400-600 | AED 3,000+ | ✅ Yes |
+
+### 3. Phone Works Perfectly Otherwise
+If your phone's battery, camera, and internals work fine, a screen crack is a minor issue worth fixing.
+
+### 4. You Have Important Data
+Photos, messages, apps, settings—there's value in keeping your current phone with all your data intact.
+
+### 5. Environmental Reasons
+Repairing extends your phone's life, reducing e-waste. In Dubai's growing sustainability focus, this matters.
+
+## When Screen Repair May NOT Be Worth It
+
+### 1. Phone is Very Old (5+ Years)
+Phones older than 5 years may have other issues developing. The screen repair might be followed by battery death or other problems.
+
+**Consider:** Repair if you just need a few more months while saving for new phone.
+
+### 2. Multiple Issues Besides Screen
+If your phone has screen damage PLUS battery problems, charging issues, or water damage, combined repair costs may exceed value.
+
+### 3. Extremely Cheap Repair Quote
+If a shop offers iPhone 15 screen repair for AED 200, they're using terrible parts that will fail quickly. Proper repair has fair costs.
+
+### 4. Phone Already Has Low Value
+Very budget phones (originally under AED 500) may cost more to repair than replace.
+
+## How to Decide: Repair Calculator
+
+**Step 1:** Check phone's current value (search "used [phone model] Dubai" on Dubizzle)
+
+**Step 2:** Get repair quote (WhatsApp Genius Tech)
+
+**Step 3:** Calculate: Is repair cost < 50% of phone value?
+
+**If YES:** Repair is worth it
+**If NO:** Consider replacement
+
+## Benefits of Repairing vs Buying New
+
+### Financial Savings
+- iPhone 14 repair: AED 500-750
+- New iPhone 15: AED 4,000+
+- **Savings: AED 3,000+**
+
+### Time Savings
+- Repair takes: 30-60 minutes
+- New phone setup takes: Hours of data transfer, app reinstalls, re-logins
+
+### Environmental Impact
+- Repair: Minimal waste
+- New phone: Mining, manufacturing, shipping, packaging waste
+
+### Keep Your Data
+- Repair: Everything stays exactly as is
+- New phone: Risk of data loss, missing backups, app issues
+
+## What Happens If You Don't Repair
+
+Leaving a cracked screen has consequences:
+
+1. **Cracks spread** - Small cracks become big cracks from daily use
+2. **Water damage risk** - Cracks let moisture into phone internals
+3. **Touch issues** - Cracks eventually affect touch sensitivity
+4. **Safety hazard** - Sharp glass edges can cut fingers
+5. **Resale value drops** - Damaged phone worth less
+
+## Genius Tech Recommendation
+
+Based on our experience repairing thousands of phones in Dubai Marina:
+
+**REPAIR if:**
+- Phone is 1-4 years old
+- Only issue is cracked screen
+- Repair cost under AED 1,000
+- You're happy with phone's performance
+
+**CONSIDER NEW PHONE if:**
+- Phone is 5+ years old
+- Multiple issues besides screen
+- Battery barely lasts a day
+- Phone is very slow
+
+**ASK US:** Not sure? WhatsApp us your phone model and issue. We'll give honest advice—even if it means recommending you buy new instead of repair.
+
+---
+
+**Genius Tech Dubai Marina**
+Honest advice, quality repairs
+West Avenue Building, Shop 1
+Open 10 AM - 10 PM Daily
+Free Pickup: Dubai Marina, JLT, JBR
+    `,
+    publishedAt: "2026-01-12",
+    updatedAt: "2026-01-12",
+    author: "Genius Tech Team",
+    category: "Repair Tips",
+    tags: [
+      "Is Screen Repair Worth It",
+      "Phone Repair vs Replace Dubai",
+      "Cracked Screen Repair Dubai",
+      "iPhone Screen Repair Worth It",
+      "Phone Repair Decision Guide",
+    ],
+    readTime: 6,
+    faqs: [
+      {
+        question: "Is it worth fixing a cracked iPhone screen in Dubai?",
+        answer:
+          "Yes, in most cases. iPhone screen repair in Dubai costs AED 200-1,200 depending on model, which is much cheaper than buying a new phone. If your iPhone is less than 4 years old and works well otherwise, repair is the smart choice.",
+      },
+      {
+        question: "How much should I pay to repair vs buy new phone?",
+        answer:
+          "The rule of thumb: if repair costs less than 50% of your phone's current value, repair is worth it. For example, an iPhone 13 worth AED 2,000 with a AED 450 screen repair is definitely worth fixing.",
+      },
+      {
+        question: "Does a cracked screen get worse over time?",
+        answer:
+          "Yes. Cracks spread with daily use, temperature changes, and pressure. A small crack can become a shattered screen within weeks. Early repair prevents bigger damage and higher repair costs.",
+      },
+    ],
+  },
+  {
+    slug: "same-day-screen-repair-dubai",
+    title: "Can You Fix a Phone Screen Same Day in Dubai? Yes! Here's How",
+    excerpt:
+      "Yes, phone screen repair is done same day in Dubai! Genius Tech offers 30-60 minute screen repairs with free pickup in Dubai Marina, JLT, and JBR.",
+    image: "/images/hero/home-service.jpg",
+    content: `
+## Quick Answer: Same-Day Screen Repair in Dubai
+
+**Yes, phone screen repair is available same day in Dubai.** At Genius Tech in Dubai Marina, we complete most screen repairs in 30-60 minutes. We offer walk-in service and free pickup/delivery throughout Dubai Marina, JLT, and JBR. Open 10 AM - 10 PM, every day including weekends.
+
+## How Same-Day Screen Repair Works
+
+### Option 1: Walk In to Our Dubai Marina Shop
+
+**Steps:**
+1. Visit Genius Tech at West Avenue Building
+2. We diagnose your phone (5 minutes)
+3. Get exact quote and time estimate
+4. Wait 30-60 minutes or explore Marina
+5. Leave with repaired phone
+
+**Best For:** People near Dubai Marina who want fastest service
+
+### Option 2: Free Pickup & Delivery
+
+**Steps:**
+1. WhatsApp us your phone model and location
+2. Get instant quote
+3. Schedule pickup (usually within 1-2 hours)
+4. We collect from your Dubai Marina, JLT, or JBR address
+5. Screen repaired at our center
+6. Free delivery back same day
+
+**Best For:** Busy professionals, anyone who can't leave home/office
+
+## Same-Day Screen Repair Times
+
+| Phone | Screen Repair Time |
+|-------|-------------------|
+| iPhone 15/14 Pro Max | 45-60 minutes |
+| iPhone 15/14/13/12 | 30-45 minutes |
+| iPhone 11 and older | 30 minutes |
+| Samsung Galaxy S24/S23 | 60-90 minutes |
+| Samsung Galaxy A series | 45-60 minutes |
+| iPad Pro | 60-90 minutes |
+| iPad Air/Mini | 45-60 minutes |
+
+## Why We Offer Same-Day Service
+
+### Parts Always in Stock
+We keep screens for all popular iPhone and Samsung models ready. No waiting for orders.
+
+### Experienced Technicians
+Our repair specialists work efficiently without rushing. Quality and speed together.
+
+### Dedicated Repair Center
+Our Dubai Marina workshop is fully equipped for all repairs.
+
+### Extended Hours
+Open 10 AM - 10 PM daily means you can get repairs done after work or on weekends.
+
+## Locations We Cover Same-Day
+
+### Dubai Marina (All Buildings)
+- Marina Promenade, Marina Heights, Marina Gate
+- Cayan Tower, Princess Tower, Damac Heights
+- The Residences, Marina Quays, Trident
+- All other Marina towers
+
+### JLT (All Clusters)
+- Clusters A through Z
+- Almas Tower, Gold Tower
+- Fortune Tower, Platinum Tower
+- All residential and office towers
+
+### JBR (All Buildings)
+- Sadaf, Bahar, Murjan
+- Amwaj, Rimal, Shams
+- All JBR Walk buildings
+
+## Frequently Asked Questions
+
+### "What if I need repair outside these areas?"
+We can still help! Pickup/delivery to other Dubai areas is available for a small fee. Contact us for details.
+
+### "What if my screen is badly shattered?"
+Same-day service still applies. Even severely damaged screens are repaired in our standard timeframes.
+
+### "Do you repair while I wait?"
+Yes! Walk-in customers can wait at our shop or explore nearby Marina Walk cafes.
+
+### "What about data safety?"
+Your data remains untouched during screen repair. We don't access personal files.
+
+## Compare: Same-Day vs Multi-Day Repair
+
+| Factor | Genius Tech (Same Day) | Other Shops |
+|--------|------------------------|-------------|
+| iPhone Screen | 30-60 min | 1-3 days |
+| Samsung Screen | 45-90 min | 2-3 days |
+| Free Pickup | ✅ Yes | Usually No |
+| Evening Service | Until 10 PM | Close 7 PM |
+| Weekend Service | ✅ Yes | Limited |
+
+## Book Your Same-Day Screen Repair
+
+Ready to fix your screen today?
+
+**WhatsApp Now** for instant quote and pickup scheduling
+
+**Walk In** to West Avenue Building, Dubai Marina
+
+**Call Us** to speak with our team
+
+---
+
+**Genius Tech Dubai Marina**
+Same-Day Screen Repair Specialists
+West Avenue Building, Shop 1, Al Yahoom Street
+Open 10 AM - 10 PM, Every Day
+Free Pickup: Dubai Marina, JLT, JBR
+    `,
+    publishedAt: "2026-01-11",
+    updatedAt: "2026-01-11",
+    author: "Genius Tech Team",
+    category: "Services",
+    tags: [
+      "Same Day Screen Repair Dubai",
+      "Fast Phone Repair Dubai Marina",
+      "Quick Screen Fix Dubai",
+      "iPhone Screen Same Day Dubai",
+      "Emergency Phone Repair Dubai",
+    ],
+    readTime: 4,
+    faqs: [
+      {
+        question: "Can I get my phone screen fixed same day in Dubai?",
+        answer:
+          "Yes! At Genius Tech in Dubai Marina, most phone screen repairs take 30-60 minutes. We offer walk-in service and free pickup/delivery in Dubai Marina, JLT, and JBR. Open 10 AM - 10 PM daily.",
+      },
+      {
+        question: "How fast can you repair an iPhone screen in Dubai Marina?",
+        answer:
+          "iPhone screen repair takes 30-60 minutes at our Dubai Marina shop. iPhone 11 and older models take about 30 minutes. iPhone 14/15 Pro Max takes 45-60 minutes. Same-day service guaranteed.",
+      },
+      {
+        question: "Do you offer emergency screen repair in Dubai?",
+        answer:
+          "Yes, we offer same-day emergency screen repair. WhatsApp us for priority service. We can arrange pickup within 1-2 hours and have your phone repaired and returned same day.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

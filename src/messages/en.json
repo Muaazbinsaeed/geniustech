@@ -83,6 +83,7 @@
     "areas": "Service Areas",
     "about": "About",
     "blog": "Blog",
+    "faq": "FAQ",
     "contact": "Contact"
   },
   "hero": {
@@ -474,6 +475,97 @@
         "title": "Expertise",
         "description": "Our certified technicians have years of experience with all device brands and models."
       }
+    }
+  },
+  "pricing": {
+    "metaTitle": "Phone Repair Prices Dubai - iPhone, MacBook, Samsung Costs",
+    "metaDescription": "Transparent phone repair prices in Dubai Marina. iPhone screen repair from AED 200, MacBook battery from AED 350. Same-day service, free pickup in JLT, JBR.",
+    "title": "Repair Prices",
+    "subtitle": "Transparent pricing with no hidden fees. All prices include parts, labor, and warranty.",
+    "badge": "Price List 2026",
+    "quickAnswer": {
+      "label": "How much does phone repair cost in Dubai?",
+      "value": "iPhone screen repair: AED 200-1,200 | MacBook battery: AED 350-950 | Samsung screen: AED 200-800"
+    },
+    "highlights": {
+      "sameDay": "Same-Day Service",
+      "freePickup": "Free Pickup & Delivery",
+      "warranty": "Up to 1 Year Warranty",
+      "noHidden": "No Hidden Fees"
+    },
+    "table": {
+      "service": "Service",
+      "price": "Price (AED)",
+      "disclaimer": "* Prices may vary based on device condition. Contact us for an exact quote."
+    },
+    "cta": {
+      "title": "Get Your Free Quote",
+      "subtitle": "Send us a WhatsApp message with your device model and issue for an instant quote.",
+      "button": "Get Free Quote on WhatsApp",
+      "response": "We typically respond within 5 minutes during business hours."
+    }
+  },
+  "faq": {
+    "metaTitle": "Frequently Asked Questions - Phone Repair Dubai",
+    "metaDescription": "Get answers to common questions about phone repair in Dubai Marina. iPhone screen repair cost, repair time, warranty, free pickup & delivery in JLT, JBR.",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our phone and laptop repair services in Dubai Marina, JLT, and JBR.",
+    "badge": "FAQ",
+    "quickAnswers": "Quick Answers",
+    "qa": {
+      "cost": {
+        "label": "How much does iPhone screen repair cost?",
+        "value": "AED 200 - 1,200 depending on model"
+      },
+      "time": {
+        "label": "How long does repair take?",
+        "value": "1-2 hours for most repairs"
+      },
+      "warranty": {
+        "label": "Do you offer warranty?",
+        "value": "Yes, 30 days to 1 year warranty"
+      },
+      "pickup": {
+        "label": "Is pickup really free?",
+        "value": "Yes, free in Dubai Marina, JLT, JBR"
+      }
+    },
+    "categories": {
+      "general": "General Questions",
+      "iphone": "iPhone Repair",
+      "macbook": "MacBook Repair",
+      "android": "Android & Samsung Repair",
+      "ipad": "iPad Repair",
+      "laptop": "Laptop Repair",
+      "smartwatch": "Smartwatch Repair"
+    },
+    "general": {
+      "pickup": {
+        "q": "Is pickup and delivery really free?",
+        "a": "Yes, we offer completely free pickup and delivery within Dubai Marina, JLT (Jumeirah Lakes Towers), and JBR (Jumeirah Beach Residence). No hidden fees or minimum order required."
+      },
+      "warranty": {
+        "q": "What warranty do you offer on repairs?",
+        "a": "All our repairs come with a warranty ranging from 30 days to 1 year depending on the service. Screen repairs typically have 6 months warranty, while battery replacements have 1 year warranty."
+      },
+      "time": {
+        "q": "How long does a typical repair take?",
+        "a": "Most repairs are completed within 1-2 hours. iPhone screen repairs take 30-60 minutes, MacBook repairs take 1-2 hours. We offer same-day service for all standard repairs."
+      },
+      "payment": {
+        "q": "What payment methods do you accept?",
+        "a": "We accept Cash, Credit Card, Debit Card, Apple Pay, Google Pay, and Bank Transfer. Payment is only collected after you're satisfied with the repair."
+      },
+      "quote": {
+        "q": "How do I get a repair quote?",
+        "a": "Simply send us a WhatsApp message describing your device issue. We'll provide a free quote within minutes. No obligation, no hidden fees."
+      }
+    },
+    "cta": {
+      "title": "Still Have Questions?",
+      "subtitle": "Our team is here to help! Contact us on WhatsApp for instant answers or call us directly.",
+      "whatsapp": "Ask on WhatsApp",
+      "call": "Call Us"
     }
   }
 }

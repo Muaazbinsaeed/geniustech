@@ -7,6 +7,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
 import { Button } from "@/components/ui/Button";
+import { AboutPageSchema } from "@/components/seo/SchemaMarkup";
 import { SITE_CONFIG, type Locale } from "@/lib/constants";
 import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/utils";
@@ -80,6 +81,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
 
   return (
     <>
+      <AboutPageSchema />
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero Banner */}

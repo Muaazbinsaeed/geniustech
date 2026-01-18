@@ -13,6 +13,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
 import { Button } from "@/components/ui/Button";
+import { ContactPageSchema } from "@/components/seo/SchemaMarkup";
 import { SITE_CONFIG, type Locale } from "@/lib/constants";
 import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
 import { getWhatsAppLink, getPhoneLink } from "@/lib/utils";
@@ -99,6 +100,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
 
   return (
     <>
+      <ContactPageSchema />
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero Banner */}

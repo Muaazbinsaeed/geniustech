@@ -43,6 +43,7 @@ export function Header() {
     { href: `/${locale}/areas`, label: t("areas") },
     { href: `/${locale}/about`, label: t("about") },
     { href: `/${locale}/blog`, label: t("blog") },
+    { href: `/${locale}/faq`, label: t("faq") },
     { href: `/${locale}/contact`, label: t("contact") },
   ];
 
