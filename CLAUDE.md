@@ -27,6 +27,8 @@ npm start        # Start production server
 - **Tailwind CSS 4** - Uses `@tailwindcss/postcss` (not the legacy v3 config)
 - **next-intl** - Internationalization
 - **Framer Motion** - Animations
+- **@ducanh2912/next-pwa** - Progressive Web App support
+- **@vercel/analytics** - Analytics integration
 
 ### Internationalization (i18n)
 
@@ -123,6 +125,18 @@ All business info in `src/lib/constants.ts` via `SITE_CONFIG`:
 
 Locales defined as: `LOCALES`, `RTL_LOCALES`, `DEFAULT_LOCALE`, `LOCALE_NAMES`
 
+### PWA Configuration
+
+The site is a Progressive Web App using `@ducanh2912/next-pwa`. PWA is disabled in development mode. Service worker and caching strategies are configured in `next.config.ts`. The manifest is at `public/manifest.json`.
+
+### Image Sources
+
+Remote images are allowed from these domains (configured in `next.config.ts`):
+- `images.unsplash.com`, `images.pexels.com` - Stock photos
+- `i.ytimg.com` - YouTube thumbnails
+- `flagcdn.com` - Country flags
+- `lh3.googleusercontent.com`, `maps.googleapis.com` - Google services
+
 ## Adding Content
 
 ### New Service
@@ -182,3 +196,48 @@ Deployed to Vercel with auto-deploy on push to `main`. See README.md for detaile
 - `NEXT_PUBLIC_GOOGLE_ADS_ID` - Google Ads conversion ID (format: `AW-XXXXXXXXXX`)
 - `NEXT_PUBLIC_GOOGLE_ADS_WHATSAPP_CONVERSION` - WhatsApp button conversion label
 - `NEXT_PUBLIC_GOOGLE_ADS_CALL_CONVERSION` - Phone call conversion label
+
+## Changelog
+
+### v1.5.0 (Jan 18, 2026) - SEO/AEO/GEO Optimization
+- **3ace14f** `feat: Add advanced SEO/AEO/GEO optimizations`
+  - PWA icons at all required sizes (48-512px) with maskable variants
+  - Error boundaries and loading states for all routes
+  - Focus trap and keyboard navigation in mobile menu
+  - 44px minimum touch targets (WCAG 2.1 AA)
+  - `llms.txt` for AI crawlers (ChatGPT, Perplexity)
+  - AI crawler rules in robots.txt
+- **ab8d622** `perf: Comprehensive SEO optimization with branded images`
+
+### v1.4.0 (Jan 14, 2026) - Domain & Infrastructure
+- **a0272d1** `docs: Update project links and domain configuration`
+- **55c2c1b** `chore: Update site URL to geniustechuae.com`
+- **4c7813e** `perf: Add SEO schema markup and performance optimizations`
+- **47a019a** `fix: Replace deprecated next-pwa with maintained fork`
+- **1815a2f** `docs: Add detailed Vercel deployment instructions`
+
+### v1.3.0 (Jan 14, 2026) - Video & i18n
+- **14c1e17** `feat: Complete i18n and SEO improvements for video section`
+- **e2e2ae0** `refactor: Update video section to hero layout`
+- **127b59a** `feat: Add YouTube Shorts section and SEO improvements`
+- **fb82c86** `feat: Update WhatsApp icon and language switcher with flags`
+
+### v1.2.0 (Jan 12, 2026) - SEO Quick Wins
+- **9a9c8ee** `perf: Implement SEO and accessibility quick wins`
+- **0d0014a** `docs: Add comprehensive website analysis report`
+- **5df417c** `chore: Add environment variables template`
+
+### v1.0.0 (Jan 12, 2026) - Initial Release
+- **4e38c08** `feat: Complete Genius Tech device repair website`
+  - Multi-lingual support (7 languages: EN, AR, HI, UR, RU, FR, ES)
+  - RTL support for Arabic and Urdu
+  - Dark/light theme with system preference detection
+  - 159 static pages generated
+  - SEO: sitemap.xml, robots.txt, schema markup
+  - Homepage with hero slider, services, areas, reviews
+  - 6 service pages, 3 area pages, 5 blog articles
+- **b357f32** `Initial commit from Create Next App`
+
+## Documentation
+
+- [Project Report](docs/PROJECT_REPORT.md) - Detailed audit scores, metrics, and recommendations

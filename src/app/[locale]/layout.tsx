@@ -31,6 +31,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_CONFIG.url),
   title: {
     default: `${SITE_CONFIG.name} - Dubai's Fastest Device Repair`,
     template: `%s | ${SITE_CONFIG.name}`,
@@ -114,17 +115,29 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={direction} suppressHydrationWarning>
       <head>
-        {/* Resource hints for performance */}
-        <link rel="preconnect" href="https://images.unsplash.com" />
+        {/* Theme flash prevention - must be first */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{if(localStorage.theme==='dark'||(!('theme' in localStorage)&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}`,
+          }}
+        />
+
+        {/* Critical resource hints - fonts only */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://www.google-analytics.com" />
+
+        {/* Non-critical DNS prefetch */}
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://i.ytimg.com" />
+        <link rel="dns-prefetch" href="https://wa.me" />
         <link rel="dns-prefetch" href="https://flagcdn.com" />
 
-        {/* Preload hero image for faster LCP */}
-        <link rel="preload" href="/images/hero/shop-interior.jpg" as="image" />
+        {/* Preload hero image for faster LCP - desktop */}
+        <link rel="preload" href="/images/hero/shop-interior.jpg" as="image" media="(min-width: 768px)" />
+        {/* Mobile-specific smaller image preload */}
+        <link rel="preload" href="/images/hero/shop-interior.jpg" as="image" media="(max-width: 767px)" fetchPriority="high" />
 
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
@@ -157,7 +170,7 @@ export default async function LocaleLayout({
         {/* Skip to main content link for accessibility */}
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 bg-primary text-white px-4 py-2 rounded-md font-medium"
+          className="skip-to-content"
         >
           Skip to main content
         </a>

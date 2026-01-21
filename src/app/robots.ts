@@ -49,6 +49,21 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/", "/private/"],
       },
       {
+        userAgent: "Google-Extended",
+        allow: "/",
+        disallow: ["/api/", "/_next/", "/private/"],
+      },
+      {
+        userAgent: "Bytespider", // TikTok crawler
+        allow: "/",
+        disallow: ["/api/", "/_next/", "/private/"],
+      },
+      {
+        userAgent: "CCBot", // Common Crawl
+        allow: "/",
+        disallow: ["/api/", "/_next/", "/private/"],
+      },
+      {
         userAgent: "Applebot",
         allow: "/",
         disallow: ["/api/", "/_next/", "/private/"],

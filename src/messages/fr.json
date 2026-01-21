@@ -83,6 +83,8 @@
     "areas": "Zones de service",
     "about": "À propos",
     "blog": "Blog",
+    "faq": "FAQ",
+    "pricing": "Tarifs",
     "contact": "Contact"
   },
   "hero": {
@@ -188,13 +190,21 @@
   "contact": {
     "title": "Contactez-nous",
     "subtitle": "Prenez contact avec notre équipe",
+    "heroDescription": "Contactez notre équipe d'experts pour une réparation rapide et fiable de vos appareils à Dubaï.",
     "address": "Adresse",
     "phone": "Téléphone",
     "email": "Email",
     "hours": "Heures d'ouverture",
     "everyday": "Tous les jours: 10h - 22h",
     "findUs": "Nous trouver",
-    "landmark": "À l'intérieur de Pluspoint Mini Mart"
+    "landmark": "À l'intérieur de Pluspoint Mini Mart",
+    "whatsappDesc": "Réponse la plus rapide - généralement en minutes",
+    "phoneDesc": "Appelez-nous directement",
+    "emailDesc": "Pour les demandes et devis",
+    "whatsappUs": "WhatsApp",
+    "getDirections": "Itinéraire",
+    "pickupAreas": "Zones de ramassage et livraison gratuits",
+    "pickupAreasDesc": "Nous offrons le ramassage et la livraison gratuits dans ces zones"
   },
   "blog": {
     "title": "Conseils et guides de réparation",
@@ -474,6 +484,97 @@
         "title": "Expertise",
         "description": "Nos techniciens certifiés ont des années d'expérience avec toutes les marques et tous les modèles d'appareils."
       }
+    }
+  },
+  "pricing": {
+    "metaTitle": "Prix réparation téléphone Dubaï - iPhone, MacBook, Samsung",
+    "metaDescription": "Prix transparents pour la réparation de téléphones à Dubai Marina. Réparation écran iPhone à partir de 200 AED, batterie MacBook à partir de 350 AED. Service le jour même, ramassage gratuit JLT, JBR.",
+    "title": "Prix des réparations",
+    "subtitle": "Tarification transparente sans frais cachés. Tous les prix incluent les pièces, la main d'œuvre et la garantie.",
+    "badge": "Tarifs 2026",
+    "quickAnswer": {
+      "label": "Combien coûte la réparation de téléphone à Dubaï?",
+      "value": "Écran iPhone: 200-1,200 AED | Batterie MacBook: 350-950 AED | Écran Samsung: 200-800 AED"
+    },
+    "highlights": {
+      "sameDay": "Service le jour même",
+      "freePickup": "Ramassage et livraison gratuits",
+      "warranty": "Garantie jusqu'à 1 an",
+      "noHidden": "Pas de frais cachés"
+    },
+    "table": {
+      "service": "Service",
+      "price": "Prix (AED)",
+      "disclaimer": "* Les prix peuvent varier selon l'état de l'appareil. Contactez-nous pour un devis exact."
+    },
+    "cta": {
+      "title": "Obtenez un devis gratuit",
+      "subtitle": "Envoyez-nous un message WhatsApp avec le modèle de votre appareil et le problème pour un devis instantané.",
+      "button": "Devis gratuit sur WhatsApp",
+      "response": "Nous répondons généralement en 5 minutes pendant les heures d'ouverture."
+    }
+  },
+  "faq": {
+    "metaTitle": "Questions fréquentes - Réparation téléphone Dubaï",
+    "metaDescription": "Réponses aux questions courantes sur la réparation de téléphone à Dubai Marina. Coût réparation écran iPhone, délai, garantie, ramassage gratuit JLT, JBR.",
+    "title": "Questions fréquentes",
+    "subtitle": "Trouvez les réponses à vos questions sur nos services de réparation de téléphones et ordinateurs à Dubai Marina, JLT et JBR.",
+    "badge": "FAQ",
+    "quickAnswers": "Réponses rapides",
+    "qa": {
+      "cost": {
+        "label": "Combien coûte la réparation d'écran iPhone?",
+        "value": "AED 200 - 1,200 selon le modèle"
+      },
+      "time": {
+        "label": "Combien de temps prend la réparation?",
+        "value": "1-2 heures pour la plupart des réparations"
+      },
+      "warranty": {
+        "label": "Offrez-vous une garantie?",
+        "value": "Oui, garantie de 30 jours à 1 an"
+      },
+      "pickup": {
+        "label": "Le ramassage est-il vraiment gratuit?",
+        "value": "Oui, gratuit à Dubai Marina, JLT, JBR"
+      }
+    },
+    "categories": {
+      "general": "Questions générales",
+      "iphone": "Réparation iPhone",
+      "macbook": "Réparation MacBook",
+      "android": "Réparation Android et Samsung",
+      "ipad": "Réparation iPad",
+      "laptop": "Réparation ordinateur",
+      "smartwatch": "Réparation montre connectée"
+    },
+    "general": {
+      "pickup": {
+        "q": "Le ramassage et la livraison sont-ils vraiment gratuits?",
+        "a": "Oui, nous offrons un ramassage et une livraison entièrement gratuits à Dubai Marina, JLT et JBR. Pas de frais cachés ni de minimum requis."
+      },
+      "warranty": {
+        "q": "Quelle garantie offrez-vous sur les réparations?",
+        "a": "Toutes nos réparations sont garanties de 30 jours à 1 an selon le service. Les réparations d'écran ont généralement 6 mois de garantie."
+      },
+      "time": {
+        "q": "Combien de temps prend une réparation typique?",
+        "a": "La plupart des réparations sont effectuées en 1-2 heures. La réparation d'écran iPhone prend 30-60 minutes. Nous offrons un service le jour même."
+      },
+      "payment": {
+        "q": "Quels modes de paiement acceptez-vous?",
+        "a": "Nous acceptons l'espèces, carte de crédit, carte de débit, Apple Pay, Google Pay et virement bancaire."
+      },
+      "quote": {
+        "q": "Comment obtenir un devis de réparation?",
+        "a": "Envoyez-nous simplement un message WhatsApp décrivant le problème de votre appareil. Nous vous fournirons un devis gratuit en quelques minutes."
+      }
+    },
+    "cta": {
+      "title": "Encore des questions?",
+      "subtitle": "Notre équipe est là pour vous aider! Contactez-nous sur WhatsApp pour des réponses instantanées.",
+      "whatsapp": "Demander sur WhatsApp",
+      "call": "Appelez-nous"
     }
   }
 }

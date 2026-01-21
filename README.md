@@ -1,143 +1,95 @@
-# Genius Tech - Dubai Device Repair
+# Genius Tech UAE
 
-A modern, multi-lingual website for Genius Tech, Dubai's fastest device repair service.
+A multi-language device repair service website for Dubai's fastest repair shop.
 
-## Project Links
-
-| Resource | URL |
-|----------|-----|
-| **Live Website** | [geniustechuae.com](https://geniustechuae.com) |
-| **GitHub Repository** | [github.com/Muaazbinsaeed/geniustech](https://github.com/Muaazbinsaeed/geniustech) |
-| **Vercel Dashboard** | [vercel.com/muaazs-projects-bc145511/geniustech](https://vercel.com/muaazs-projects-bc145511/geniustech) |
+**Live Site:** [geniustechuae.com](https://geniustechuae.com)
 
 ## Features
 
-- **7 Languages** - English 🇬🇧, Arabic 🇦🇪, Hindi 🇮🇳, Urdu 🇵🇰, Russian 🇷🇺, French 🇫🇷, Spanish 🇪🇸
+- **7 Languages** - English, Arabic, Hindi, Urdu, Russian, French, Spanish
 - **RTL Support** - Full right-to-left layout for Arabic and Urdu
 - **Dark/Light Mode** - Theme toggle with system preference detection
-- **Responsive Design** - Mobile-first, works on all devices
-- **WhatsApp Integration** - Primary CTA with official WhatsApp Business icon
-- **SEO Optimized** - Sitemap, robots.txt, schema markup, hreflang tags
-- **Video Integration** - YouTube Shorts with VideoObject schema
-- **Analytics Ready** - Google Analytics & Ads integration
-- **PWA Support** - Offline-ready progressive web app
+- **PWA Ready** - Installable app with offline support
+- **SEO Optimized** - Schema markup, sitemap, hreflang, AI crawler support
 
 ## Tech Stack
 
-- **Next.js 16** - React framework with App Router
-- **React 19** - UI library
-- **Tailwind CSS 4** - Styling
-- **next-intl** - Internationalization
-- **Framer Motion** - Animations
-- **TypeScript** - Type safety
+- **Next.js 16** with App Router
+- **React 19**
+- **Tailwind CSS 4**
+- **next-intl** for i18n
+- **Framer Motion** for animations
+- **TypeScript**
 
 ## Quick Start
 
 ```bash
-# Install dependencies
 npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
+npm run dev      # Start dev server at http://localhost:3000
+npm run build    # Build for production
+npm run lint     # Run ESLint
 ```
 
 ## Project Structure
 
 ```
 src/
-├── app/[locale]/     # Pages with locale routing
+├── app/[locale]/     # Locale-prefixed pages (208 static pages)
 ├── components/       # React components
-├── data/            # Static data (services, areas, blog)
-├── messages/        # Translation files (7 languages)
-└── lib/             # Utilities and constants
+├── data/             # Static data (services, areas, blog)
+├── messages/         # Translation files (7 languages)
+└── lib/              # Utilities and constants
 ```
 
 ## Pages
 
 | Route | Description |
 |-------|-------------|
-| `/` | Home page |
+| `/` | Homepage |
 | `/services` | All repair services |
-| `/services/[slug]` | Individual service |
+| `/services/[slug]` | Individual service (6 services) |
 | `/areas` | Service areas |
-| `/areas/[area]` | Individual area |
+| `/areas/[area]` | Individual area (3 areas) |
 | `/blog` | Blog articles |
 | `/blog/[slug]` | Blog post |
-| `/about` | About us |
+| `/about` | About page |
 | `/contact` | Contact page |
 
-## Configuration
+## Environment Variables
 
-### Environment Variables
-
-Create a `.env.local` file in the root directory with the following variables:
+Create `.env.local` with:
 
 ```env
-# Site Configuration
 NEXT_PUBLIC_SITE_URL=https://geniustechuae.com
-
-# Google Analytics (Optional)
-# Get your Measurement ID from Google Analytics dashboard
-# Format: G-XXXXXXXXXX
-NEXT_PUBLIC_GA_MEASUREMENT_ID=
-
-# Google Ads (Optional)
-# Get your Conversion ID from Google Ads dashboard
-# Format: AW-XXXXXXXXXX
-NEXT_PUBLIC_GOOGLE_ADS_ID=
-
-# Google Ads Conversion Labels (Optional)
-# Get these from your Google Ads conversion actions
-NEXT_PUBLIC_GOOGLE_ADS_WHATSAPP_CONVERSION=
-NEXT_PUBLIC_GOOGLE_ADS_CALL_CONVERSION=
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX      # Optional
+NEXT_PUBLIC_GOOGLE_ADS_ID=AW-XXXXXXXXXX         # Optional
 ```
-
-**Note:** All environment variables are optional. The site will work without them, but analytics and conversion tracking will be disabled.
 
 ## Deployment
 
-### Deploy to Vercel (Recommended)
+Deployed to **Vercel** with auto-deploy on push to `main`.
 
-**Step 1: Go to Vercel**
-- Visit [vercel.com](https://vercel.com) and sign in with GitHub
+1. Import project at [vercel.com](https://vercel.com)
+2. Add environment variables (optional)
+3. Deploy
 
-**Step 2: Import Project**
-1. Click **"Add New..."** → **"Project"**
-2. Find **"geniustech"** in your repository list
-3. Click **"Import"**
+Custom domain configured with Vercel DNS.
 
-**Step 3: Configure Project**
-- Leave defaults as-is
-- Optionally add environment variables:
+## Documentation
 
-| Name | Value |
-|------|-------|
-| `NEXT_PUBLIC_SITE_URL` | `https://geniustechuae.com` |
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Your GA4 ID (optional) |
+- [Project Report](docs/PROJECT_REPORT.md) - Detailed audit scores and recommendations
+- [CLAUDE.md](CLAUDE.md) - Development guidelines and architecture
 
-**Step 4: Deploy**
-- Click **"Deploy"** and wait ~2 minutes
-- You'll get a URL like `https://geniustech-xxx.vercel.app`
+## Lighthouse Scores
 
-**Step 5: Custom Domain**
-The site uses `geniustechuae.com` with Vercel DNS:
-- **Nameservers:** `ns1.vercel-dns.com`, `ns2.vercel-dns.com`
+| Metric | Homepage | Service Page |
+|--------|----------|--------------|
+| Performance | 74 | 92 |
+| Accessibility | 93 | 96 |
+| Best Practices | 100 | 100 |
+| SEO | 92 | 92 |
 
-Alternatively, use CNAME/A records:
-   - **A Record:** `76.76.21.21`
-   - **CNAME:** `cname.vercel-dns.com`
-
-Your site will auto-deploy on every push to `main`.
-
-### Pre-Deployment Checklist
-
-- [ ] Create `og-image.jpg` (1200x630px) in `/public` folder
-- [ ] Set environment variables in Vercel dashboard
-- [ ] Configure custom domain (if applicable)
-- [ ] Test all language routes after deployment
+*Tested January 21, 2026*
 
 ## License
 

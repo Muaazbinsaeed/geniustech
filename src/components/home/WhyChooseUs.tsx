@@ -73,6 +73,7 @@ export function WhyChooseUs() {
                     src={imageUrl}
                     alt={t(`${usp}.title`)}
                     fill
+                    loading="lazy"
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />

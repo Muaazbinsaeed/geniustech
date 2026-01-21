@@ -12,6 +12,20 @@ const withPWAConfig = withPWA({
     skipWaiting: true,
     clientsClaim: true,
     runtimeCaching: [
+      // HTML pages - NetworkFirst with offline fallback
+      {
+        urlPattern: ({ request }: { request: Request }) => request.mode === "navigate",
+        handler: "NetworkFirst",
+        options: {
+          cacheName: "pages",
+          expiration: {
+            maxEntries: 50,
+            maxAgeSeconds: 24 * 60 * 60, // 1 day
+          },
+          networkTimeoutSeconds: 10,
+        },
+      },
+      // Google Fonts
       {
         urlPattern: /^https:\/\/fonts\.(?:gstatic|googleapis)\.com\/.*/i,
         handler: "CacheFirst",
@@ -23,6 +37,7 @@ const withPWAConfig = withPWA({
           },
         },
       },
+      // Local images
       {
         urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp|ico)$/i,
         handler: "CacheFirst",
@@ -34,10 +49,24 @@ const withPWAConfig = withPWA({
           },
         },
       },
+      // External images (Unsplash, etc.)
+      {
+        urlPattern: /^https:\/\/images\.unsplash\.com\/.*/i,
+        handler: "CacheFirst",
+        options: {
+          cacheName: "external-images",
+          expiration: {
+            maxEntries: 50,
+            maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
+          },
+        },
+      },
+      // WhatsApp links - never cache
       {
         urlPattern: /^https:\/\/wa\.me\/.*/i,
         handler: "NetworkOnly",
       },
+      // Next.js static assets
       {
         urlPattern: /\/_next\/static\/.*/i,
         handler: "CacheFirst",
@@ -46,6 +75,18 @@ const withPWAConfig = withPWA({
           expiration: {
             maxEntries: 100,
             maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
+          },
+        },
+      },
+      // API routes and data
+      {
+        urlPattern: /\/_next\/data\/.*/i,
+        handler: "NetworkFirst",
+        options: {
+          cacheName: "next-data",
+          expiration: {
+            maxEntries: 50,
+            maxAgeSeconds: 24 * 60 * 60, // 1 day
           },
         },
       },

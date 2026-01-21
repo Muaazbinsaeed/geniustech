@@ -177,14 +177,21 @@ export function LocalBusinessSchema() {
         reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
         author: { "@type": "Person", name: "Ahmed K." },
         reviewBody: "Amazing service! Fixed my iPhone screen in just 2 hours. Free pickup from my office in JLT.",
-        datePublished: "2024-12-15",
+        datePublished: "2025-01-12",
       },
       {
         "@type": "Review",
         reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
         author: { "@type": "Person", name: "Sarah M." },
         reviewBody: "Best phone repair in Dubai Marina. Same-day MacBook battery replacement with warranty.",
-        datePublished: "2024-11-28",
+        datePublished: "2025-01-05",
+      },
+      {
+        "@type": "Review",
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        author: { "@type": "Person", name: "Mohammed R." },
+        reviewBody: "Excellent experience! WhatsApp response was instant and they fixed my Samsung same day.",
+        datePublished: "2024-12-29",
       },
     ],
   };

@@ -75,7 +75,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
       value: SITE_CONFIG.whatsapp,
       link: whatsappLink,
       primary: true,
-      description: "Fastest response - usually within minutes",
+      description: t("whatsappDesc"),
       isWhatsApp: true,
     },
     {
@@ -84,7 +84,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
       value: SITE_CONFIG.phone,
       link: phoneLink,
       primary: false,
-      description: "Call us directly",
+      description: t("phoneDesc"),
       isWhatsApp: false,
     },
     {
@@ -93,7 +93,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
       value: SITE_CONFIG.email,
       link: `mailto:${SITE_CONFIG.email}`,
       primary: false,
-      description: "For inquiries and quotes",
+      description: t("emailDesc"),
       isWhatsApp: false,
     },
   ];
@@ -129,7 +129,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
                   {t("title")}
                 </h1>
                 <p className="text-lg text-foreground-muted max-w-xl">
-                  Get in touch with our expert team for fast, reliable device repairs in Dubai.
+                  {t("heroDescription")}
                 </p>
               </div>
             </div>
@@ -209,7 +209,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
                       className="flex items-center gap-2"
                     >
                       <WhatsAppIcon className="h-5 w-5" />
-                      WhatsApp Us
+                      {t("whatsappUs")}
                     </a>
                   </Button>
                   <Button variant="secondary" asChild>
@@ -220,7 +220,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
                       className="flex items-center gap-2"
                     >
                       <ExternalLink className="h-5 w-5" />
-                      Get Directions
+                      {t("getDirections")}
                     </a>
                   </Button>
                 </div>
@@ -257,10 +257,10 @@ export default async function ContactPage({ params }: ContactPageProps) {
 
           <div className="container mx-auto px-4 text-center relative z-10">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Free Pickup & Delivery Areas
+              {t("pickupAreas")}
             </h2>
             <p className="text-foreground-muted mb-8">
-              We offer free pickup and delivery in these areas
+              {t("pickupAreasDesc")}
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">

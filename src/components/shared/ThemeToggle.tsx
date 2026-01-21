@@ -28,9 +28,10 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
     return (
       <button
         className={cn(
-          "h-10 w-10 rounded-xl bg-card border border-card-border flex items-center justify-center",
+          "min-h-[44px] min-w-[44px] h-11 w-11 rounded-xl bg-card border border-card-border flex items-center justify-center",
           className
         )}
+        aria-label="Toggle theme"
       >
         <div className="h-5 w-5" />
       </button>
@@ -41,7 +42,7 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
     <button
       onClick={handleToggle}
       className={cn(
-        "h-10 w-10 rounded-xl bg-card border border-card-border flex items-center justify-center transition-all hover:border-primary/50 hover:bg-background-secondary",
+        "min-h-[44px] min-w-[44px] h-11 w-11 rounded-xl bg-card border border-card-border flex items-center justify-center transition-all hover:border-primary/50 hover:bg-background-secondary",
         className
       )}
       aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}

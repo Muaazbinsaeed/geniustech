@@ -1,83 +1,45 @@
 "use client";
 
 import { useEffect } from "react";
-import Link from "next/link";
-import { Home, RefreshCw } from "lucide-react";
-import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { Button } from "@/components/ui/Button";
-import { SITE_CONFIG } from "@/lib/constants";
-import { getWhatsAppLink } from "@/lib/utils";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 
-interface ErrorProps {
+export default function Error({
+  error,
+  reset,
+}: {
   error: Error & { digest?: string };
   reset: () => void;
-}
-
-export default function Error({ error, reset }: ErrorProps) {
-  const whatsappLink = getWhatsAppLink(
-    SITE_CONFIG.whatsapp,
-    `Hi! I encountered an error on your website: ${error.message}`
-  );
-
+}) {
   useEffect(() => {
-    // Log error to console in development
     console.error("Page error:", error);
   }, [error]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background px-4">
-      <div className="text-center max-w-md">
-        {/* Error Icon */}
-        <div className="mb-8 flex justify-center">
-          <div className="w-24 h-24 rounded-full bg-red-100 dark:bg-red-900/20 flex items-center justify-center">
-            <span className="text-4xl">!</span>
-          </div>
-        </div>
-
-        {/* Message */}
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
-          Something Went Wrong
-        </h2>
-        <p className="text-foreground-muted mb-8">
-          We apologize for the inconvenience. Please try again or contact us on WhatsApp.
-        </p>
-
-        {/* Actions */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button onClick={reset} className="flex items-center gap-2">
-            <RefreshCw className="h-4 w-4" />
-            Try Again
-          </Button>
-          <Button variant="outline" asChild>
-            <Link href="/" className="flex items-center gap-2">
-              <Home className="h-4 w-4" />
-              Back to Home
-            </Link>
-          </Button>
-        </div>
-
-        {/* WhatsApp Contact */}
-        <div className="mt-8">
-          <Button variant="whatsapp" asChild>
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2"
-            >
-              <WhatsAppIcon className="h-4 w-4" />
-              Report Issue on WhatsApp
-            </a>
-          </Button>
-        </div>
-
-        {/* Error Details (Development) */}
-        {process.env.NODE_ENV === "development" && error.digest && (
-          <p className="mt-4 text-xs text-foreground-muted">
-            Error ID: {error.digest}
+    <>
+      <Header />
+      <main className="min-h-screen flex items-center justify-center p-4">
+        <div className="text-center max-w-md">
+          <div className="text-6xl mb-6">⚠️</div>
+          <h1 className="text-3xl font-bold mb-4">Something went wrong</h1>
+          <p className="text-text-secondary mb-8">
+            We apologize for the inconvenience. An unexpected error occurred while loading this page.
           </p>
-        )}
-      </div>
-    </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button onClick={reset}>Try again</Button>
+            <Button variant="outline" onClick={() => window.location.href = "/"}>
+              Go to Homepage
+            </Button>
+          </div>
+          {error.digest && (
+            <p className="mt-6 text-sm text-text-tertiary">
+              Error ID: {error.digest}
+            </p>
+          )}
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 }

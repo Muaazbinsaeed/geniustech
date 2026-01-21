@@ -83,6 +83,8 @@
     "areas": "Áreas de servicio",
     "about": "Nosotros",
     "blog": "Blog",
+    "faq": "Preguntas",
+    "pricing": "Precios",
     "contact": "Contacto"
   },
   "hero": {
@@ -188,13 +190,21 @@
   "contact": {
     "title": "Contáctanos",
     "subtitle": "Ponte en contacto con nuestro equipo",
+    "heroDescription": "Contacta con nuestro equipo de expertos para una reparación rápida y confiable de dispositivos en Dubái.",
     "address": "Dirección",
     "phone": "Teléfono",
     "email": "Email",
     "hours": "Horario",
     "everyday": "Todos los días: 10AM - 10PM",
     "findUs": "Encuéntranos",
-    "landmark": "Dentro de Pluspoint Mini Mart"
+    "landmark": "Dentro de Pluspoint Mini Mart",
+    "whatsappDesc": "Respuesta más rápida - generalmente en minutos",
+    "phoneDesc": "Llámanos directamente",
+    "emailDesc": "Para consultas y presupuestos",
+    "whatsappUs": "WhatsApp",
+    "getDirections": "Cómo llegar",
+    "pickupAreas": "Áreas de recogida y entrega gratis",
+    "pickupAreasDesc": "Ofrecemos recogida y entrega gratis en estas áreas"
   },
   "blog": {
     "title": "Consejos y guías de reparación",
@@ -474,6 +484,97 @@
         "title": "Experiencia",
         "description": "Nuestros técnicos certificados tienen años de experiencia con todas las marcas y modelos de dispositivos."
       }
+    }
+  },
+  "pricing": {
+    "metaTitle": "Precios reparación teléfono Dubái - iPhone, MacBook, Samsung",
+    "metaDescription": "Precios transparentes de reparación de teléfonos en Dubai Marina. Reparación pantalla iPhone desde 200 AED, batería MacBook desde 350 AED. Servicio mismo día, recogida gratis JLT, JBR.",
+    "title": "Precios de reparación",
+    "subtitle": "Precios transparentes sin cargos ocultos. Todos los precios incluyen piezas, mano de obra y garantía.",
+    "badge": "Lista de precios 2026",
+    "quickAnswer": {
+      "label": "¿Cuánto cuesta reparar un teléfono en Dubái?",
+      "value": "Pantalla iPhone: 200-1,200 AED | Batería MacBook: 350-950 AED | Pantalla Samsung: 200-800 AED"
+    },
+    "highlights": {
+      "sameDay": "Servicio el mismo día",
+      "freePickup": "Recogida y entrega gratis",
+      "warranty": "Garantía hasta 1 año",
+      "noHidden": "Sin cargos ocultos"
+    },
+    "table": {
+      "service": "Servicio",
+      "price": "Precio (AED)",
+      "disclaimer": "* Los precios pueden variar según el estado del dispositivo. Contáctanos para un presupuesto exacto."
+    },
+    "cta": {
+      "title": "Obtén un presupuesto gratis",
+      "subtitle": "Envíanos un mensaje de WhatsApp con el modelo de tu dispositivo y el problema para un presupuesto instantáneo.",
+      "button": "Presupuesto gratis por WhatsApp",
+      "response": "Normalmente respondemos en 5 minutos durante horario laboral."
+    }
+  },
+  "faq": {
+    "metaTitle": "Preguntas frecuentes - Reparación de teléfonos en Dubái",
+    "metaDescription": "Respuestas a preguntas comunes sobre reparación de teléfonos en Dubai Marina. Costo de reparación de pantalla iPhone, tiempo, garantía, recogida gratis JLT, JBR.",
+    "title": "Preguntas frecuentes",
+    "subtitle": "Encuentra respuestas a preguntas comunes sobre nuestros servicios de reparación de teléfonos y portátiles en Dubai Marina, JLT y JBR.",
+    "badge": "FAQ",
+    "quickAnswers": "Respuestas rápidas",
+    "qa": {
+      "cost": {
+        "label": "¿Cuánto cuesta reparar pantalla iPhone?",
+        "value": "AED 200 - 1,200 según modelo"
+      },
+      "time": {
+        "label": "¿Cuánto tiempo toma la reparación?",
+        "value": "1-2 horas para la mayoría de reparaciones"
+      },
+      "warranty": {
+        "label": "¿Ofrecen garantía?",
+        "value": "Sí, garantía de 30 días a 1 año"
+      },
+      "pickup": {
+        "label": "¿La recogida es realmente gratis?",
+        "value": "Sí, gratis en Dubai Marina, JLT, JBR"
+      }
+    },
+    "categories": {
+      "general": "Preguntas generales",
+      "iphone": "Reparación iPhone",
+      "macbook": "Reparación MacBook",
+      "android": "Reparación Android y Samsung",
+      "ipad": "Reparación iPad",
+      "laptop": "Reparación portátiles",
+      "smartwatch": "Reparación smartwatch"
+    },
+    "general": {
+      "pickup": {
+        "q": "¿La recogida y entrega son realmente gratis?",
+        "a": "Sí, ofrecemos recogida y entrega completamente gratis en Dubai Marina, JLT y JBR. Sin cargos ocultos ni pedido mínimo."
+      },
+      "warranty": {
+        "q": "¿Qué garantía ofrecen en las reparaciones?",
+        "a": "Todas nuestras reparaciones tienen garantía de 30 días a 1 año según el servicio. Las reparaciones de pantalla tienen típicamente 6 meses de garantía."
+      },
+      "time": {
+        "q": "¿Cuánto tiempo toma una reparación típica?",
+        "a": "La mayoría de reparaciones se completan en 1-2 horas. La reparación de pantalla iPhone toma 30-60 minutos. Ofrecemos servicio el mismo día."
+      },
+      "payment": {
+        "q": "¿Qué métodos de pago aceptan?",
+        "a": "Aceptamos efectivo, tarjeta de crédito, tarjeta de débito, Apple Pay, Google Pay y transferencia bancaria."
+      },
+      "quote": {
+        "q": "¿Cómo obtengo un presupuesto de reparación?",
+        "a": "Simplemente envíenos un mensaje de WhatsApp describiendo el problema de su dispositivo. Le daremos un presupuesto gratis en minutos."
+      }
+    },
+    "cta": {
+      "title": "¿Todavía tienes preguntas?",
+      "subtitle": "¡Nuestro equipo está aquí para ayudar! Contáctanos por WhatsApp para respuestas instantáneas.",
+      "whatsapp": "Preguntar por WhatsApp",
+      "call": "Llámanos"
     }
   }
 }

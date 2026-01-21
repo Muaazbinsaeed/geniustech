@@ -1,12 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { cn, getWhatsAppLink } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
@@ -22,6 +22,50 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+
+  // Focus trap and keyboard navigation for mobile menu
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setIsMobileMenuOpen(false);
+        menuButtonRef.current?.focus();
+      }
+
+      // Focus trap
+      if (e.key === "Tab" && mobileMenuRef.current) {
+        const focusableElements = mobileMenuRef.current.querySelectorAll(
+          'a[href], button:not([disabled])'
+        );
+        const firstElement = focusableElements[0] as HTMLElement;
+        const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
+
+        if (e.shiftKey && document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement?.focus();
+        } else if (!e.shiftKey && document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement?.focus();
+        }
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    // Focus first link when menu opens
+    const firstLink = mobileMenuRef.current?.querySelector('a') as HTMLElement;
+    firstLink?.focus();
+
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [isMobileMenuOpen]);
+
+  // Close mobile menu on route change
+  const closeMobileMenu = useCallback(() => {
+    setIsMobileMenuOpen(false);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -108,13 +152,13 @@ export function Header() {
                   )}
                 </Link>
 
-                {/* Services Dropdown */}
-                {link.hasDropdown && isServicesOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    className="absolute top-full left-0 mt-1 w-56 md:w-64 bg-card border border-card-border rounded-xl shadow-lg overflow-hidden"
+                {/* Services Dropdown - CSS transitions for performance */}
+                {link.hasDropdown && (
+                  <div
+                    className={cn(
+                      "absolute top-full left-0 mt-1 w-56 md:w-64 bg-card border border-card-border rounded-xl shadow-lg overflow-hidden transition-all duration-200",
+                      isServicesOpen ? "opacity-100 translate-y-0 visible" : "opacity-0 translate-y-2 invisible"
+                    )}
                     role="menu"
                     aria-label="Services submenu"
                   >
@@ -130,14 +174,14 @@ export function Header() {
                         </div>
                       </Link>
                     ))}
-                  </motion.div>
+                  </div>
                 )}
               </div>
             ))}
           </nav>
 
-          {/* Desktop Actions */}
-          <div className="hidden md:flex items-center gap-2 lg:gap-3">
+          {/* Desktop Actions - gap-3 for WCAG touch target spacing */}
+          <div className="hidden md:flex items-center gap-3 lg:gap-4">
             <LanguageSwitcher />
             <ThemeToggle />
             <Button variant="whatsapp" size="sm" asChild>
@@ -158,8 +202,9 @@ export function Header() {
             <LanguageSwitcher compact />
             <ThemeToggle />
             <button
+              ref={menuButtonRef}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="h-11 w-11 rounded-xl bg-card border border-card-border flex items-center justify-center"
+              className="min-h-[44px] min-w-[44px] h-11 w-11 rounded-xl bg-card border border-card-border flex items-center justify-center"
               aria-label={isMobileMenuOpen ? tCommon("closeMenu") : tCommon("openMenu")}
               aria-expanded={isMobileMenuOpen}
               aria-controls="mobile-menu"
@@ -178,6 +223,7 @@ export function Header() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
+            ref={mobileMenuRef}
             id="mobile-menu"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
@@ -192,7 +238,7 @@ export function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={closeMobileMenu}
                     className="px-4 py-3 text-sm font-medium rounded-lg hover:bg-background-secondary transition-colors"
                   >
                     {link.label}

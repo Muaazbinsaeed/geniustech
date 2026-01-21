@@ -84,6 +84,7 @@
     "about": "About",
     "blog": "Blog",
     "faq": "FAQ",
+    "pricing": "Pricing",
     "contact": "Contact"
   },
   "hero": {
@@ -189,13 +190,21 @@
   "contact": {
     "title": "Contact Us",
     "subtitle": "Get in touch with our team",
+    "heroDescription": "Get in touch with our expert team for fast, reliable device repairs in Dubai.",
     "address": "Address",
     "phone": "Phone",
     "email": "Email",
     "hours": "Working Hours",
     "everyday": "Everyday: 10AM - 10PM",
     "findUs": "Find Us",
-    "landmark": "Inside Pluspoint Mini Mart"
+    "landmark": "Inside Pluspoint Mini Mart",
+    "whatsappDesc": "Fastest response - usually within minutes",
+    "phoneDesc": "Call us directly",
+    "emailDesc": "For inquiries and quotes",
+    "whatsappUs": "WhatsApp Us",
+    "getDirections": "Get Directions",
+    "pickupAreas": "Free Pickup & Delivery Areas",
+    "pickupAreasDesc": "We offer free pickup and delivery in these areas"
   },
   "blog": {
     "title": "Device Repair Tips & Guides",

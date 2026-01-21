@@ -3,20 +3,45 @@ import dynamic from "next/dynamic";
 import { setRequestLocale } from "next-intl/server";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { HeroSlider } from "@/components/home/HeroSlider";
+import { HeroSection } from "@/components/home/HeroSection";
 import { TrustBar } from "@/components/home/TrustBar";
 import { SITE_CONFIG, type Locale } from "@/lib/constants";
 import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
 import { VideoSchema } from "@/components/seo/SchemaMarkup";
 
-// Dynamic imports for below-fold components (code splitting)
-const VideoShortsSection = dynamic(() => import("@/components/home/VideoShortsSection").then(mod => ({ default: mod.VideoShortsSection })));
-const Services = dynamic(() => import("@/components/home/Services").then(mod => ({ default: mod.Services })));
-const WhyChooseUs = dynamic(() => import("@/components/home/WhyChooseUs").then(mod => ({ default: mod.WhyChooseUs })));
-const ServiceAreas = dynamic(() => import("@/components/home/ServiceAreas").then(mod => ({ default: mod.ServiceAreas })));
-const Reviews = dynamic(() => import("@/components/home/Reviews").then(mod => ({ default: mod.Reviews })));
-const CTASection = dynamic(() => import("@/components/home/CTASection").then(mod => ({ default: mod.CTASection })));
-const WhatsAppFAB = dynamic(() => import("@/components/shared/WhatsAppFAB").then(mod => ({ default: mod.WhatsAppFAB })));
+// Loading skeleton component for code-split sections
+function SectionSkeleton({ height = "h-96" }: { height?: string }) {
+  return <div className={`${height} bg-background-secondary animate-pulse rounded-lg`} />;
+}
+
+// Dynamic imports for below-fold components (code splitting) with loading skeletons
+const VideoShortsSection = dynamic(
+  () => import("@/components/home/VideoShortsSection").then(mod => ({ default: mod.VideoShortsSection })),
+  { loading: () => <SectionSkeleton height="h-80" /> }
+);
+const Services = dynamic(
+  () => import("@/components/home/Services").then(mod => ({ default: mod.Services })),
+  { loading: () => <SectionSkeleton height="h-[500px]" /> }
+);
+const WhyChooseUs = dynamic(
+  () => import("@/components/home/WhyChooseUs").then(mod => ({ default: mod.WhyChooseUs })),
+  { loading: () => <SectionSkeleton height="h-[400px]" /> }
+);
+const ServiceAreas = dynamic(
+  () => import("@/components/home/ServiceAreas").then(mod => ({ default: mod.ServiceAreas })),
+  { loading: () => <SectionSkeleton height="h-64" /> }
+);
+const Reviews = dynamic(
+  () => import("@/components/home/Reviews").then(mod => ({ default: mod.Reviews })),
+  { loading: () => <SectionSkeleton height="h-[350px]" /> }
+);
+const CTASection = dynamic(
+  () => import("@/components/home/CTASection").then(mod => ({ default: mod.CTASection })),
+  { loading: () => <SectionSkeleton height="h-48" /> }
+);
+const WhatsAppFAB = dynamic(
+  () => import("@/components/shared/WhatsAppFAB").then(mod => ({ default: mod.WhatsAppFAB }))
+);
 
 interface HomePageProps {
   params: Promise<{ locale: string }>;
@@ -93,7 +118,7 @@ export default async function HomePage({ params }: HomePageProps) {
       <VideoSchema videos={SITE_CONFIG.location.youtubeShorts} />
       <Header />
       <main id="main-content">
-        <HeroSlider />
+        <HeroSection />
         <TrustBar />
         <VideoShortsSection videos={SITE_CONFIG.location.youtubeShorts} />
         <Services />
