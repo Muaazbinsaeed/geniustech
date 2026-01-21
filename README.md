@@ -26,7 +26,7 @@ A multi-language device repair service website for Dubai's fastest repair shop.
 ```bash
 npm install
 npm run dev      # Start dev server at http://localhost:3000
-npm run build    # Build for production
+npm run build    # Build for production (generates 208 static pages)
 npm run lint     # Run ESLint
 ```
 
@@ -34,52 +34,44 @@ npm run lint     # Run ESLint
 
 ```
 src/
-├── app/[locale]/     # Locale-prefixed pages (208 static pages)
+├── app/[locale]/     # Locale-prefixed pages
 ├── components/       # React components
 ├── data/             # Static data (services, areas, blog)
 ├── messages/         # Translation files (7 languages)
 └── lib/              # Utilities and constants
 ```
 
-## Pages
-
-| Route | Description |
-|-------|-------------|
-| `/` | Homepage |
-| `/services` | All repair services |
-| `/services/[slug]` | Individual service (6 services) |
-| `/areas` | Service areas |
-| `/areas/[area]` | Individual area (3 areas) |
-| `/blog` | Blog articles |
-| `/blog/[slug]` | Blog post |
-| `/about` | About page |
-| `/contact` | Contact page |
-
 ## Environment Variables
 
-Create `.env.local` with:
+Create `.env.local`:
 
 ```env
 NEXT_PUBLIC_SITE_URL=https://geniustechuae.com
 NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX      # Optional
 NEXT_PUBLIC_GOOGLE_ADS_ID=AW-XXXXXXXXXX         # Optional
+NEXT_PUBLIC_GOOGLE_ADS_WHATSAPP_CONVERSION=     # Optional
+NEXT_PUBLIC_GOOGLE_ADS_CALL_CONVERSION=         # Optional
 ```
 
 ## Deployment
 
-Deployed to **Vercel** with auto-deploy on push to `main`.
+### Vercel (Recommended)
 
-1. Import project at [vercel.com](https://vercel.com)
-2. Add environment variables (optional)
-3. Deploy
+1. Push code to GitHub
+2. Import at [vercel.com](https://vercel.com)
+3. Add environment variables
+4. Deploy (auto-deploys on push to `main`)
 
-Custom domain configured with Vercel DNS.
+**Current Setup:** geniustechuae.com via Vercel DNS
 
-## Documentation
+### Post-Deployment Checklist
 
-- [Project Report](docs/PROJECT_REPORT.md) - Detailed audit scores and recommendations
-- [Deployment Guide](DEPLOYMENT.md) - Step-by-step deployment instructions
-- [CLAUDE.md](CLAUDE.md) - Development guidelines and architecture
+- [ ] All 7 languages work (`/en`, `/ar`, `/hi`, `/ur`, `/ru`, `/fr`, `/es`)
+- [ ] SSL active (HTTPS)
+- [ ] Sitemap: `https://geniustechuae.com/sitemap.xml`
+- [ ] Robots: `https://geniustechuae.com/robots.txt`
+- [ ] PWA installable
+- [ ] WhatsApp links work
 
 ## Audit Scores
 
@@ -107,6 +99,11 @@ Custom domain configured with Vercel DNS.
 | Contact | 70 | 95 | 100 | 92 |
 
 *Tested January 21, 2026 via Lighthouse CLI*
+
+## Documentation
+
+- [Project Report](docs/PROJECT_REPORT.md) - Detailed audit scores, metrics, and recommendations
+- [CLAUDE.md](CLAUDE.md) - Development guidelines and architecture
 
 ## License
 

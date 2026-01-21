@@ -199,6 +199,13 @@ Deployed to Vercel with auto-deploy on push to `main`. See README.md for detaile
 
 ## Changelog
 
+### v1.6.1 (Jan 21, 2026) - Error Handling & Code Quality
+- **bdf99d9** `fix: Add error handling and null checks for critical code paths`
+  - Added `isValidPhoneNumber()` and `safeArray()` utility functions
+  - Fixed potential crashes from undefined arrays in service/area pages
+  - Added XSS protection to blog `formatContent()` function
+  - Phone validation with safe fallbacks for invalid numbers
+
 ### v1.6.0 (Jan 21, 2026) - Documentation & Audit
 - **57f2fac** `docs: Add comprehensive multi-dimensional project report`
   - Fresh Lighthouse audits (Production + Localhost)

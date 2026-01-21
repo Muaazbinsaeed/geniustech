@@ -376,6 +376,9 @@ async headers() {
 | Focus trap | ✅ |
 | 44px touch targets | ✅ |
 | llms.txt (local) | ✅ |
+| Phone number validation | ✅ |
+| Safe array handling | ✅ |
+| XSS protection (blog) | ✅ |
 
 ### Needs Work ⚠️
 
@@ -445,13 +448,23 @@ Security: securityheaders.com/?q=geniustechuae.com
 
 ## 12. Project Changelog
 
+### v1.6.1 (Jan 21, 2026) - Error Handling & Code Quality
+- Phone number validation with safe fallbacks
+- Safe array handling for translations (prevents crashes)
+- XSS protection in blog content formatting
+- Removed unused imports
+
+### v1.6.0 (Jan 21, 2026) - Documentation & Audit
+- Comprehensive multi-dimensional project report
+- Fresh Lighthouse audits (Production + Localhost)
+- Archived old reports to docs/archive/
+
 ### v1.5.0 (Jan 18, 2026) - SEO/AEO/GEO Optimization
 - PWA icons at all required sizes (48-512px)
 - Error boundaries and loading states
 - Focus trap and keyboard navigation
 - 44px minimum touch targets
 - llms.txt for AI crawlers
-- AI crawler rules in robots.txt
 
 ### v1.4.0 (Jan 14, 2026) - Domain & Infrastructure
 - Updated site URL to geniustechuae.com
