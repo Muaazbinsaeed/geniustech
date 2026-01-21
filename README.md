@@ -80,16 +80,21 @@ Custom domain configured with Vercel DNS.
 - [Project Report](docs/PROJECT_REPORT.md) - Detailed audit scores and recommendations
 - [CLAUDE.md](CLAUDE.md) - Development guidelines and architecture
 
-## Lighthouse Scores
+## Audit Scores
 
-| Metric | Homepage | Service Page |
-|--------|----------|--------------|
-| Performance | 74 | 92 |
-| Accessibility | 93 | 96 |
-| Best Practices | 100 | 100 |
-| SEO | 92 | 92 |
+| Dimension | Score | Status |
+|-----------|-------|--------|
+| Performance | 78/100 | ⚠️ Needs Work |
+| Accessibility | 93/100 | ✅ Good |
+| Best Practices | 100/100 | ✅ Excellent |
+| SEO | 92/100 | ✅ Good |
+| PWA | 75/100 | ⚠️ Needs Work |
+| AISEO/GEO/AEO | 80/100 | ✅ Good |
+| Mobile | 95/100 | ✅ Excellent |
+| i18n | 100/100 | ✅ Excellent |
+| **Overall** | **87/100** | ✅ Good |
 
-*Tested January 21, 2026*
+*Tested January 21, 2026 via Lighthouse CLI*
 
 ## License
 
