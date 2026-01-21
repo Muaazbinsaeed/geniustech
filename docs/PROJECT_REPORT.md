@@ -36,10 +36,20 @@
 
 #### Localhost (Development)
 
-| Page | Performance | Accessibility | Best Practices | SEO |
-|------|-------------|---------------|----------------|-----|
-| Homepage (`/en`) | 87 | 100 | 100 | 92 |
-| Service Page | 91 | 100 | 100 | 92 |
+| Page | Performance | Accessibility | Best Practices | SEO | LCP |
+|------|-------------|---------------|----------------|-----|-----|
+| Homepage (`/en`) | 87 | 100 | 100 | 92 | 4.1s |
+| Service Page | 91 | 100 | 100 | 92 | 3.6s |
+| Arabic RTL (`/ar`) | 87 | 100 | 100 | 92 | 4.0s |
+| Contact Page | 70 | 95 | 100 | 92 | - |
+
+#### Production vs Localhost Comparison
+
+| Page | Production | Localhost | Difference |
+|------|------------|-----------|------------|
+| Homepage | 78 | 87 | +9 |
+| Service | 72 | 91 | +19 |
+| Arabic RTL | 60 | 87 | +27 |
 
 ### Core Web Vitals
 

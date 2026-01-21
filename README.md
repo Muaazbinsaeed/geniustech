@@ -78,9 +78,12 @@ Custom domain configured with Vercel DNS.
 ## Documentation
 
 - [Project Report](docs/PROJECT_REPORT.md) - Detailed audit scores and recommendations
+- [Deployment Guide](DEPLOYMENT.md) - Step-by-step deployment instructions
 - [CLAUDE.md](CLAUDE.md) - Development guidelines and architecture
 
 ## Audit Scores
+
+### Production (geniustechuae.com)
 
 | Dimension | Score | Status |
 |-----------|-------|--------|
@@ -93,6 +96,15 @@ Custom domain configured with Vercel DNS.
 | Mobile | 95/100 | ✅ Excellent |
 | i18n | 100/100 | ✅ Excellent |
 | **Overall** | **87/100** | ✅ Good |
+
+### Localhost (Development)
+
+| Page | Perf | A11y | BP | SEO |
+|------|------|------|-----|-----|
+| Homepage | 87 | 100 | 100 | 92 |
+| Service | 91 | 100 | 100 | 92 |
+| Arabic RTL | 87 | 100 | 100 | 92 |
+| Contact | 70 | 95 | 100 | 92 |
 
 *Tested January 21, 2026 via Lighthouse CLI*
 

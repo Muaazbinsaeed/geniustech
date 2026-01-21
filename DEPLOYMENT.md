@@ -9,7 +9,7 @@ This document provides detailed instructions for deploying the Genius Tech websi
 Set up the following environment variables in your deployment platform:
 
 ```env
-NEXT_PUBLIC_SITE_URL=https://geniustech.ae
+NEXT_PUBLIC_SITE_URL=https://geniustechuae.com
 NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 NEXT_PUBLIC_GOOGLE_ADS_ID=AW-XXXXXXXXXX
 NEXT_PUBLIC_GOOGLE_ADS_WHATSAPP_CONVERSION=
@@ -148,9 +148,16 @@ The project is configured for:
 ### 4. Performance Check
 
 - [ ] Run Lighthouse audit (target: 90+ score)
-- [ ] Check Core Web Vitals
+- [ ] Check Core Web Vitals (LCP < 2.5s, CLS < 0.1)
 - [ ] Test on mobile devices
 - [ ] Verify PWA installation works
+- [ ] Test all 7 language versions
+
+### 5. AI/GEO Verification
+
+- [ ] llms.txt accessible: `https://geniustechuae.com/llms.txt`
+- [ ] Schema markup validates at validator.schema.org
+- [ ] Rich Results Test passes
 
 ## Troubleshooting
 

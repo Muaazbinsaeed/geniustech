@@ -199,6 +199,16 @@ Deployed to Vercel with auto-deploy on push to `main`. See README.md for detaile
 
 ## Changelog
 
+### v1.6.0 (Jan 21, 2026) - Documentation & Audit
+- **57f2fac** `docs: Add comprehensive multi-dimensional project report`
+  - Fresh Lighthouse audits (Production + Localhost)
+  - 12 dimensions analyzed: Performance, SEO, PWA, AISEO/GEO/AEO, Accessibility, Mobile, i18n, Security
+  - Priority action items documented
+- **d8ebb52** `docs: Reorganize documentation and add project report`
+  - Created `docs/` folder structure
+  - Archived old reports to `docs/archive/`
+  - Updated README and CLAUDE.md with changelog
+
 ### v1.5.0 (Jan 18, 2026) - SEO/AEO/GEO Optimization
 - **3ace14f** `feat: Add advanced SEO/AEO/GEO optimizations`
   - PWA icons at all required sizes (48-512px) with maskable variants
