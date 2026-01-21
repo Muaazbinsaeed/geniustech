@@ -260,9 +260,21 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   );
 }
 
-// Simple markdown-like formatting
-function formatContent(content: string): string {
-  let html = content
+// Simple markdown-like formatting with input validation
+function formatContent(content: string | undefined | null): string {
+  // Validate input
+  if (!content || typeof content !== "string") {
+    console.warn("formatContent received invalid content:", typeof content);
+    return "<p>Content not available.</p>";
+  }
+
+  // Basic sanitization - escape HTML entities to prevent XSS
+  // (allowing only our markdown-like syntax)
+  const sanitized = content
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+  let html = sanitized
     .replace(/^## (.*$)/gim, '<h2 class="mt-8 mb-4">$1</h2>')
     .replace(/^### (.*$)/gim, '<h3 class="mt-6 mb-3">$1</h3>')
     .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")

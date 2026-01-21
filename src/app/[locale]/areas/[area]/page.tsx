@@ -19,7 +19,7 @@ import { Button } from "@/components/ui/Button";
 import { getAllAreaSlugs, getAreaBySlug } from "@/data/areas";
 import { servicesData } from "@/data/services";
 import { SITE_CONFIG, type Locale } from "@/lib/constants";
-import { getWhatsAppLink, getPhoneLink } from "@/lib/utils";
+import { getWhatsAppLink, getPhoneLink, safeArray } from "@/lib/utils";
 import { generateAlternates, getOGLocale } from "@/lib/seo";
 import { LocalBusinessSchema, BreadcrumbSchema } from "@/components/seo/SchemaMarkup";
 
@@ -124,12 +124,12 @@ export default async function AreaPage({ params }: AreaPageProps) {
   const tService = await getTranslations("serviceData");
   const tArea = await getTranslations("areaData");
 
-  // Get translated area data
+  // Get translated area data with safe defaults
   const name = tArea(`${area}.name`);
   const fullName = tArea(`${area}.fullName`);
   const description = tArea(`${area}.description`);
-  const highlights = tArea.raw(`${area}.highlights`) as string[];
-  const landmarks = tArea.raw(`${area}.landmarks`) as string[];
+  const highlights = safeArray(tArea.raw(`${area}.highlights`) as string[] | undefined);
+  const landmarks = safeArray(tArea.raw(`${area}.landmarks`) as string[] | undefined);
 
   const whatsappLink = getWhatsAppLink(
     SITE_CONFIG.whatsapp,

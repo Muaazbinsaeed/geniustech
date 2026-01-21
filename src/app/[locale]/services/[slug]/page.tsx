@@ -20,7 +20,7 @@ import { WhatsAppFAB } from "@/components/shared/WhatsAppFAB";
 import { Button } from "@/components/ui/Button";
 import { getAllServiceSlugs, getServiceBySlug } from "@/data/services";
 import { SITE_CONFIG, type Locale } from "@/lib/constants";
-import { getWhatsAppLink, getPhoneLink } from "@/lib/utils";
+import { getWhatsAppLink, getPhoneLink, safeArray } from "@/lib/utils";
 import { generateAlternates, getOGLocale, DEFAULT_OG_IMAGE } from "@/lib/seo";
 import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/SchemaMarkup";
 
@@ -165,10 +165,10 @@ export default async function ServicePage({ params }: ServicePageProps) {
   );
   const phoneLink = getPhoneLink(SITE_CONFIG.phone);
 
-  // Get arrays from translations
-  const features = tService.raw("features") as string[];
-  const issues = tService.raw("issues") as { title: string; desc: string }[];
-  const faqs = tService.raw("faqs") as { q: string; a: string }[];
+  // Get arrays from translations with safe defaults
+  const features = safeArray(tService.raw("features") as string[] | undefined);
+  const issues = safeArray(tService.raw("issues") as { title: string; desc: string }[] | undefined);
+  const faqs = safeArray(tService.raw("faqs") as { q: string; a: string }[] | undefined);
 
   // Prepare breadcrumb data
   const breadcrumbs = [
